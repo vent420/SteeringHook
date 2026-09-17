@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://bqhpifwwpy7fl"]
+
+[ext_resource type="Texture2D" uid="uid://m6tlfkcakobu" path="res://sprite/path/p.png" id="1_77qeq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
+size = Vector2(342, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42ksk"]
+size = Vector2(299.84375, 31.5)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_iixhk"]
+radius = 4.3452206
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_77qeq")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1521330351]
+position = Vector2(-122, -3)
+polygon = PackedVector2Array(-289, -98, -287, -202, -254, -286, -180, -344, -70, -396, 28, -399, 137, -378, 232, -301, 274, -212, 283, -119, 319, -118, 314, -469, -405, -483, -398, 241, -44, 244, -48, 152, -122, 129, -184, 93, -243, 35, -281, -34)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1479394194]
+position = Vector2(322, 122)
+shape = SubResource("RectangleShape2D_3j2vm")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=2081744202]
+position = Vector2(122, 322)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_3j2vm")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=1010845242]
+position = Vector2(-125, 319)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_3j2vm")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=1420821353]
+position = Vector2(336.92188, -119)
+shape = SubResource("RectangleShape2D_42ksk")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D" unique_id=1127563655]
+position = Vector2(-127.99999, -127.999985)
+scale = Vector2(7.650135, 7.650135)
+shape = SubResource("CircleShape2D_iixhk")

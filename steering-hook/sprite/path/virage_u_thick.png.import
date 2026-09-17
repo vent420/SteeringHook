@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75iwmxe2odss"
-path="res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"
+uid="uid://bnn67bfl2ygl8"
+path="res://.godot/imported/virage_u_thick.png-3c2d0dca5f70fa4571fcc9c91e32970d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vfx/drift/drift-particle_sprite-sheet.png"
-dest_files=["res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"]
+source_file="res://sprite/path/virage_u_thick.png"
+dest_files=["res://.godot/imported/virage_u_thick.png-3c2d0dca5f70fa4571fcc9c91e32970d.ctex"]
 
 [params]
 

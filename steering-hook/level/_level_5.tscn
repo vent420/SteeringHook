@@ -1,0 +1,51 @@
+[gd_scene format=3 uid="uid://bht1k6jy2fukx"]
+
+[ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_uybmh"]
+[ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_2bwxy"]
+[ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_u288t"]
+[ext_resource type="PackedScene" uid="uid://c4ten1c4wtxsd" path="res://tiles/tile_road_slanted_fork_mirrored.tscn" id="6_hqh7v"]
+[ext_resource type="PackedScene" uid="uid://b7xw4pvl3l3js" path="res://tiles/tile_road_diag.tscn" id="6_lshts"]
+[ext_resource type="PackedScene" uid="uid://d4fg7lrumic7c" path="res://tiles/tile_road_diag_mirrored.tscn" id="7_aque2"]
+[ext_resource type="PackedScene" uid="uid://dosnnrebms648" path="res://tiles/tile_road_uthick.tscn" id="11_1pg2i"]
+
+[node name="Level1" type="Node2D" unique_id=4028965]
+
+[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("1_uybmh")]
+position = Vector2(500, 500)
+
+[node name="TileRoadStraight2" parent="." unique_id=999649631 instance=ExtResource("6_lshts")]
+position = Vector2(1500, -500)
+
+[node name="TileRoadStraight3" parent="." unique_id=2028415881 instance=ExtResource("3_u288t")]
+position = Vector2(1500, 500)
+
+[node name="TileRoadStraight4" parent="." unique_id=184042709 instance=ExtResource("2_2bwxy")]
+position = Vector2(2500, -500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight7" parent="." unique_id=574825905 instance=ExtResource("2_2bwxy")]
+position = Vector2(3500, 500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight5" parent="." unique_id=987231973 instance=ExtResource("2_2bwxy")]
+position = Vector2(2500, -1500)
+rotation = -3.1415927
+
+[node name="TileRoadStraight6" parent="." unique_id=2130740528 instance=ExtResource("1_uybmh")]
+position = Vector2(2500, 500)
+
+[node name="TileRoadStraight8" parent="." unique_id=927850094 instance=ExtResource("1_uybmh")]
+position = Vector2(3500, -1500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight9" parent="." unique_id=402559610 instance=ExtResource("11_1pg2i")]
+position = Vector2(3500, -500)
+rotation = 4.712389
+
+[node name="TileRoadStraight10" parent="." unique_id=2020993252 instance=ExtResource("6_hqh7v")]
+position = Vector2(3500, -2500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight11" parent="." unique_id=412420797 instance=ExtResource("7_aque2")]
+position = Vector2(4500, -2500)
+rotation = 1.5707964

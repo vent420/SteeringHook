@@ -21,7 +21,7 @@ size = Vector2(517, 26)
 size = Vector2(27.625, 87.5)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4w8rr"]
-size = Vector2(55.90625, 33.75)
+size = Vector2(37.476563, 33.875)
 
 [node name="RondBoost" type="Sprite2D" unique_id=2133397994]
 position = Vector2(1, 39)
@@ -63,6 +63,10 @@ shape = SubResource("RectangleShape2D_4w8rr")
 
 [node name="CollisionShape2D10" type="CollisionShape2D" parent="Area2D" unique_id=1579702098]
 position = Vector2(164, -470)
+shape = SubResource("RectangleShape2D_4w8rr")
+
+[node name="CollisionShape2D11" type="CollisionShape2D" parent="Area2D" unique_id=926489129]
+position = Vector2(1, -275)
 shape = SubResource("RectangleShape2D_4w8rr")
 
 [node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D" unique_id=1931014202]
