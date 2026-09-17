@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://dbq7cj7i10bvk"]
+
+[ext_resource type="Texture2D" uid="uid://dnawwhj81h5jv" path="res://sprite/path/virage_u.png" id="1_0eci8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_du3a7"]
+size = Vector2(37.39459, 1.0159297)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8wbj2"]
+size = Vector2(7.447708, 34.040504)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_8wbj2"]
+radius = 14.07703
+height = 32.802116
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_0eci8")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=999448930]
+position = Vector2(-210.58124, -495.00003)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_du3a7")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D" unique_id=888023644]
+position = Vector2(-210.58124, 488.99997)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_du3a7")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D" unique_id=941512430]
+position = Vector2(-436.08124, 3.3249817)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_8wbj2")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D" unique_id=216830888]
+position = Vector2(-250.00002, 2.000061)
+rotation = -1.5707964
+scale = Vector2(15.06, 15.06)
+shape = SubResource("CapsuleShape2D_8wbj2")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=633157307]
+position = Vector2(123, -488)
+polygon = PackedVector2Array(105, 43, 233, 141, 331, 299, 375, 484, 336, 682, 258, 819, 107, 933, -43, 975, -40, 996, 431, 980, 419, -15, -30, -21, -38, 12)
