@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dn5joyxkgp82e"]
+
+[ext_resource type="Script" uid="uid://3cexfd67ctwd" path="res://script/test_controller.gd" id="1_itefh"]
+[ext_resource type="Texture2D" uid="uid://csnife3x07mf2" path="res://sprite/placeholder/car.jpg" id="2_ahcvf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_am1su"]
+size = Vector2(108, 193)
+
+[node name="Player" type="Area2D" unique_id=1010667792]
+script = ExtResource("1_itefh")
+metadata/_edit_group_ = true
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=332899250]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=809086396]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_ahcvf")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=125151462]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_am1su")
+
+[node name="HookAnchor" type="Node2D" parent="." unique_id=1559163370]
