@@ -30,8 +30,8 @@ func _process(delta: float) -> void:
 		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
 		hook_anchor_global = to_global(get_node("HookAnchor").position)
-		#print("mouse pos : ", mouse_pos_global)
-		#print("hook pos : ", hook_anchor_global)
+		print("mouse pos : ", mouse_pos_global)
+		print("hook pos : ", hook_anchor_global)
 		
 		# Vecteur directeur de l'hypothenuse
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
