@@ -1,19 +1,19 @@
-[gd_scene format=3 uid="uid://cufmjv7e7rk0e"]
+[gd_scene format=3 uid="uid://bvv2r5l7mpauy"]
 
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_ixmtu"]
+[ext_resource type="Texture2D" uid="uid://rfb0r4efvhgd" path="res://sprite/path/ligne_droite_offset.png" id="1_15sng"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
 size = Vector2(999, 27)
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
-texture = ExtResource("1_ixmtu")
+texture = ExtResource("1_15sng")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=907913620]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1230825477]
-position = Vector2(-0.5, -123.5)
+position = Vector2(0, -500)
 shape = SubResource("RectangleShape2D_3j2vm")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1479394194]
-position = Vector2(-0.5, 122)
+position = Vector2(0, -254.5)
 shape = SubResource("RectangleShape2D_3j2vm")

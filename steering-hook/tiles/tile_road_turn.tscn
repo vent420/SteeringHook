@@ -1,40 +1,16 @@
 [gd_scene format=3 uid="uid://cp3mjo0ybnk1v"]
 
-[ext_resource type="Texture2D" uid="uid://c1ehbcpco17nd" path="res://sprite/path/saparation-1.png" id="1_4am7l"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_vgpod"]
-size = Vector2(643, 27)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_48ftp"]
-size = Vector2(479.56775, 27)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3ktsr"]
-size = Vector2(492.70782, 22.577118)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
-size = Vector2(999, 27)
+[ext_resource type="Texture2D" uid="uid://bdl3wvvsvlhgk" path="res://sprite/path/tournant.png" id="1_oxfst"]
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
-texture = ExtResource("1_4am7l")
+texture = ExtResource("1_oxfst")
 
-[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+[node name="Area2D" type="Area2D" parent="." unique_id=1983864261]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1230825477]
-position = Vector2(177.5, -123.5)
-shape = SubResource("RectangleShape2D_vgpod")
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D" unique_id=95712054]
+position = Vector2(18, -1)
+polygon = PackedVector2Array(91, -495, 98, -433, 114, -358, 142, -265, 203, -194, 281, -143, 378, -114, 474, -107, 471, -130)
 
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=1261484733]
-position = Vector2(11.805826, -303.04242)
-rotation = -0.87959456
-scale = Vector2(0.9999999, 0.9999999)
-shape = SubResource("RectangleShape2D_48ftp")
-
-[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=1501957001]
-position = Vector2(-308.00003, -310.00003)
-rotation = -0.85198087
-scale = Vector2(0.9999999, 0.9999999)
-shape = SubResource("RectangleShape2D_3ktsr")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1479394194]
-position = Vector2(-0.5, 122)
-shape = SubResource("RectangleShape2D_3j2vm")
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1534134932]
+position = Vector2(-15, 11)
+polygon = PackedVector2Array(-29, -91, 28, -23, 101, 37, 209, 72, 322, 92, 448, 102, 510, 100, 509, 119, -83, 68, -127, -498, -97, -502, -105, -420, -100, -298, -79, -185)
