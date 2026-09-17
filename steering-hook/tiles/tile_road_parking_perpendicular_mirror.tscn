@@ -3,10 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://bupuwhn1cehoi" path="res://sprite/path/carre02_2.png" id="1_5f482"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hn27s"]
-size = Vector2(34.13015, 4.7576313)
+size = Vector2(25.033203, 4.7576313)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kyuk4"]
-size = Vector2(16.93227, 4.7576313)
+size = Vector2(25.099602, 4.7576313)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_du3a7"]
 size = Vector2(66.268265, 4.7576313)
@@ -21,12 +21,12 @@ flip_v = true
 [node name="Area2D" type="Area2D" parent="." unique_id=907913620]
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=999448930]
-position = Vector2(-242, 461)
+position = Vector2(-310.5, 461)
 scale = Vector2(15.06, 15.06)
 shape = SubResource("RectangleShape2D_hn27s")
 
 [node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D" unique_id=1558975894]
-position = Vector2(367.5, 461)
+position = Vector2(306, 461)
 scale = Vector2(15.06, 15.06)
 shape = SubResource("RectangleShape2D_kyuk4")
 
