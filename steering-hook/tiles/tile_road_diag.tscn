@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://b7xw4pvl3l3js"]
+
+[ext_resource type="Texture2D" uid="uid://bbu2260mr4q2u" path="res://sprite/path/separation_suite.png" id="1_w1r0o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cv0ea"]
+size = Vector2(132.94727, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f8tf4"]
+size = Vector2(86.47363, 20)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_odtco"]
+size = Vector2(28, 421.6056)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
+size = Vector2(645.89453, 20)
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_w1r0o")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1796928680]
+position = Vector2(432.47363, -117)
+shape = SubResource("RectangleShape2D_cv0ea")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=95574185]
+position = Vector2(455, 148)
+shape = SubResource("RectangleShape2D_f8tf4")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=130890968]
+position = Vector2(307, -73)
+rotation = -0.6000823
+shape = SubResource("RectangleShape2D_cv0ea")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=881508793]
+position = Vector2(287.7027, 326.98468)
+rotation = 0.6227397
+shape = SubResource("RectangleShape2D_odtco")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1932008864]
+position = Vector2(63.597633, 228.38295)
+rotation = -0.9381612
+shape = SubResource("RectangleShape2D_3j2vm")

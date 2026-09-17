@@ -1,0 +1,39 @@
+[gd_scene format=3 uid="uid://40c0k843m5ge"]
+
+[ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_lmtnf"]
+[ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_xas6p"]
+[ext_resource type="PackedScene" uid="uid://bpluncum0evj1" path="res://tiles/tile_road_parking_parallel.tscn" id="4_ebgyn"]
+[ext_resource type="PackedScene" uid="uid://bgtce3fjvktan" path="res://tiles/tile_road_parking_perpendicular_mirror.tscn" id="5_gevex"]
+[ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="8_7ovs8"]
+
+[node name="Level1" type="Node2D" unique_id=4028965]
+
+[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("1_lmtnf")]
+position = Vector2(500, 500)
+
+[node name="TileRoadStraight2" parent="." unique_id=380183257 instance=ExtResource("1_lmtnf")]
+position = Vector2(1500, 500)
+
+[node name="TileRoadStraight3" parent="." unique_id=2136265072 instance=ExtResource("2_xas6p")]
+position = Vector2(2500, 500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight9" parent="." unique_id=1380684284 instance=ExtResource("2_xas6p")]
+position = Vector2(7500, -1500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight4" parent="." unique_id=892319790 instance=ExtResource("8_7ovs8")]
+position = Vector2(3500, -1500)
+
+[node name="TileRoadStraight5" parent="." unique_id=689726780 instance=ExtResource("4_ebgyn")]
+position = Vector2(4500, -1500)
+
+[node name="TileRoadStraight6" parent="." unique_id=386642958 instance=ExtResource("5_gevex")]
+position = Vector2(5500, -1500)
+
+[node name="TileRoadStraight7" parent="." unique_id=1956888401 instance=ExtResource("2_xas6p")]
+position = Vector2(5500, -500)
+
+[node name="TileRoadStraight8" parent="." unique_id=866189536 instance=ExtResource("2_xas6p")]
+position = Vector2(6500, -1500)
+rotation = 1.5707964

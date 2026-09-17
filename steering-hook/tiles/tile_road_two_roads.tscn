@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b4g02v2xy4jqm"]
+
+[ext_resource type="Texture2D" uid="uid://dv5m4pfp7wthn" path="res://sprite/path/2_routes.png" id="1_fsvsv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_orlpp"]
+size = Vector2(67.10491, 4.156707)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5prfr"]
+size = Vector2(43.957504, 4.156707)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_du3a7"]
+size = Vector2(25.142761, 1.0159297)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qpiq8"]
+size = Vector2(3.7184563, 19.475437)
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_fsvsv")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1230825477]
+position = Vector2(2.6999817, -231.3)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_orlpp")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1673333004]
+position = Vector2(3, -516)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_orlpp")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=508697732]
+position = Vector2(171.99998, 239.99994)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_5prfr")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=999448930]
+position = Vector2(307.675, 486.35)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_du3a7")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=1920128123]
+position = Vector2(-131.00003, 355.34998)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("RectangleShape2D_qpiq8")
