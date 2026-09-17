@@ -10,6 +10,10 @@
 [ext_resource type="PackedScene" uid="uid://b7xw4pvl3l3js" path="res://tiles/tile_road_diag.tscn" id="9_srl7w"]
 [ext_resource type="PackedScene" uid="uid://7lhmt53sjdt3" path="res://tiles/tile_road_tetris_mirrored.tscn" id="9_xas6p"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="10_2xjr2"]
+[ext_resource type="PackedScene" uid="uid://dosnnrebms648" path="res://tiles/tile_road_uthick.tscn" id="11_xas6p"]
+[ext_resource type="PackedScene" uid="uid://bqhpifwwpy7fl" path="res://tiles/tile_road_p.tscn" id="12_3fe1e"]
+[ext_resource type="PackedScene" uid="uid://b8a6qve25c2ew" path="res://tiles/tile_road_s.tscn" id="13_c63xr"]
+[ext_resource type="PackedScene" uid="uid://83blkptldqab" path="res://tiles/tile_road_loop.tscn" id="14_ehl75"]
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -110,3 +114,29 @@ rotation = -1.5707964
 
 [node name="TileRoadStraight27" parent="." unique_id=128180685 instance=ExtResource("10_2xjr2")]
 position = Vector2(8500, -9500)
+
+[node name="TileRoadStraight28" parent="." unique_id=1172714141 instance=ExtResource("11_xas6p")]
+position = Vector2(2500, -500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight29" parent="." unique_id=223239610 instance=ExtResource("11_xas6p")]
+position = Vector2(7500, -1500)
+
+[node name="TileRoadStraight30" parent="." unique_id=168129327 instance=ExtResource("11_xas6p")]
+position = Vector2(6500, -7500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight31" parent="." unique_id=1493156306 instance=ExtResource("12_3fe1e")]
+position = Vector2(2500, -1500)
+
+[node name="TileRoadStraight32" parent="." unique_id=105761624 instance=ExtResource("12_3fe1e")]
+position = Vector2(6500, -500)
+rotation = -3.1415927
+
+[node name="Road9" parent="." unique_id=450356794 instance=ExtResource("13_c63xr")]
+position = Vector2(6500, -5502)
+rotation = 1.5707964
+
+[node name="RondBoost" parent="." unique_id=2133397994 instance=ExtResource("14_ehl75")]
+position = Vector2(8500, -2500)
+rotation = 1.5707964
