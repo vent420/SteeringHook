@@ -1,6 +1,6 @@
-[gd_scene format=3 uid="uid://cxg801abhwyw1"]
+[gd_scene format=3 uid="uid://dnxdmexd3wgjo"]
 
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_1assy"]
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_igdqw"]
 
 [node name="Main" type="Control" unique_id=270908751]
 layout_mode = 3
@@ -31,7 +31,7 @@ custom_maximum_size = Vector2(500, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-texture = ExtResource("1_1assy")
+texture = ExtResource("1_igdqw")
 region_rect = Rect2(0, 400, 1000, 200)
 patch_margin_left = 10
 patch_margin_top = 30
@@ -45,27 +45,32 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/margin_top = 40
+theme_override_constants/margin_bottom = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/BG/MarginContainer" unique_id=1986872391]
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/BG/MarginContainer" unique_id=808799230]
+custom_maximum_size = Vector2(-1, 120)
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 4
-theme_override_constants/separation = 76
+theme_override_constants/separation = 10
 
-[node name="Play_B" type="Button" parent="MarginContainer/VBoxContainer/BG/MarginContainer/HBoxContainer" unique_id=399123209]
-custom_minimum_size = Vector2(150, 80)
+[node name="Play_B" type="Button" parent="MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer" unique_id=399123209]
+custom_minimum_size = Vector2(80, 50)
 custom_maximum_size = Vector2(150, 80)
 layout_mode = 2
 size_flags_horizontal = 6
-size_flags_vertical = 4
+size_flags_vertical = 2
+theme_override_constants/outline_size = 5
 text = "Play"
 
-[node name="Quit_B" type="Button" parent="MarginContainer/VBoxContainer/BG/MarginContainer/HBoxContainer" unique_id=251109209]
-custom_minimum_size = Vector2(150, 80)
+[node name="Quit_B" type="Button" parent="MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer" unique_id=251109209]
+custom_minimum_size = Vector2(80, 50)
 custom_maximum_size = Vector2(150, 80)
 layout_mode = 2
 size_flags_horizontal = 6
-size_flags_vertical = 4
+size_flags_vertical = 10
+theme_override_constants/outline_size = 5
+theme_override_constants/h_separation = 4
+theme_override_constants/line_spacing = 0
 text = "Quit"
 
 [node name="Control" type="Control" parent="MarginContainer/VBoxContainer" unique_id=357927258]
