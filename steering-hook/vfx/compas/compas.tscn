@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://3dg5n7jser5f"]
+
+[ext_resource type="Script" uid="uid://frfj2ntj3lfg" path="res://vfx/compas/compas.gd" id="1_imxg1"]
+[ext_resource type="Texture2D" uid="uid://d1rtk4f6hurd7" path="res://vfx/compas/arrow.png" id="2_5t3df"]
+
+[node name="Compas" type="Node2D" unique_id=541164269]
+
+[node name="FinishLine" type="Node2D" parent="." unique_id=498535830]
+position = Vector2(181, 142)
+
+[node name="CompasHolder" type="Node2D" parent="." unique_id=2113053312]
+position = Vector2(69, 146)
+
+[node name="Compas" type="Node2D" parent="CompasHolder" unique_id=512011572 node_paths=PackedStringArray("target")]
+position = Vector2(-3.8146973e-06, -17.000002)
+scale = Vector2(0.107779235, 0.107779235)
+script = ExtResource("1_imxg1")
+target = NodePath("../../FinishLine")
+
+[node name="Sprite2D" type="Sprite2D" parent="CompasHolder/Compas" unique_id=340152364]
+texture = ExtResource("2_5t3df")
