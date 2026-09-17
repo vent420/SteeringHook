@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bydgyp04qoa62"]
 
-[ext_resource type="Texture2D" uid="uid://s5remd2awb58" path="res://sprite/path/slanted_donut.png" id="1_kjfly"]
+[ext_resource type="Texture2D" uid="uid://s5remd2awb58" path="res://sprite/path/tile_loop_2.png" id="1_kjfly"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_p1h3o"]
 radius = 9.628384

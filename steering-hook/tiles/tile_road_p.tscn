@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqhpifwwpy7fl"]
 
-[ext_resource type="Texture2D" uid="uid://m6tlfkcakobu" path="res://sprite/path/p.png" id="1_77qeq"]
+[ext_resource type="Texture2D" uid="uid://m6tlfkcakobu" path="res://sprite/path/inverted_p_loop.png" id="1_77qeq"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
 size = Vector2(342, 27)

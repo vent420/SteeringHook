@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://ds7vknpp56bq2"]
 
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_equ7c"]
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/road_1.png" id="1_equ7c"]
 [ext_resource type="Script" uid="uid://b4mo8e5o8lpo" path="res://interface/level_selection.gd" id="1_tsoj0"]
 
 [node name="LevelSelection" type="Control" unique_id=928083003]

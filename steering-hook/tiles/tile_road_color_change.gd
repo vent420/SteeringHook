@@ -1,10 +1,11 @@
 extends Sprite2D
 
-@export var spr_arr: Array[Texture2D]
+@export var defaultPath: String
 
 func _ready() -> void:
-	pass
+	if defaultPath.is_empty(): defaultPath = texture.resource_path.left(-4)
 	# xxx.connect(ChangeRoadColor)
+	ChangeRoadColor("r")
 
-func ChangeRoadColor(level: int):
-	texture = spr_arr[level]
+func ChangeRoadColor(col: String):
+	texture = load(defaultPath + "_" + col + ".png")

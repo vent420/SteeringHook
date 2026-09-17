@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cp3mjo0ybnk1v"]
 
-[ext_resource type="Texture2D" uid="uid://bdl3wvvsvlhgk" path="res://sprite/path/tournant.png" id="1_oxfst"]
+[ext_resource type="Texture2D" uid="uid://bdl3wvvsvlhgk" path="res://sprite/path/road_6.png" id="1_oxfst"]
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
 texture = ExtResource("1_oxfst")

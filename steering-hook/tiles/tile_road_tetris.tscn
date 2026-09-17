@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c6uka48j4slrc"]
 
-[ext_resource type="Texture2D" uid="uid://4gx7s3d2rjg4" path="res://sprite/path/milleux-vers-haut.png" id="1_jbhn6"]
+[ext_resource type="Texture2D" uid="uid://4gx7s3d2rjg4" path="res://sprite/path/road_2.png" id="1_jbhn6"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
 size = Vector2(499, 27)

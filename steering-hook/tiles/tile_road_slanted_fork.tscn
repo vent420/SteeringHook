@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://co1ensvnf6vq4"]
 
-[ext_resource type="Texture2D" uid="uid://c1ehbcpco17nd" path="res://sprite/path/saparation-1.png" id="1_wusrt"]
+[ext_resource type="Texture2D" uid="uid://c1ehbcpco17nd" path="res://sprite/path/road_3.png" id="1_wusrt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_vgpod"]
 size = Vector2(643, 27)
