@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://b4g02v2xy4jqm"]
 
-[ext_resource type="Texture2D" uid="uid://dv5m4pfp7wthn" path="res://sprite/path/2_routes.png" id="1_fsvsv"]
+[ext_resource type="Texture2D" uid="uid://dv5m4pfp7wthn" path="res://sprite/path_road/2_routes.png" id="1_fsvsv"]
 [ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_orlpp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orlpp"]

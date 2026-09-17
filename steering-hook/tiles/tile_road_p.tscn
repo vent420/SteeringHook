@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bqhpifwwpy7fl"]
 
-[ext_resource type="Texture2D" uid="uid://m6tlfkcakobu" path="res://sprite/path/inverted_p_loop.png" id="1_77qeq"]
+[ext_resource type="Texture2D" uid="uid://m6tlfkcakobu" path="res://sprite/path_road/inverted_p_loop.png" id="1_77qeq"]
 [ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_tl6n4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]

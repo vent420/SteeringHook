@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cxg801abhwyw1"]
 
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/road_1.png" id="1_1assy"]
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path_road/road_1.png" id="1_1assy"]
 [ext_resource type="Script" uid="uid://dkv1ym56yoarp" path="res://interface/main_menue.gd" id="1_rfu3d"]
 
 [node name="Main" type="Control" unique_id=270908751]

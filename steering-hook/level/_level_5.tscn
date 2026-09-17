@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b8a6qve25c2ew" path="res://tiles/tile_road_s.tscn" id="14_a723m"]
 [ext_resource type="PackedScene" uid="uid://4xiuswb3wytd" path="res://tiles/tile_road_s_mirrored.tscn" id="15_lshts"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="18_bo4m4"]
+[ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="19_w1uqk"]
 
 [node name="Level2" type="Node2D" unique_id=4028965]
 
@@ -496,3 +497,8 @@ scale = Vector2(0.3, 0.3)
 [node name="Camera2D" type="Camera2D" parent="." unique_id=41851679]
 position = Vector2(1655, -2432)
 zoom = Vector2(0.1, 0.1)
+
+[node name="Batiment16" type="Sprite2D" parent="Camera2D" unique_id=211275855]
+position = Vector2(3354, -485.99988)
+scale = Vector2(0.5963729, 0.5963729)
+texture = ExtResource("19_w1uqk")
