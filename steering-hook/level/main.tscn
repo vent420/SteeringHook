@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://ooqtwpmnwv2k"]
+
+[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="1_0ukcc"]
+[ext_resource type="PackedScene" uid="uid://w28i2s5kao2t" path="res://vfx/Trail/trail_renderer.tscn" id="2_nt2wp"]
+
+[node name="Main" type="Node2D" unique_id=1623129557]
+
+[node name="Player" parent="." unique_id=1010667792 instance=ExtResource("1_0ukcc")]
+
+[node name="Trail_Renderer" parent="Player" unique_id=495962236 instance=ExtResource("2_nt2wp")]
+position = Vector2(-31, 73)
+rotation = 1.5673488
+scale = Vector2(0.99999994, 0.99999994)
