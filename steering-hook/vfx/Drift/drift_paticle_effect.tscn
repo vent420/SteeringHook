@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bp31wk7rwvjfq"]
 
-[ext_resource type="Texture2D" uid="uid://75iwmxe2odss" path="res://vfx/Drift/drift-particle_sprite-sheet.png" id="1_iw8lu"]
+[ext_resource type="Texture2D" uid="uid://75iwmxe2odss" path="res://vfx/drift/drift-particle_sprite-sheet.png" id="1_iw8lu"]
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_iw8lu"]
 particles_animation = true
