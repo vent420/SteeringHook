@@ -12,5 +12,19 @@ func _physics_process(delta):
 
 
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+	var layer: int = area.collision_layer
+	print(layer)
+	collide(layer, area)
 	
-	pass # Replace with function body.
+	
+func collide(layer:int , obj:Area2D)->void:
+	match layer:
+		1:
+			print("wall")
+		2:
+			print("booster")
+		3:
+			print("obstacle")
+		4:
+			print("thy self")
+	
