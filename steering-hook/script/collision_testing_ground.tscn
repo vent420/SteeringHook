@@ -3,19 +3,32 @@
 [ext_resource type="Script" uid="uid://3cexfd67ctwd" path="res://script/test_controller.gd" id="1_c8jex"]
 [ext_resource type="Texture2D" uid="uid://c70jmytakpgfe" path="res://icon.svg" id="1_ytds1"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="3_07ddf"]
+[ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_slanted_donut.tscn" id="4_5jf4n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c8jex"]
 
 [node name="TEST_Controller" type="Node2D" unique_id=463197386]
 
+[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("4_5jf4n")]
+position = Vector2(413, 305)
+
+[node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
+light_mask = 0
+visibility_layer = 15
+position = Vector2(732, 343)
+scale = Vector2(0.36636066, 0.35502964)
+collision_layer = 2
+collision_mask = 8
+
 [node name="player_phy_test" type="Area2D" parent="." unique_id=2034205866]
 self_modulate = Color(1, 0.44705883, 1, 1)
 light_mask = 0
 visibility_layer = 15
-position = Vector2(311, 528)
+position = Vector2(711, 287)
 collision_layer = 8
 collision_mask = 7
 script = ExtResource("1_c8jex")
+metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="player_phy_test" unique_id=547552600]
 texture = ExtResource("1_ytds1")
@@ -26,18 +39,5 @@ visibility_layer = 31
 position = Vector2(0, -3)
 scale = Vector2(6.5901327, 6.5901327)
 shape = SubResource("RectangleShape2D_c8jex")
-
-[node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
-light_mask = 0
-visibility_layer = 15
-position = Vector2(549, 512.00006)
-scale = Vector2(0.36636066, 0.35502964)
-collision_layer = 2
-collision_mask = 8
-
-[node name="Booster2" parent="." unique_id=1195323448 instance=ExtResource("3_07ddf")]
-position = Vector2(382, 140)
-collision_layer = 2
-collision_mask = 8
 
 [connection signal="area_shape_entered" from="player_phy_test" to="player_phy_test" method="_on_area_shape_entered"]
