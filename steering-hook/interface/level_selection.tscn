@@ -11,25 +11,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1669522013]
-layout_mode = 0
-offset_left = 15.0
-offset_right = 1152.0
-offset_bottom = 648.0
-theme_override_constants/margin_bottom = 25
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=758804094]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-
-[node name="Return_B" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=412181770]
-custom_minimum_size = Vector2(120, 60)
-layout_mode = 2
-mouse_default_cursor_shape = 2
-text = "Return
-"
-
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1256688422]
 layout_mode = 1
 anchors_preset = 15
@@ -182,6 +163,25 @@ mouse_default_cursor_shape = 2
 keep_pressed_outside = true
 text = "Play"
 
-[connection signal="pressed" from="MarginContainer2/HBoxContainer/Return_B" to="MarginContainer" method="_on_return_b_pressed"]
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1669522013]
+layout_mode = 0
+offset_left = 15.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_bottom = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=758804094]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Return_B" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=412181770]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Return
+"
+
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_1" to="MarginContainer" method="_on_play_l_1_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_2" to="MarginContainer" method="_on_play_l_2_pressed"]
+[connection signal="pressed" from="MarginContainer2/HBoxContainer/Return_B" to="MarginContainer" method="_on_return_b_pressed"]
