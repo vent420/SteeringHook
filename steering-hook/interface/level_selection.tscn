@@ -11,6 +11,25 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1669522013]
+layout_mode = 0
+offset_left = 15.0
+offset_right = 1152.0
+offset_bottom = 648.0
+theme_override_constants/margin_bottom = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=758804094]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Return_B" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=412181770]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+mouse_default_cursor_shape = 2
+text = "Return
+"
+
 [node name="MarginContainer" type="MarginContainer" parent="." unique_id=1256688422]
 layout_mode = 1
 anchors_preset = 15
@@ -18,14 +37,12 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 theme_override_constants/margin_left = 15
 theme_override_constants/margin_right = 0
 script = ExtResource("1_tsoj0")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=354609780]
 layout_mode = 2
-mouse_filter = 2
 theme_override_constants/separation = 120
 
 [node name="Level_1" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1554089478]
@@ -33,7 +50,6 @@ custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 4
-mouse_filter = 2
 theme_override_constants/separation = 10
 
 [node name="BG" type="NinePatchRect" parent="MarginContainer/HBoxContainer/Level_1" unique_id=1350414968]
@@ -42,7 +58,6 @@ custom_maximum_size = Vector2(500, 200)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 8
-mouse_behavior_recursive = 1
 mouse_force_pass_scroll_events = false
 texture = ExtResource("1_equ7c")
 region_rect = Rect2(0, 400, 1000, 200)
@@ -58,17 +73,14 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer" unique_id=721660221]
 layout_mode = 2
 size_flags_vertical = 8
-mouse_filter = 2
 theme_override_constants/separation = 60
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer" unique_id=758685942]
 layout_mode = 2
-mouse_filter = 2
 
 [node name="Label" type="Label" parent="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=230264479]
 layout_mode = 2
@@ -89,8 +101,6 @@ text = "696969"
 [node name="MarginContainer3" type="MarginContainer" parent="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer" unique_id=261704185]
 layout_mode = 2
 size_flags_horizontal = 3
-mouse_filter = 2
-mouse_behavior_recursive = 1
 theme_override_constants/margin_right = 1
 
 [node name="Play_L_1" type="Button" parent="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=1920689798]
@@ -100,8 +110,7 @@ custom_maximum_size = Vector2(150, 80)
 layout_mode = 2
 size_flags_horizontal = 10
 size_flags_vertical = 4
-mouse_force_pass_scroll_events = false
-mouse_default_cursor_shape = 4
+mouse_default_cursor_shape = 2
 text = "Play"
 
 [node name="Level_2" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1646479663]
@@ -167,31 +176,12 @@ y_sort_enabled = true
 custom_minimum_size = Vector2(150, 80)
 custom_maximum_size = Vector2(150, 80)
 layout_mode = 2
-size_flags_horizontal = 10
+size_flags_horizontal = 3
 size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+keep_pressed_outside = true
 text = "Play"
 
-[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1669522013]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_bottom = 25
-
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=758804094]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-
-[node name="Return_B" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=412181770]
-custom_minimum_size = Vector2(120, 60)
-layout_mode = 2
-mouse_default_cursor_shape = 2
-text = "Return
-"
-
+[connection signal="pressed" from="MarginContainer2/HBoxContainer/Return_B" to="MarginContainer" method="_on_return_b_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_1" to="MarginContainer" method="_on_play_l_1_pressed"]
 [connection signal="pressed" from="MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_2" to="MarginContainer" method="_on_play_l_2_pressed"]
-[connection signal="pressed" from="MarginContainer2/HBoxContainer/Return_B" to="MarginContainer" method="_on_return_b_pressed"]
