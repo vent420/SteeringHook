@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://c7pcia7rb0lhx"]
+
+[ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="1_cisfb"]
+[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="2_xtr2x"]
+
+[node name="VTestScene" type="Control" unique_id=1020089230]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Booster" parent="." unique_id=559202974 instance=ExtResource("1_cisfb")]
+position = Vector2(120, 58)
+
+[node name="Player" parent="." unique_id=1010667792 instance=ExtResource("2_xtr2x")]
+position = Vector2(75, 315)
