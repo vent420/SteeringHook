@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dhqk7k8t664fc"]
+
+[ext_resource type="Script" uid="uid://3cexfd67ctwd" path="res://script/test_controller.gd" id="1_c8jex"]
+[ext_resource type="Texture2D" uid="uid://c70jmytakpgfe" path="res://icon.svg" id="1_ytds1"]
+[ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="3_07ddf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c8jex"]
+
+[node name="TEST_Controller" type="Node2D" unique_id=463197386]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=500176491]
+visibility_layer = 7
+position = Vector2(145, 119)
+collision_layer = 8
+script = ExtResource("1_c8jex")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=547552600]
+texture = ExtResource("1_ytds1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=312324427]
+scale = Vector2(6.5901327, 6.5901327)
+shape = SubResource("RectangleShape2D_c8jex")
+
+[node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
+position = Vector2(539.99994, 114.99999)
+scale = Vector2(8.20487, 8.20487)

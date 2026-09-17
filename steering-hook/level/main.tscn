@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://ooqtwpmnwv2k"]
 
 [ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="1_0ukcc"]
-[ext_resource type="PackedScene" uid="uid://w28i2s5kao2t" path="res://vfx/Trail/trail_renderer.tscn" id="2_nt2wp"]
+[ext_resource type="PackedScene" uid="uid://w28i2s5kao2t" path="res://vfx/trail/trail_renderer.tscn" id="2_nt2wp"]
 
 [node name="Main" type="Node2D" unique_id=1623129557]
 

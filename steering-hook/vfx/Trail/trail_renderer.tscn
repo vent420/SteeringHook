@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://w28i2s5kao2t"]
 
-[ext_resource type="Script" uid="uid://defil8i38hieh" path="res://vfx/Trail/trail_renderer.gd" id="1_lxx3v"]
+[ext_resource type="Script" uid="uid://defil8i38hieh" path="res://vfx/trail/trail_renderer.gd" id="1_lxx3v"]
 
 [sub_resource type="Curve" id="Curve_doa8y"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
@@ -19,4 +19,4 @@ width_curve = SubResource("Curve_doa8y")
 gradient = SubResource("Gradient_doa8y")
 
 [node name="TrailTimer" type="Timer" parent="." unique_id=749601681]
-wait_time = 0.009999999999999998
+wait_time = 0.1
