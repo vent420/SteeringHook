@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ddqo7fnaat43m"]
+
+[node name="Straight" type="Node2D" unique_id=429807276]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=210234834]
+
+[node name="Entrance" type="Marker2D" parent="Sprite2D" unique_id=276082969]
+
+[node name="Exit" type="Marker2D" parent="Sprite2D" unique_id=132175425]
