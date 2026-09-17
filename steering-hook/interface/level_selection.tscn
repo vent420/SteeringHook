@@ -172,6 +172,155 @@ mouse_default_cursor_shape = 2
 keep_pressed_outside = true
 text = "Play"
 
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=1424798354]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 13
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 5
+script = ExtResource("1_tsoj0")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3" unique_id=858010504]
+layout_mode = 2
+theme_override_constants/separation = 120
+
+[node name="Level_3" type="VBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer" unique_id=251308431]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3" unique_id=1903135677]
+custom_minimum_size = Vector2(500, 200)
+custom_maximum_size = Vector2(500, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+mouse_force_pass_scroll_events = false
+texture = ExtResource("1_equ7c")
+region_rect = Rect2(0, 400, 1000, 200)
+patch_margin_left = 10
+patch_margin_top = 30
+patch_margin_right = 10
+patch_margin_bottom = 30
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG" unique_id=684534476]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer" unique_id=1482713126]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 60
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer" unique_id=1981630220]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=745186637]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Best score :"
+
+[node name="Score" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=895621445]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "696969"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer" unique_id=741096639]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_right = 1
+
+[node name="Play_L_3" type="Button" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=1996099527]
+z_index = 99
+custom_minimum_size = Vector2(150, 80)
+custom_maximum_size = Vector2(150, 80)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+text = "Play"
+
+[node name="Level_4" type="VBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer" unique_id=248035366]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4" unique_id=1390160245]
+custom_minimum_size = Vector2(500, 200)
+custom_maximum_size = Vector2(500, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture = ExtResource("1_equ7c")
+region_rect = Rect2(0, 400, 1000, 200)
+patch_margin_left = 10
+patch_margin_top = 30
+patch_margin_right = 10
+patch_margin_bottom = 30
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG" unique_id=367018713]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer" unique_id=350571382]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 60
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer" unique_id=1343154073]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=72988268]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Best score :"
+
+[node name="Score" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=879389143]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "696969"
+
+[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer" unique_id=1931019672]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_right = 1
+
+[node name="Play_L_4" type="Button" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=887818018]
+z_index = 1
+y_sort_enabled = true
+custom_minimum_size = Vector2(150, 80)
+custom_maximum_size = Vector2(150, 80)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+mouse_default_cursor_shape = 2
+keep_pressed_outside = true
+text = "Play"
+
 [node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=1669522013]
 layout_mode = 2
 size_flags_vertical = 10
@@ -191,4 +340,6 @@ text = "Return
 
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_1" to="VBoxContainer/MarginContainer" method="_on_play_l_1_pressed"]
 [connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_2" to="VBoxContainer/MarginContainer" method="_on_play_l_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_3" to="VBoxContainer/MarginContainer" method="_on_play_l_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_4" to="VBoxContainer/MarginContainer" method="_on_play_l_4_pressed"]
 [connection signal="pressed" from="VBoxContainer/MarginContainer2/HBoxContainer/Return_B" to="VBoxContainer/MarginContainer" method="_on_return_b_pressed"]
