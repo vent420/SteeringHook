@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dbq7cj7i10bvk"]
 
 [ext_resource type="Texture2D" uid="uid://dnawwhj81h5jv" path="res://sprite/path/virage_u.png" id="1_0eci8"]
+[ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_8wbj2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_du3a7"]
 size = Vector2(37.39459, 1.0159297)
@@ -14,6 +15,7 @@ height = 32.802116
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
 texture = ExtResource("1_0eci8")
+script = ExtResource("2_8wbj2")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=907913620]
 

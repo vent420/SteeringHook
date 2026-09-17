@@ -3,49 +3,496 @@
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_uybmh"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_2bwxy"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_u288t"]
+[ext_resource type="PackedScene" uid="uid://bpluncum0evj1" path="res://tiles/tile_road_parking_parallel.tscn" id="4_a723m"]
+[ext_resource type="PackedScene" uid="uid://bgtce3fjvktan" path="res://tiles/tile_road_parking_perpendicular_mirror.tscn" id="5_s7vtp"]
 [ext_resource type="PackedScene" uid="uid://c4ten1c4wtxsd" path="res://tiles/tile_road_slanted_fork_mirrored.tscn" id="6_hqh7v"]
 [ext_resource type="PackedScene" uid="uid://b7xw4pvl3l3js" path="res://tiles/tile_road_diag.tscn" id="6_lshts"]
 [ext_resource type="PackedScene" uid="uid://d4fg7lrumic7c" path="res://tiles/tile_road_diag_mirrored.tscn" id="7_aque2"]
+[ext_resource type="PackedScene" uid="uid://dg30yc2bruw4o" path="res://tiles/tile_road_parking_perpendicular.tscn" id="7_bo4m4"]
+[ext_resource type="PackedScene" uid="uid://c6uka48j4slrc" path="res://tiles/tile_road_tetris.tscn" id="8_w1uqk"]
+[ext_resource type="PackedScene" uid="uid://7lhmt53sjdt3" path="res://tiles/tile_road_tetris_mirrored.tscn" id="9_j7toq"]
+[ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="10_rfwxk"]
 [ext_resource type="PackedScene" uid="uid://dosnnrebms648" path="res://tiles/tile_road_uthick.tscn" id="11_1pg2i"]
+[ext_resource type="PackedScene" uid="uid://83blkptldqab" path="res://tiles/tile_road_loop.tscn" id="11_u288t"]
+[ext_resource type="PackedScene" uid="uid://bqhpifwwpy7fl" path="res://tiles/tile_road_p.tscn" id="12_n7ri2"]
+[ext_resource type="PackedScene" uid="uid://b8a6qve25c2ew" path="res://tiles/tile_road_s.tscn" id="14_a723m"]
+[ext_resource type="PackedScene" uid="uid://4xiuswb3wytd" path="res://tiles/tile_road_s_mirrored.tscn" id="15_lshts"]
+[ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="18_bo4m4"]
 
-[node name="Level1" type="Node2D" unique_id=4028965]
+[node name="Level2" type="Node2D" unique_id=4028965]
 
-[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("1_uybmh")]
+[node name="RoadTiles" type="Node" parent="." unique_id=1664681287]
+
+[node name="TileRoadStraight" parent="RoadTiles" unique_id=258768893 instance=ExtResource("1_uybmh")]
 position = Vector2(500, 500)
 
-[node name="TileRoadStraight2" parent="." unique_id=999649631 instance=ExtResource("6_lshts")]
+[node name="TileRoadStraight2" parent="RoadTiles" unique_id=999649631 instance=ExtResource("6_lshts")]
 position = Vector2(1500, -500)
 
-[node name="TileRoadStraight3" parent="." unique_id=2028415881 instance=ExtResource("3_u288t")]
+[node name="TileRoadStraight3" parent="RoadTiles" unique_id=2028415881 instance=ExtResource("3_u288t")]
 position = Vector2(1500, 500)
 
-[node name="TileRoadStraight4" parent="." unique_id=184042709 instance=ExtResource("2_2bwxy")]
+[node name="TileRoadStraight4" parent="RoadTiles" unique_id=184042709 instance=ExtResource("2_2bwxy")]
 position = Vector2(2500, -500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight7" parent="." unique_id=574825905 instance=ExtResource("2_2bwxy")]
+[node name="TileRoadStraight7" parent="RoadTiles" unique_id=574825905 instance=ExtResource("2_2bwxy")]
 position = Vector2(3500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight5" parent="." unique_id=987231973 instance=ExtResource("2_2bwxy")]
+[node name="TileRoadStraight5" parent="RoadTiles" unique_id=987231973 instance=ExtResource("2_2bwxy")]
 position = Vector2(2500, -1500)
-rotation = -3.1415927
+rotation = 3.1415925
 
-[node name="TileRoadStraight6" parent="." unique_id=2130740528 instance=ExtResource("1_uybmh")]
+[node name="TileRoadStraight6" parent="RoadTiles" unique_id=2130740528 instance=ExtResource("1_uybmh")]
 position = Vector2(2500, 500)
 
-[node name="TileRoadStraight8" parent="." unique_id=927850094 instance=ExtResource("1_uybmh")]
+[node name="TileRoadStraight8" parent="RoadTiles" unique_id=927850094 instance=ExtResource("1_uybmh")]
 position = Vector2(3500, -1500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight9" parent="." unique_id=402559610 instance=ExtResource("11_1pg2i")]
+[node name="TileRoadStraight9" parent="RoadTiles" unique_id=402559610 instance=ExtResource("11_1pg2i")]
 position = Vector2(3500, -500)
-rotation = 4.712389
+rotation = -1.5707964
 
-[node name="TileRoadStraight10" parent="." unique_id=2020993252 instance=ExtResource("6_hqh7v")]
+[node name="TileRoadStraight33" parent="RoadTiles" unique_id=1078900616 instance=ExtResource("11_1pg2i")]
+position = Vector2(1500, -8500)
+rotation = 1.5707966
+
+[node name="TileRoadStraight10" parent="RoadTiles" unique_id=2020993252 instance=ExtResource("6_hqh7v")]
 position = Vector2(3500, -2500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight11" parent="." unique_id=412420797 instance=ExtResource("7_aque2")]
+[node name="TileRoadStraight11" parent="RoadTiles" unique_id=412420797 instance=ExtResource("7_aque2")]
 position = Vector2(4500, -2500)
 rotation = 1.5707964
+
+[node name="TileRoadStraight12" parent="RoadTiles" unique_id=1908679160 instance=ExtResource("2_2bwxy")]
+position = Vector2(4500, -3500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight13" parent="RoadTiles" unique_id=1263026285 instance=ExtResource("2_2bwxy")]
+position = Vector2(5500, -3500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight40" parent="RoadTiles" unique_id=1672437835 instance=ExtResource("2_2bwxy")]
+position = Vector2(1500, -4500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight47" parent="RoadTiles" unique_id=1894430657 instance=ExtResource("2_2bwxy")]
+position = Vector2(500, -4500)
+
+[node name="TileRoadStraight51" parent="RoadTiles" unique_id=1063004157 instance=ExtResource("2_2bwxy")]
+position = Vector2(-500, -1500)
+
+[node name="TileRoadStraight52" parent="RoadTiles" unique_id=1520231151 instance=ExtResource("2_2bwxy")]
+position = Vector2(-1500, -2500)
+
+[node name="TileRoadStraight48" parent="RoadTiles" unique_id=2094734393 instance=ExtResource("2_2bwxy")]
+position = Vector2(500, -2500)
+
+[node name="TileRoadStraight45" parent="RoadTiles" unique_id=837791449 instance=ExtResource("2_2bwxy")]
+position = Vector2(2500, -3500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight16" parent="RoadTiles" unique_id=1999708870 instance=ExtResource("2_2bwxy")]
+position = Vector2(4500, -5500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight41" parent="RoadTiles" unique_id=214972083 instance=ExtResource("2_2bwxy")]
+position = Vector2(1500, -5500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight36" parent="RoadTiles" unique_id=1959081836 instance=ExtResource("2_2bwxy")]
+position = Vector2(500, -6500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight55" parent="RoadTiles" unique_id=341601943 instance=ExtResource("2_2bwxy")]
+position = Vector2(-1500, -7500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight58" parent="RoadTiles" unique_id=1022381286 instance=ExtResource("2_2bwxy")]
+position = Vector2(-1500, -11500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight17" parent="RoadTiles" unique_id=1714257879 instance=ExtResource("2_2bwxy")]
+position = Vector2(5500, -5500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight32" parent="RoadTiles" unique_id=372931221 instance=ExtResource("2_2bwxy")]
+position = Vector2(500, -8500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight23" parent="RoadTiles" unique_id=833885467 instance=ExtResource("2_2bwxy")]
+position = Vector2(3500, -8500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight38" parent="RoadTiles" unique_id=1526814581 instance=ExtResource("2_2bwxy")]
+position = Vector2(-500, -2500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight18" parent="RoadTiles" unique_id=1388148539 instance=ExtResource("2_2bwxy")]
+position = Vector2(4500, -6500)
+
+[node name="TileRoadStraight22" parent="RoadTiles" unique_id=726414107 instance=ExtResource("2_2bwxy")]
+position = Vector2(2500, -8500)
+
+[node name="TileRoadStraight59" parent="RoadTiles" unique_id=1368616747 instance=ExtResource("2_2bwxy")]
+position = Vector2(-1500, -10500)
+
+[node name="TileRoadStraight14" parent="RoadTiles" unique_id=991135452 instance=ExtResource("5_s7vtp")]
+position = Vector2(5500, -4500)
+
+[node name="TileRoadStraight15" parent="RoadTiles" unique_id=1474817689 instance=ExtResource("5_s7vtp")]
+position = Vector2(4500, -4500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight20" parent="RoadTiles" unique_id=893679710 instance=ExtResource("5_s7vtp")]
+position = Vector2(4500, -7500)
+
+[node name="TileRoadStraight42" parent="RoadTiles" unique_id=1383074716 instance=ExtResource("5_s7vtp")]
+position = Vector2(3500, -5500)
+
+[node name="TileRoadStraight57" parent="RoadTiles" unique_id=839031414 instance=ExtResource("5_s7vtp")]
+position = Vector2(-500, -8500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight35" parent="RoadTiles" unique_id=1345901398 instance=ExtResource("5_s7vtp")]
+position = Vector2(1500, -6500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight56" parent="RoadTiles" unique_id=1854870790 instance=ExtResource("5_s7vtp")]
+position = Vector2(-500, -7500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight21" parent="RoadTiles" unique_id=1284958868 instance=ExtResource("5_s7vtp")]
+position = Vector2(3500, -7500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight19" parent="RoadTiles" unique_id=310659390 instance=ExtResource("12_n7ri2")]
+position = Vector2(5500, -6500)
+rotation = 1.5641319
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TileRoadStraight26" parent="RoadTiles" unique_id=2089371371 instance=ExtResource("12_n7ri2")]
+position = Vector2(2499.9998, -10500)
+rotation = 1.5641319
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TileRoadStraight31" parent="RoadTiles" unique_id=1283826293 instance=ExtResource("12_n7ri2")]
+position = Vector2(499.99976, -9499.999)
+rotation = 1.5641319
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="TileRoadStraight24" parent="RoadTiles" unique_id=107114522 instance=ExtResource("6_hqh7v")]
+position = Vector2(2500, -9500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight25" parent="RoadTiles" unique_id=1680169663 instance=ExtResource("7_aque2")]
+position = Vector2(1500, -9500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight43" parent="RoadTiles" unique_id=601992017 instance=ExtResource("6_hqh7v")]
+position = Vector2(3500, -4500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight44" parent="RoadTiles" unique_id=989718240 instance=ExtResource("7_aque2")]
+position = Vector2(2500, -4500)
+rotation = -1.5707964
+
+[node name="TileRoadStraight49" parent="RoadTiles" unique_id=1898202938 instance=ExtResource("6_hqh7v")]
+position = Vector2(1500, -1500)
+
+[node name="TileRoadStraight50" parent="RoadTiles" unique_id=2049641436 instance=ExtResource("7_aque2")]
+position = Vector2(1500, -2500)
+
+[node name="TileRoadStraight29" parent="RoadTiles" unique_id=864066522 instance=ExtResource("6_hqh7v")]
+position = Vector2(-500, -10500)
+rotation = 3.1415925
+
+[node name="TileRoadStraight30" parent="RoadTiles" unique_id=393171486 instance=ExtResource("7_aque2")]
+position = Vector2(-500, -9500)
+rotation = 3.1415925
+
+[node name="TileRoadStraight27" parent="RoadTiles" unique_id=1087259866 instance=ExtResource("4_a723m")]
+position = Vector2(500, -10500)
+
+[node name="TileRoadStraight39" parent="RoadTiles" unique_id=201450637 instance=ExtResource("4_a723m")]
+position = Vector2(2500, -5500)
+
+[node name="TileRoadStraight28" parent="RoadTiles" unique_id=523008113 instance=ExtResource("4_a723m")]
+position = Vector2(1500, -10500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight46" parent="RoadTiles" unique_id=935628412 instance=ExtResource("4_a723m")]
+position = Vector2(1500, -3500)
+rotation = -3.1415925
+
+[node name="TileRoadStraight34" parent="RoadTiles" unique_id=1110265588 instance=ExtResource("4_a723m")]
+position = Vector2(1500, -7500)
+rotation = 1.5707964
+
+[node name="RondBoost" parent="RoadTiles" unique_id=2133397994 instance=ExtResource("11_u288t")]
+position = Vector2(500, -5500)
+rotation = 1.5707964
+
+[node name="RondBoost2" parent="RoadTiles" unique_id=1382960455 instance=ExtResource("11_u288t")]
+position = Vector2(3500, -3500)
+rotation = 1.5707964
+
+[node name="RondBoost3" parent="RoadTiles" unique_id=1255289461 instance=ExtResource("11_u288t")]
+position = Vector2(500, -1500)
+
+[node name="TileRoadStraight37" parent="RoadTiles" unique_id=1420545596 instance=ExtResource("7_bo4m4")]
+position = Vector2(500, -3500)
+rotation = 3.1415925
+
+[node name="TileRoadStraight53" parent="RoadTiles" unique_id=1888168509 instance=ExtResource("9_j7toq")]
+position = Vector2(-1500, -3500)
+rotation = -1.5707964
+
+[node name="Road10" parent="RoadTiles" unique_id=37376443 instance=ExtResource("14_a723m")]
+position = Vector2(-1500, -5500)
+rotation = 1.5707964
+
+[node name="Road11" parent="RoadTiles" unique_id=450356794 instance=ExtResource("15_lshts")]
+position = Vector2(-1500, -4500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight54" parent="RoadTiles" unique_id=1612003225 instance=ExtResource("8_w1uqk")]
+position = Vector2(-1500, -6500)
+rotation = 1.5707964
+
+[node name="TileRoadStraight60" parent="RoadTiles" unique_id=1449954802 instance=ExtResource("10_rfwxk")]
+position = Vector2(-500, -11500)
+
+[node name="Boosters" type="Node" parent="." unique_id=358507131]
+
+[node name="Booster" parent="Boosters" unique_id=559202974 instance=ExtResource("18_bo4m4")]
+position = Vector2(2250, 500)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster4" parent="Boosters" unique_id=685555858 instance=ExtResource("18_bo4m4")]
+position = Vector2(473, -1886)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster5" parent="Boosters" unique_id=1953431514 instance=ExtResource("18_bo4m4")]
+position = Vector2(-1120, -4154)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster13" parent="Boosters" unique_id=2114420469 instance=ExtResource("18_bo4m4")]
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster17" parent="Boosters" unique_id=969617039 instance=ExtResource("18_bo4m4")]
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster14" parent="Boosters" unique_id=1899027369 instance=ExtResource("18_bo4m4")]
+position = Vector2(3504, -1641)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster39" parent="Boosters" unique_id=1681922014 instance=ExtResource("18_bo4m4")]
+position = Vector2(5034, -4289)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster41" parent="Boosters" unique_id=699714805 instance=ExtResource("18_bo4m4")]
+position = Vector2(5467, -4751)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster42" parent="Boosters" unique_id=258598731 instance=ExtResource("18_bo4m4")]
+position = Vector2(4546, -4295)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster40" parent="Boosters" unique_id=276994798 instance=ExtResource("18_bo4m4")]
+position = Vector2(5024, -4746)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster43" parent="Boosters" unique_id=1237726656 instance=ExtResource("18_bo4m4")]
+position = Vector2(3952, -7266)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster44" parent="Boosters" unique_id=886474196 instance=ExtResource("18_bo4m4")]
+position = Vector2(4383, -7754)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster47" parent="Boosters" unique_id=152717638 instance=ExtResource("18_bo4m4")]
+position = Vector2(4412, -7487)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster48" parent="Boosters" unique_id=1718845741 instance=ExtResource("18_bo4m4")]
+position = Vector2(3740, -7502)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster45" parent="Boosters" unique_id=1299918861 instance=ExtResource("18_bo4m4")]
+position = Vector2(3464, -7272)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster46" parent="Boosters" unique_id=1398623618 instance=ExtResource("18_bo4m4")]
+position = Vector2(3940, -7749)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster30" parent="Boosters" unique_id=75267340 instance=ExtResource("18_bo4m4")]
+position = Vector2(1733, -6725)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster31" parent="Boosters" unique_id=1803553159 instance=ExtResource("18_bo4m4")]
+position = Vector2(1733, -7172)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster24" parent="Boosters" unique_id=1995947296 instance=ExtResource("18_bo4m4")]
+position = Vector2(3066, -5252)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster25" parent="Boosters" unique_id=262255361 instance=ExtResource("18_bo4m4")]
+position = Vector2(2475, -5510)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster26" parent="Boosters" unique_id=571252013 instance=ExtResource("18_bo4m4")]
+position = Vector2(2485, -5743)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster27" parent="Boosters" unique_id=498632814 instance=ExtResource("18_bo4m4")]
+position = Vector2(2475, -5263)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster21" parent="Boosters" unique_id=107689155 instance=ExtResource("18_bo4m4")]
+position = Vector2(931, -3287)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster22" parent="Boosters" unique_id=2075494601 instance=ExtResource("18_bo4m4")]
+position = Vector2(1443, -3733)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster23" parent="Boosters" unique_id=844599501 instance=ExtResource("18_bo4m4")]
+position = Vector2(2028, -3500)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster19" parent="Boosters" unique_id=1665469158 instance=ExtResource("18_bo4m4")]
+position = Vector2(5565, -6761)
+rotation = -0.7557276
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster20" parent="Boosters" unique_id=923502964 instance=ExtResource("18_bo4m4")]
+position = Vector2(5718, -6512)
+rotation = 2.1537364
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster18" parent="Boosters" unique_id=290060365 instance=ExtResource("18_bo4m4")]
+position = Vector2(4645.0005, -3420.9998)
+rotation = -0.75572765
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster15" parent="Boosters" unique_id=23528652 instance=ExtResource("18_bo4m4")]
+position = Vector2(3812.9998, -3387.9998)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster28" parent="Boosters" unique_id=1018392393 instance=ExtResource("18_bo4m4")]
+position = Vector2(815.99976, -5400)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster16" parent="Boosters" unique_id=1420960039 instance=ExtResource("18_bo4m4")]
+position = Vector2(3833.9998, -3603.0002)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster29" parent="Boosters" unique_id=1340639695 instance=ExtResource("18_bo4m4")]
+position = Vector2(831.9995, -5605.0005)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster34" parent="Boosters" unique_id=328887969 instance=ExtResource("18_bo4m4")]
+position = Vector2(2667, -10499)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster35" parent="Boosters" unique_id=554085535 instance=ExtResource("18_bo4m4")]
+position = Vector2(2679.9998, -10752)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster6" parent="Boosters" unique_id=435004434 instance=ExtResource("18_bo4m4")]
+position = Vector2(-1876.9999, -5109)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster7" parent="Boosters" unique_id=1315316685 instance=ExtResource("18_bo4m4")]
+position = Vector2(-1122, -5930)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster12" parent="Boosters" unique_id=1395010758 instance=ExtResource("18_bo4m4")]
+position = Vector2(-1057, -10498.999)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster36" parent="Boosters" unique_id=1481240560 instance=ExtResource("18_bo4m4")]
+position = Vector2(1394.9999, -10242)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster37" parent="Boosters" unique_id=142077370 instance=ExtResource("18_bo4m4")]
+position = Vector2(979.99994, -10728)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster38" parent="Boosters" unique_id=1237257715 instance=ExtResource("18_bo4m4")]
+position = Vector2(251.99994, -10504.999)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster9" parent="Boosters" unique_id=267574158 instance=ExtResource("18_bo4m4")]
+position = Vector2(-267, -7731.9995)
+rotation = 1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster11" parent="Boosters" unique_id=1011631474 instance=ExtResource("18_bo4m4")]
+position = Vector2(-460, -8141)
+rotation = 1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster8" parent="Boosters" unique_id=996067501 instance=ExtResource("18_bo4m4")]
+position = Vector2(-45, -8493)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster10" parent="Boosters" unique_id=869607899 instance=ExtResource("18_bo4m4")]
+position = Vector2(763, -9664)
+rotation = 1.0471976
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster2" parent="Boosters" unique_id=190120105 instance=ExtResource("18_bo4m4")]
+position = Vector2(3438, -518)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster3" parent="Boosters" unique_id=1487867455 instance=ExtResource("18_bo4m4")]
+position = Vector2(3192.0002, -527)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster32" parent="Boosters" unique_id=151543065 instance=ExtResource("18_bo4m4")]
+position = Vector2(1804.9998, -8507)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster33" parent="Boosters" unique_id=1371186849 instance=ExtResource("18_bo4m4")]
+position = Vector2(1559, -8516)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=41851679]
+position = Vector2(1655, -2432)
+zoom = Vector2(0.1, 0.1)
