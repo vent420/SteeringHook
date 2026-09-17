@@ -4,38 +4,125 @@
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_h15kj"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="3_xprkm"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="4_h15kj"]
+[ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings/building_color_change.gd" id="5_rw1e4"]
+[ext_resource type="Texture2D" uid="uid://b6jxtwsewbrbk" path="res://sprite/buildings/Batiment_1_t.png" id="5_ugxbt"]
+[ext_resource type="Texture2D" uid="uid://b7d5posctvehn" path="res://sprite/buildings/Batiment_2_t.png" id="7_rw1e4"]
+[ext_resource type="Texture2D" uid="uid://corbqsm2t5ri7" path="res://sprite/buildings/Batiment_3_t.png" id="8_mo5h3"]
+[ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings/Batiment_4_t.png" id="9_ne7st"]
+[ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings/Batiment_5_t.png" id="10_6xv2m"]
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
-[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("1_0arg3")]
+[node name="Road Tiles" type="Node" parent="." unique_id=1469108335]
+
+[node name="TileRoadStraight" parent="Road Tiles" unique_id=258768893 instance=ExtResource("1_0arg3")]
 position = Vector2(500, 500)
 
-[node name="TileRoadStraight2" parent="." unique_id=380183257 instance=ExtResource("1_0arg3")]
+[node name="TileRoadStraight2" parent="Road Tiles" unique_id=380183257 instance=ExtResource("1_0arg3")]
 position = Vector2(1500, 500)
 
-[node name="TileRoadStraight4" parent="." unique_id=1312461760 instance=ExtResource("1_0arg3")]
+[node name="TileRoadStraight4" parent="Road Tiles" unique_id=1312461760 instance=ExtResource("1_0arg3")]
 position = Vector2(2500, -500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight3" parent="." unique_id=1175035263 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight3" parent="Road Tiles" unique_id=1175035263 instance=ExtResource("2_h15kj")]
 position = Vector2(2500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight5" parent="." unique_id=1596290077 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight5" parent="Road Tiles" unique_id=1596290077 instance=ExtResource("2_h15kj")]
 position = Vector2(2500, -1500)
-rotation = -3.1415927
+rotation = 3.1415925
 
-[node name="TileRoadStraight6" parent="." unique_id=1715367334 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight6" parent="Road Tiles" unique_id=1715367334 instance=ExtResource("2_h15kj")]
 position = Vector2(1500, -1500)
 
-[node name="TileRoadStraight7" parent="." unique_id=2083394287 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight7" parent="Road Tiles" unique_id=2083394287 instance=ExtResource("2_h15kj")]
 position = Vector2(1500, -2500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight8" parent="." unique_id=1400247581 instance=ExtResource("3_xprkm")]
+[node name="TileRoadStraight8" parent="Road Tiles" unique_id=1400247581 instance=ExtResource("3_xprkm")]
 position = Vector2(2500, -2500)
 
 [node name="Booster" parent="." unique_id=559202974 instance=ExtResource("4_h15kj")]
 position = Vector2(2498, -556)
 rotation = -1.5707964
 scale = Vector2(0.56, 0.56)
+
+[node name="Decoration" type="Node" parent="." unique_id=1257615534]
+script = ExtResource("5_rw1e4")
+
+[node name="Batiment1" type="Sprite2D" parent="Decoration" unique_id=179681609]
+z_index = 100
+position = Vector2(3061, -1939)
+texture = ExtResource("5_ugxbt")
+
+[node name="Batiment2" type="Sprite2D" parent="Decoration" unique_id=1857405216]
+position = Vector2(1887, -937)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment5" type="Sprite2D" parent="Decoration" unique_id=1760981154]
+position = Vector2(2160, -2083)
+scale = Vector2(1.1185018, 1.223893)
+texture = ExtResource("8_mo5h3")
+
+[node name="Batiment6" type="Sprite2D" parent="Decoration" unique_id=332989806]
+position = Vector2(966, -2329)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment18" type="Sprite2D" parent="Decoration" unique_id=917124506]
+position = Vector2(3429, -3020)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment12" type="Sprite2D" parent="Decoration" unique_id=1251283946]
+position = Vector2(957, 72)
+scale = Vector2(0.584, 0.584)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment7" type="Sprite2D" parent="Decoration" unique_id=1904882734]
+position = Vector2(1582, -2975)
+texture = ExtResource("5_ugxbt")
+
+[node name="Batiment8" type="Sprite2D" parent="Decoration" unique_id=32256496]
+position = Vector2(1768, -3406)
+texture = ExtResource("9_ne7st")
+
+[node name="Batiment9" type="Sprite2D" parent="Decoration" unique_id=1201104803]
+position = Vector2(3149, -2344)
+texture = ExtResource("9_ne7st")
+
+[node name="Batiment3" type="Sprite2D" parent="Decoration" unique_id=90522195]
+position = Vector2(2432, -3374)
+texture = ExtResource("8_mo5h3")
+
+[node name="Batiment4" type="Sprite2D" parent="Decoration" unique_id=328155613]
+position = Vector2(864, -1459)
+texture = ExtResource("9_ne7st")
+
+[node name="Batiment13" type="Sprite2D" parent="Decoration" unique_id=39099771]
+position = Vector2(1697, -104)
+texture = ExtResource("10_6xv2m")
+
+[node name="Batiment14" type="Sprite2D" parent="Decoration" unique_id=492593406]
+position = Vector2(2081, 1068)
+texture = ExtResource("8_mo5h3")
+
+[node name="Batiment15" type="Sprite2D" parent="Decoration" unique_id=256772021]
+position = Vector2(3118, 72)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment16" type="Sprite2D" parent="Decoration" unique_id=1219723057]
+position = Vector2(3354, -485.99988)
+scale = Vector2(0.5963729, 0.5963729)
+texture = ExtResource("10_6xv2m")
+
+[node name="Batiment17" type="Sprite2D" parent="Decoration" unique_id=1528182067]
+position = Vector2(2972, 721)
+texture = ExtResource("5_ugxbt")
+
+[node name="Batiment10" type="Sprite2D" parent="Decoration" unique_id=458863406]
+position = Vector2(924, -713)
+texture = ExtResource("7_rw1e4")
+
+[node name="Batiment11" type="Sprite2D" parent="Decoration" unique_id=883219784]
+position = Vector2(3272, -1141)
+texture = ExtResource("9_ne7st")

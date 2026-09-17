@@ -8,4 +8,6 @@ func _ready() -> void:
 	ChangeRoadColor("r")
 
 func ChangeRoadColor(col: String):
-	texture = load(defaultPath + "_" + col + ".png")
+	var path_to_new_file: String = defaultPath + "_" + col + ".png"
+	if ResourceLoader.exists(path_to_new_file):
+		texture = load(defaultPath + "_" + col + ".png")
