@@ -1,14 +1,20 @@
 [gd_scene format=3 uid="uid://ldg6u6x2qc1"]
 
-[ext_resource type="Script" uid="uid://owww4dqyerli" path="res://prefab/player.gd" id="1_oj046"]
+[ext_resource type="Script" uid="uid://2y1xx47nnuq3" path="res://prefab/player_fixed.gd" id="1_a1o1i"]
 [ext_resource type="Texture2D" uid="uid://csnife3x07mf2" path="res://sprite/placeholder/car.jpg" id="1_umsav"]
+[ext_resource type="Texture2D" uid="uid://d1rtk4f6hurd7" path="res://vfx/compas/arrow.png" id="3_wowq3"]
+[ext_resource type="Script" uid="uid://frfj2ntj3lfg" path="res://vfx/compas/compas.gd" id="4_1lk0m"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_am1su"]
 size = Vector2(108, 193)
 
 [node name="Player" type="Area2D" unique_id=1010667792]
-script = ExtResource("1_oj046")
-metadata/_edit_group_ = true
+script = ExtResource("1_a1o1i")
+speed = 100
+
+[node name="TARGET" type="Node2D" parent="." unique_id=2084471072]
+position = Vector2(-256.99997, -150.99998)
+scale = Vector2(0.2766696, 0.2766696)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=332899250]
 
@@ -21,3 +27,10 @@ position = Vector2(0, -0.5)
 shape = SubResource("RectangleShape2D_am1su")
 
 [node name="HookAnchor" type="Node2D" parent="." unique_id=1559163370]
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1723721877 node_paths=PackedStringArray("target")]
+scale = Vector2(0.2766696, 0.2766696)
+texture = ExtResource("3_wowq3")
+offset = Vector2(0, -498.78983)
+script = ExtResource("4_1lk0m")
+target = NodePath("../TARGET")

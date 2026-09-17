@@ -9,12 +9,8 @@ func get_input():
 func _physics_process(delta):
 	get_input()
 	
+
+
+func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
 	
-
-
-
-
-
-func _on_body_entered(body) -> void:
-	print("collided")
 	pass # Replace with function body.

@@ -20,6 +20,9 @@ var rotation_direction: float = 1.0
 var peak_coord
 var peak_dist
 
+var debugInfo
+var debugInfoB
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	hook_anchor = get_node("HookAnchor").position
@@ -36,22 +39,25 @@ func _process(delta: float) -> void:
 		print("mouse pos : ", mouse_pos_global)
 		print("hook pos : ", hook_anchor_global)
 		
+		var rot = transform.get_rotation()
+		debugInfo = global_position
+		debugInfoB = debugInfo + Vector2(0,500)
+		
 		# Vecteur directeur de l'hypothenuse
-		#var dir_to_anchor = hook_anchor_global + mouse_pos_global
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		print("anchor direction : ", dir_to_anchor)
 			
 		var hypothenuse = dir_to_anchor.length()
 		print("hypothenuse : ", hypothenuse)
 	
-		var angle = dir_to_anchor.angle_to(Vector2.UP)
+		var angle = dir_to_anchor.angle_to(Vector2.UP.rotated(rotation))
 	
-		peak_dist = angle * hypothenuse
+		peak_dist = cos(angle) * hypothenuse
 		print("peak dist : ", peak_dist)
 	
 		peak_coord = (peak_dist * Vector2.UP)
-		#print("Vector UP : ", Vector2.UP)
-		#print("peak coord : ", peak_coord)
+		
+		print("peak coord : ", peak_coord)
 		
 	
 		rotation_pos_global = Vector2(hook_anchor_global.x, mouse_pos_global.y)
@@ -81,7 +87,7 @@ func _process(delta: float) -> void:
 		var calc_angular_speed = speed / orbit_radius
 		current_angle += calc_angular_speed * delta * rotation_direction
 		
-		global_position = mouse_pos_global + Vector2.RIGHT.rotated(current_angle) * orbit_radius
+		#global_position = mouse_pos_global + Vector2.RIGHT.rotated(current_angle) * orbit_radius
 		
 		if rotation_direction > 0:
 			rotation = current_angle + PI
@@ -96,6 +102,7 @@ func _process(delta: float) -> void:
 
 func _draw() -> void:
 	if peak_coord:
+		#draw_line(debugInfo, debugInfoB, Color.GREEN, 2.0)
 		draw_line(hook_anchor, peak_coord, Color.GREEN, 2.0)
 	
 	if hook_point:
@@ -105,4 +112,5 @@ func _draw() -> void:
 		var draw_radius = orbit_radius if is_orbiting else mouse_pos_global.distance_to(peak_coord)
 		draw_arc(mouse_pos_local, draw_radius, 0, TAU, 32, Color.RED, 2.0)
 		draw_line(mouse_pos_local, peak_coord, Color.BLUE, 2.0)
+		draw_line(hook_anchor, mouse_pos_local, Color.RED, 2.0)
 		
