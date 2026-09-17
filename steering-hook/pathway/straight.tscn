@@ -1,9 +1,14 @@
 [gd_scene format=3 uid="uid://ddqo7fnaat43m"]
 
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_8dfx1"]
+
 [node name="Straight" type="Node2D" unique_id=429807276]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=210234834]
+texture = ExtResource("1_8dfx1")
 
 [node name="Entrance" type="Marker2D" parent="Sprite2D" unique_id=276082969]
+position = Vector2(-500, 0)
 
 [node name="Exit" type="Marker2D" parent="Sprite2D" unique_id=132175425]
+position = Vector2(500, 0)

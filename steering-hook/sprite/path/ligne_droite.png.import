@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://4e60b4xnbesl"
-path="res://.godot/imported/tile_loop.png-a7510894f04cde110ca72cd7e7bb3ce4.ctex"
+uid="uid://bn1s5sjstr7ol"
+path="res://.godot/imported/ligne_droite.png-c848b24c633027f85a973e3488a62b8c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprite/tile_loop.png"
-dest_files=["res://.godot/imported/tile_loop.png-a7510894f04cde110ca72cd7e7bb3ce4.ctex"]
+source_file="res://sprite/path/ligne_droite.png"
+dest_files=["res://.godot/imported/ligne_droite.png-c848b24c633027f85a973e3488a62b8c.ctex"]
 
 [params]
 
