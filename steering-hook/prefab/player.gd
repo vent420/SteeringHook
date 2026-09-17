@@ -81,6 +81,7 @@ func _process(delta: float) -> void:
 	else:
 		var velocity = Vector2.UP.rotated(rotation) * speed
 		position += velocity * delta
+		print("Position : ", position)
 
 	if hook_point:
 		queue_redraw()

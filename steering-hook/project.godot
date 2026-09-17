@@ -27,6 +27,10 @@ left_click={
 ]
 }
 
+[layer_names]
+
+2d_physics/layer_2="Booster Layer"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
