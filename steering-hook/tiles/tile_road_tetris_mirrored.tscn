@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://7lhmt53sjdt3"]
+
+[ext_resource type="Texture2D" uid="uid://4gx7s3d2rjg4" path="res://sprite/path/milleux-vers-haut.png" id="1_6gmmc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3j2vm"]
+size = Vector2(499, 27)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_42ksk"]
+size = Vector2(314.75, 31.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rtqc7"]
+size = Vector2(149.56003, 30.107193)
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_6gmmc")
+flip_v = true
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1230825477]
+position = Vector2(249.5, 500)
+shape = SubResource("RectangleShape2D_3j2vm")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Area2D" unique_id=1479394194]
+position = Vector2(-249, -125)
+shape = SubResource("RectangleShape2D_3j2vm")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Area2D" unique_id=1078209847]
+position = Vector2(321.25, 239)
+shape = SubResource("RectangleShape2D_42ksk")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Area2D" unique_id=906947248]
+position = Vector2(-334, 128)
+shape = SubResource("RectangleShape2D_42ksk")
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Area2D" unique_id=1043742278]
+position = Vector2(-168.25, 287)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_42ksk")
+
+[node name="CollisionShape2D7" type="CollisionShape2D" parent="Area2D" unique_id=2082301095]
+position = Vector2(-83, 475)
+rotation = 3.6409853
+shape = SubResource("RectangleShape2D_rtqc7")
+
+[node name="CollisionShape2D8" type="CollisionShape2D" parent="Area2D" unique_id=25125435]
+position = Vector2(83.99999, -110)
+rotation = 3.5751488
+shape = SubResource("RectangleShape2D_rtqc7")
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Area2D" unique_id=314927699]
+position = Vector2(144, 85)
+rotation = 1.5707964
+shape = SubResource("RectangleShape2D_42ksk")
