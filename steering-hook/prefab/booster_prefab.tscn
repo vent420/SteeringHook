@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://b1fuhk487bdsg"]
+
+[ext_resource type="Texture2D" uid="uid://hny34lehxmqu" path="res://sprite/placeholder/boost_arrow.png" id="1_vvrsb"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vml2s"]
+radius = 5.0
+height = 12.0
+
+[node name="Booster" type="Node2D" unique_id=559202974]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=60223550]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1749520413]
+shape = SubResource("CapsuleShape2D_vml2s")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2116134280]
+position = Vector2(1, 0)
+scale = Vector2(0.040863626, 0.040863626)
+texture = ExtResource("1_vvrsb")

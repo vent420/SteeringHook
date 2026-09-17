@@ -29,20 +29,29 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	# When left click is pressed
 	if Input.is_action_just_pressed("left_click"):
+		# Mouse pos = A
+		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
 		var hook_anchor_global = to_global(get_node("HookAnchor").position)
-	
-		var dir_to_anchor = hook_anchor_global - mouse_pos_global
+		print("mouse pos : ", mouse_pos_global)
+		print("hook pos : ", hook_anchor_global)
+		
+		# Vecteur directeur de l'hypothenuse
+		#var dir_to_anchor = hook_anchor_global + mouse_pos_global
+		var dir_to_anchor = mouse_pos_global - hook_anchor_global
+		print("anchor direction : ", dir_to_anchor)
+			
 		var hypothenuse = dir_to_anchor.length()
+		print("hypothenuse : ", hypothenuse)
 	
 		var angle = dir_to_anchor.angle_to(Vector2.UP)
 	
-		peak_dist = sin(angle) * hypothenuse
+		peak_dist = angle * hypothenuse
 		print("peak dist : ", peak_dist)
 	
-		peak_coord = (peak_dist * Vector2.UP) * -1
-		print("Vector UP : ", Vector2.UP)
-		print("peak coord : ", peak_coord)
+		peak_coord = (peak_dist * Vector2.UP)
+		#print("Vector UP : ", Vector2.UP)
+		#print("peak coord : ", peak_coord)
 		
 	
 		rotation_pos_global = Vector2(hook_anchor_global.x, mouse_pos_global.y)
@@ -80,7 +89,7 @@ func _process(delta: float) -> void:
 			rotation = current_angle
 	else:
 		var velocity = Vector2.UP.rotated(rotation) * speed
-		position += velocity * delta
+		#position += velocity * delta
 
 	if hook_point:
 		queue_redraw()

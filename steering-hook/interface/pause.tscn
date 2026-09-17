@@ -76,3 +76,6 @@ text = "Quit"
 [node name="Control" type="Control" parent="MarginContainer/VBoxContainer" unique_id=357927258]
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Play_B" to="MarginContainer" method="_on_play_b_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Quit_B" to="MarginContainer" method="_on_quit_b_pressed"]
