@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://bydgyp04qoa62"]
+
+[ext_resource type="Texture2D" uid="uid://s5remd2awb58" path="res://sprite/path/slanted_donut.png" id="1_kjfly"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_p1h3o"]
+radius = 9.628384
+
+[node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
+texture = ExtResource("1_kjfly")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=907913620]
+
+[node name="CollisionPolygon2D2" type="CollisionPolygon2D" parent="Area2D" unique_id=1672308111]
+position = Vector2(258, -496)
+polygon = PackedVector2Array(-2, -2, 1, 80, -131, 17, -290, -2, -483, 51, -606, 139, -702, 279, -755, 451, -741, 626, -673, 749, -762, 753, -755, -7)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D" unique_id=1474938739]
+position = Vector2(486, -491)
+polygon = PackedVector2Array(-4, -10, 2, 553, -47, 731, -157, 859, -302, 952, -485, 986, -994, 978, -994, 1018, 47, 1022, 38, -22)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1230825477]
+position = Vector2(0, -1)
+scale = Vector2(15.06, 15.06)
+shape = SubResource("CircleShape2D_p1h3o")
