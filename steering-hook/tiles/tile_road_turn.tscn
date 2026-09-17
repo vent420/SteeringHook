@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cp3mjo0ybnk1v"]
 
-[ext_resource type="Texture2D" uid="uid://bdl3wvvsvlhgk" path="res://sprite/path/road_6.png" id="1_oxfst"]
+[ext_resource type="Texture2D" uid="uid://bdl3wvvsvlhgk" path="res://sprite/path_road/road_6.png" id="1_oxfst"]
 [ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_01ks1"]
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]

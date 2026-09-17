@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dnxdmexd3wgjo"]
 
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/road_1.png" id="1_igdqw"]
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path_road/road_1.png" id="1_igdqw"]
 
 [node name="Main" type="Control" unique_id=270908751]
 layout_mode = 3

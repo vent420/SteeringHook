@@ -4,12 +4,12 @@
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_h15kj"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="3_xprkm"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="4_h15kj"]
-[ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings/building_color_change.gd" id="5_rw1e4"]
-[ext_resource type="Texture2D" uid="uid://b6jxtwsewbrbk" path="res://sprite/buildings/Batiment_1_t.png" id="5_ugxbt"]
-[ext_resource type="Texture2D" uid="uid://b7d5posctvehn" path="res://sprite/buildings/Batiment_2_t.png" id="7_rw1e4"]
-[ext_resource type="Texture2D" uid="uid://corbqsm2t5ri7" path="res://sprite/buildings/Batiment_3_t.png" id="8_mo5h3"]
-[ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings/Batiment_4_t.png" id="9_ne7st"]
-[ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings/Batiment_5_t.png" id="10_6xv2m"]
+[ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings_decoration/building_color_change.gd" id="5_rw1e4"]
+[ext_resource type="Texture2D" uid="uid://b6jxtwsewbrbk" path="res://sprite/buildings_decoration/Batiment_1_t.png" id="5_ugxbt"]
+[ext_resource type="Texture2D" uid="uid://b7d5posctvehn" path="res://sprite/buildings_decoration/Batiment_2_t.png" id="7_rw1e4"]
+[ext_resource type="Texture2D" uid="uid://corbqsm2t5ri7" path="res://sprite/buildings_decoration/Batiment_3_t.png" id="8_mo5h3"]
+[ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings_decoration/Batiment_4_t.png" id="9_ne7st"]
+[ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="10_6xv2m"]
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -111,6 +111,11 @@ position = Vector2(3118, 72)
 texture = ExtResource("7_rw1e4")
 
 [node name="Batiment16" type="Sprite2D" parent="Decoration" unique_id=1219723057]
+position = Vector2(3354, -485.99988)
+scale = Vector2(0.5963729, 0.5963729)
+texture = ExtResource("10_6xv2m")
+
+[node name="Batiment16" type="Sprite2D" parent="Decoration/Batiment16" unique_id=1739085771]
 position = Vector2(3354, -485.99988)
 scale = Vector2(0.5963729, 0.5963729)
 texture = ExtResource("10_6xv2m")

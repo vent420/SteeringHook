@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dbq7cj7i10bvk"]
 
-[ext_resource type="Texture2D" uid="uid://dnawwhj81h5jv" path="res://sprite/path/virage_u.png" id="1_0eci8"]
+[ext_resource type="Texture2D" uid="uid://dnawwhj81h5jv" path="res://sprite/path_road/virage_u.png" id="1_0eci8"]
 [ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_8wbj2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_du3a7"]

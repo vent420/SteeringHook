@@ -11,6 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="7_iewcs"]
 [ext_resource type="PackedScene" uid="uid://dbq7cj7i10bvk" path="res://tiles/tile_road_u_turn.tscn" id="7_xj2f1"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="11_xj2f1"]
+[ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="12_lvl1f"]
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -96,3 +97,8 @@ scale = Vector2(0.55, 0.55)
 position = Vector2(5898, -1124)
 rotation = 3.1415927
 scale = Vector2(0.55, 0.55)
+
+[node name="Batiment16" type="Sprite2D" parent="." unique_id=481867838]
+position = Vector2(3354, -485.99988)
+scale = Vector2(0.5963729, 0.5963729)
+texture = ExtResource("12_lvl1f")
