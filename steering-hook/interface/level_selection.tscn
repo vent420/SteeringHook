@@ -1,0 +1,107 @@
+[gd_scene format=3 uid="uid://ds7vknpp56bq2"]
+
+[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path/ligne_droite.png" id="1_equ7c"]
+
+[node name="LevelSelection" type="Control" unique_id=928083003]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1256688422]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" unique_id=354609780]
+layout_mode = 2
+theme_override_constants/separation = 120
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer/HBoxContainer" unique_id=1554089478]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="BG" type="NinePatchRect" parent="MarginContainer/HBoxContainer/VBoxContainer2" unique_id=1350414968]
+custom_minimum_size = Vector2(500, 200)
+custom_maximum_size = Vector2(500, 200)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+texture = ExtResource("1_equ7c")
+region_rect = Rect2(0, 400, 1000, 200)
+patch_margin_left = 10
+patch_margin_top = 30
+patch_margin_right = 10
+patch_margin_bottom = 30
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG" unique_id=1715373194]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer" unique_id=721660221]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 60
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer/HBoxContainer" unique_id=758685942]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=230264479]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Best score :"
+
+[node name="Score" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1172817624]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "676737"
+
+[node name="Play_A" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer/HBoxContainer" unique_id=1920689798]
+z_index = 1
+y_sort_enabled = true
+custom_minimum_size = Vector2(150, 80)
+custom_maximum_size = Vector2(150, 80)
+layout_mode = 2
+size_flags_horizontal = 10
+size_flags_vertical = 4
+text = "Play"
+
+[node name="MarginContainer2" type="MarginContainer" parent="." unique_id=1669522013]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_bottom = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2" unique_id=758804094]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="Button" type="Button" parent="MarginContainer2/HBoxContainer" unique_id=412181770]
+custom_minimum_size = Vector2(120, 60)
+layout_mode = 2
+text = "Return
+"
