@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b8a6qve25c2ew"]
 
 [ext_resource type="Texture2D" uid="uid://celjcxgfd4x6g" path="res://sprite/path/road_9.png" id="1_q3fpm"]
+[ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_aukg3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_x7li8"]
 size = Vector2(842, 72)
@@ -36,8 +37,8 @@ size = Vector2(458, 72)
 size = Vector2(586, 72)
 
 [node name="Road9" type="Sprite2D" unique_id=450356794]
-position = Vector2(0, -2)
 texture = ExtResource("1_q3fpm")
+script = ExtResource("2_aukg3")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=854600506]
 

@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://dg30yc2bruw4o"]
 
 [ext_resource type="Texture2D" uid="uid://bupuwhn1cehoi" path="res://sprite/path/carre02_2.png" id="1_4pqo5"]
+[ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_hn27s"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hn27s"]
 size = Vector2(25.564411, 4.7576313)
@@ -16,6 +17,7 @@ size = Vector2(5.046485, 59.937748)
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
 texture = ExtResource("1_4pqo5")
+script = ExtResource("2_hn27s")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=907913620]
 

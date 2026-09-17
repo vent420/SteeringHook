@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b4g02v2xy4jqm"]
 
 [ext_resource type="Texture2D" uid="uid://dv5m4pfp7wthn" path="res://sprite/path/2_routes.png" id="1_fsvsv"]
+[ext_resource type="Script" uid="uid://dnqbpum3e6dn2" path="res://tiles/tile_road_color_change.gd" id="2_orlpp"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_orlpp"]
 size = Vector2(67.10491, 4.156707)
@@ -16,6 +17,7 @@ size = Vector2(3.7184563, 19.475437)
 
 [node name="TileRoadStraight" type="Sprite2D" unique_id=258768893]
 texture = ExtResource("1_fsvsv")
+script = ExtResource("2_orlpp")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=907913620]
 
