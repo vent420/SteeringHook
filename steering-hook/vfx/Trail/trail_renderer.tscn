@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://w28i2s5kao2t"]
+
+[ext_resource type="Script" uid="uid://defil8i38hieh" path="res://vfx/Trail/trail_renderer.gd" id="1_lxx3v"]
+
+[sub_resource type="Curve" id="Curve_doa8y"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_doa8y"]
+colors = PackedColorArray(0.37254903, 0, 0, 0, 1, 0, 0, 1)
+
+[node name="Trail_Renderer" type="Node2D" unique_id=495962236]
+script = ExtResource("1_lxx3v")
+
+[node name="Line2D" type="Line2D" parent="." unique_id=683170039]
+points = PackedVector2Array(95, 0, 49, 0, 0, 0)
+width_curve = SubResource("Curve_doa8y")
+gradient = SubResource("Gradient_doa8y")
+
+[node name="Timer" type="Timer" parent="." unique_id=749601681]
+wait_time = 0.1
