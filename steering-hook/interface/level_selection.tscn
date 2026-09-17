@@ -74,7 +74,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "676767"
+text = "676737"
 
 [node name="Play_A" type="Button" parent="MarginContainer/HBoxContainer/VBoxContainer2/BG/MarginContainer/HBoxContainer" unique_id=1920689798]
 z_index = 1
