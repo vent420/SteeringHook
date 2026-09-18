@@ -28,7 +28,7 @@ shape = SubResource("RectangleShape2D_am1su")
 
 [node name="HookAnchor" type="Node2D" parent="." unique_id=1559163370]
 
-[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1723721877 node_paths=PackedStringArray("target")]
+[node name="Compass" type="Sprite2D" parent="." unique_id=1723721877 node_paths=PackedStringArray("target")]
 scale = Vector2(0.2766696, 0.2766696)
 texture = ExtResource("3_wowq3")
 offset = Vector2(0, -498.78983)
