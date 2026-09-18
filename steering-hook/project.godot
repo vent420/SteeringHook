@@ -14,6 +14,10 @@ config/name="SteeringHook"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+GlobalsAudio="*uid://ccj5rm5u2057y"
+
 [display]
 
 window/stretch/mode="viewport"

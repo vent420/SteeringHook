@@ -25,13 +25,13 @@ position = Vector2(500, 500)
 [node name="TileRoadStraight2" parent="." unique_id=380183257 instance=ExtResource("1_lmtnf")]
 position = Vector2(1500, 500)
 
-[node name="TileRoadStraight26" parent="." unique_id=1324203864 instance=ExtResource("1_lmtnf")]
-position = Vector2(7500, -9500)
-
-[node name="Batiment16" type="Sprite2D" parent="TileRoadStraight26" unique_id=1730723028]
-position = Vector2(3354, -485.99988)
+[node name="Batiment16" type="Sprite2D" parent="." unique_id=1730723028]
+position = Vector2(10854, -9986)
 scale = Vector2(0.5963729, 0.5963729)
 texture = ExtResource("2_xttce")
+
+[node name="TileRoadStraight26" parent="." unique_id=1324203864 instance=ExtResource("1_lmtnf")]
+position = Vector2(7500, -9500)
 
 [node name="TileRoadStraight3" parent="." unique_id=2136265072 instance=ExtResource("2_xas6p")]
 position = Vector2(2500, 500)

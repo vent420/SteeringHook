@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://b83rlwkine4rl"]
+
+[ext_resource type="Script" uid="uid://bkn48xviyeeg1" path="res://audio/audio_test_scene.gd" id="1_2dhws"]
+
+[node name="AudioTestScene" type="Control" unique_id=228002734]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_2dhws")
+
+[node name="Button2" type="Button" parent="." unique_id=110628807]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 180.0
+offset_right = 234.0
+offset_bottom = 215.0
+text = "play random oneshot"
+
+[node name="Button" type="Button" parent="." unique_id=1062870616]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 57.0
+offset_right = 496.0
+offset_bottom = 135.0
+text = "start level
+(music and engine will not work without this)"
+
+[node name="Button3" type="Button" parent="." unique_id=1199426612]
+layout_mode = 0
+offset_left = 303.0
+offset_top = 141.0
+offset_right = 659.0
+offset_bottom = 173.0
+text = "end level"
+
+[node name="CheckButton" type="CheckButton" parent="." unique_id=629328075]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 53.0
+offset_right = 178.0
+offset_bottom = 93.0
+text = "play drift"
+
+[node name="HSlider" type="HSlider" parent="." unique_id=666627162]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 137.0
+offset_right = 251.0
+offset_bottom = 153.0
+
+[node name="Label" type="Label" parent="HSlider" unique_id=93258990]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 40.0
+text = "engine strength"
+
+[connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
+[connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
+[connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
+[connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
+[connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
