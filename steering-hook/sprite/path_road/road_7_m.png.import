@@ -1,0 +1,49 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://bikshursk0c06"
+<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-7_m.png.import
+path="res://.godot/imported/road-7_m.png-d09d3e5241db9d0ba743d5d52ff6ad39.ctex"
+========
+path="res://.godot/imported/road_7_m.png-fbcf32fb1fc7de38639aaf03218491d5.ctex"
+>>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_7_m.png.import
+metadata={
+"vram_texture": false
+}
+
+[deps]
+
+<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-7_m.png.import
+source_file="res://sprite/path_road/road-7_m.png"
+dest_files=["res://.godot/imported/road-7_m.png-d09d3e5241db9d0ba743d5d52ff6ad39.ctex"]
+========
+source_file="res://sprite/path/road_7_m.png"
+dest_files=["res://.godot/imported/road_7_m.png-fbcf32fb1fc7de38639aaf03218491d5.ctex"]
+>>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_7_m.png.import
+
+[params]
+
+compress/mode=0
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/uastc_level=0
+compress/rdo_quality_loss=0.0
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=false
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/channel_remap/red=0
+process/channel_remap/green=1
+process/channel_remap/blue=2
+process/channel_remap/alpha=3
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=1

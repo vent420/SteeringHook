@@ -1,7 +1,9 @@
 [gd_scene format=3 uid="uid://deribo2yqn282"]
 
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_0arg3"]
+[ext_resource type="Shader" uid="uid://bamf7wg5x1gmc" path="res://vfx/Bg/bg_test.gdshader" id="1_mo5h3"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_h15kj"]
+[ext_resource type="Texture2D" uid="uid://6o8ytq0vck24" path="res://sprite/path/carre01_1_m.png" id="2_ne7st"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="3_xprkm"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="4_h15kj"]
 [ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings_decoration/building_color_change.gd" id="5_rw1e4"]
@@ -11,7 +13,25 @@
 [ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings_decoration/Batiment_4_t.png" id="9_ne7st"]
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="10_6xv2m"]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e17y4"]
+shader = ExtResource("1_mo5h3")
+shader_parameter/bg_color = Vector4(183, 151, 248, 225)
+
 [node name="Level1" type="Node2D" unique_id=4028965]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1145405311]
+position = Vector2(2254.5327, -1257.2197)
+rotation = -1.5707964
+scale = Vector2(7.683167, 8.344286)
+zoom = Vector2(0.2, 0.2)
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1085591514]
+z_index = -200
+material = SubResource("ShaderMaterial_e17y4")
+position = Vector2(2254.5327, -1257.2197)
+rotation = -1.5707964
+scale = Vector2(7.683167, 8.344286)
+texture = ExtResource("2_ne7st")
 
 [node name="Road Tiles" type="Node" parent="." unique_id=1469108335]
 
