@@ -173,5 +173,4 @@ texture = ExtResource("12_lvl1f")
 z_index = 1
 position = Vector2(278, 500)
 rotation = 1.5707964
-scale = Vector2(0.3, 0.3)
 car_texture = ExtResource("17_ntv1s")

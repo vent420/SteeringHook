@@ -316,6 +316,4 @@ position = Vector2(5324, -1305)
 z_index = 1
 position = Vector2(237, 499)
 rotation = 1.5707964
-scale = Vector2(0.3, 0.3)
-speed = 500.0
 car_texture = ExtResource("20_mtlsp")
