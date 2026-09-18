@@ -20,11 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="17_srl7w"]
 
 [sub_resource type="Curve" id="Curve_srl7w"]
-_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.27038628, 1), 0.0, 0.0, 0, 0, Vector2(0.68240345, 0.43750006), -1.3546509, -1.3546509, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_2xjr2"]
-colors = PackedColorArray(0.28706238, 1.3596937e-06, 0.1836771, 1, 1, 1, 1, 1)
+colors = PackedColorArray(0.57941115, 6.0644747e-06, 0.38766602, 1, 0.887299, 0.55076134, 0.7414434, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -261,20 +261,23 @@ texture = ExtResource("17_srl7w")
 [node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236978144]
 z_index = -100
 position = Vector2(5000, -3968)
-amount = 500
+amount = 2000
 texture = ExtResource("17_7ovs8")
 lifetime = 10.0
+preprocess = 5.0
+speed_scale = 0.2
 randomness = 1.0
 emission_shape = 3
 emission_rect_extents = Vector2(6000, 7000)
 direction = Vector2(1, -1)
 spread = 0.0
 gravity = Vector2(0, 0)
-initial_velocity_min = 10.0
-initial_velocity_max = 15.0
+initial_velocity_min = 60.0
+initial_velocity_max = 100.0
 scale_amount_min = 4.0
-scale_amount_max = 4.0
+scale_amount_max = 5.0
 scale_amount_curve = SubResource("Curve_srl7w")
+color = Color(1, 1, 1, 0.25882354)
 color_ramp = SubResource("Gradient_2xjr2")
 hue_variation_min = -1.0
 hue_variation_max = 1.0

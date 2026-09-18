@@ -12,21 +12,51 @@
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="10_6xv2m"]
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="11_ne7st"]
 [ext_resource type="Texture2D" uid="uid://gxvjcg4a7ltl" path="res://vfx/panning_particles/background_shapes/pentagone.png" id="12_ne7st"]
+[ext_resource type="Texture2D" uid="uid://bch3uhkh0bsnm" path="res://sprite/buildings_decoration/bush_1_t.png" id="13_6xv2m"]
 
 [sub_resource type="Curve" id="Curve_ne7st"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
 point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_6xv2m"]
-colors = PackedColorArray(0.011650794, 0.16956976, 0.20708895, 1, 1, 1, 1, 1)
+colors = PackedColorArray(0.02248765, 0.17875454, 0.16530666, 1, 0.25487402, 0.6001797, 0.58033353, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=1145405311]
-position = Vector2(2254.5327, -1257.2197)
-rotation = -1.5707964
-scale = Vector2(7.683167, 8.344286)
-zoom = Vector2(0.2, 0.2)
+[node name="Folder - Background" type="Node" parent="." unique_id=2133328095]
+
+[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=273007677]
+self_modulate = Color(0.0627451, 0.44313726, 0.4117647, 1)
+z_index = -101
+position = Vector2(2107, -1000.00024)
+scale = Vector2(122.87741, 127.60022)
+texture = ExtResource("11_ne7st")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=288711306]
+z_index = -100
+position = Vector2(2268.0007, -1213.0002)
+scale = Vector2(0.62947613, 0.44202083)
+amount = 2000
+texture = ExtResource("12_ne7st")
+lifetime = 10.0
+speed_scale = 0.2
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(6000, 7000)
+direction = Vector2(1, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 70.0
+initial_velocity_max = 130.0
+angular_velocity_min = -5.0
+angular_velocity_max = 60.0
+scale_amount_min = 2.0
+scale_amount_max = 3.0
+scale_amount_curve = SubResource("Curve_ne7st")
+color = Color(1, 1, 1, 0.41960785)
+color_ramp = SubResource("Gradient_6xv2m")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
 
 [node name="Road Tiles" type="Node" parent="." unique_id=1469108335]
 
@@ -125,12 +155,12 @@ texture = ExtResource("8_mo5h3")
 position = Vector2(3118, 72)
 texture = ExtResource("7_rw1e4")
 
-[node name="Batiment16" type="Sprite2D" parent="Decoration" unique_id=1219723057]
-position = Vector2(3354, -485.99988)
-scale = Vector2(0.5963729, 0.5963729)
+[node name="Batiment19" type="Sprite2D" parent="Decoration" unique_id=1739085771]
+position = Vector2(5354.235, -775.83704)
+scale = Vector2(0.35566065, 0.35566065)
 texture = ExtResource("10_6xv2m")
 
-[node name="Batiment16" type="Sprite2D" parent="Decoration/Batiment16" unique_id=1739085771]
+[node name="Batiment16" type="Sprite2D" parent="Decoration" unique_id=1219723057]
 position = Vector2(3354, -485.99988)
 scale = Vector2(0.5963729, 0.5963729)
 texture = ExtResource("10_6xv2m")
@@ -147,33 +177,7 @@ texture = ExtResource("7_rw1e4")
 position = Vector2(3272, -1141)
 texture = ExtResource("9_ne7st")
 
-[node name="Folder - Background" type="Node" parent="." unique_id=2133328095]
-
-[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=273007677]
-self_modulate = Color(0.0627451, 0.44313726, 0.4117647, 1)
-z_index = -101
-position = Vector2(2107, -1000.00024)
-scale = Vector2(122.87741, 127.60022)
-texture = ExtResource("11_ne7st")
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=288711306]
-z_index = -100
-position = Vector2(2268.0007, -1213.0002)
-scale = Vector2(0.62947613, 0.44202083)
-amount = 500
-texture = ExtResource("12_ne7st")
-lifetime = 10.0
-randomness = 1.0
-emission_shape = 3
-emission_rect_extents = Vector2(6000, 7000)
-direction = Vector2(1, -1)
-spread = 0.0
-gravity = Vector2(0, 0)
-initial_velocity_min = 10.0
-initial_velocity_max = 15.0
-scale_amount_min = 4.0
-scale_amount_max = 4.0
-scale_amount_curve = SubResource("Curve_ne7st")
-color_ramp = SubResource("Gradient_6xv2m")
-hue_variation_min = -1.0
-hue_variation_max = 1.0
+[node name="Bush1T" type="Sprite2D" parent="Decoration" unique_id=26477812]
+position = Vector2(2905, -1106.9999)
+scale = Vector2(0.57070714, 0.57070714)
+texture = ExtResource("13_6xv2m")
