@@ -414,212 +414,284 @@ visible = false
 z_index = 4
 position = Vector2(2250, 500)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster4" parent="Boosters aller" unique_id=685555858 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(473, -1886)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster5" parent="Boosters aller" unique_id=1953431514 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1120, -4154)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster13" parent="Boosters aller" unique_id=2114420469 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1373, -2162.0002)
 rotation = -2.151991
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster17" parent="Boosters aller" unique_id=969617039 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1373, -2162.0002)
 rotation = -2.151991
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster14" parent="Boosters aller" unique_id=1899027369 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3504, -1641)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster47" parent="Boosters aller" unique_id=152717638 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(4412, -7487)
 rotation = -3.1415925
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster48" parent="Boosters aller" unique_id=1718845741 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3740, -7502)
 rotation = -3.1415925
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster30" parent="Boosters aller" unique_id=75267340 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1733, -6725)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster31" parent="Boosters aller" unique_id=1803553159 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1733, -7172)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster24" parent="Boosters aller" unique_id=1995947296 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3066, -5252)
 rotation = -3.1415925
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster25" parent="Boosters aller" unique_id=262255361 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2475, -5510)
 rotation = -3.1415925
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster21" parent="Boosters aller" unique_id=107689155 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(931, -3287)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster22" parent="Boosters aller" unique_id=2075494601 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1443, -3733)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster23" parent="Boosters aller" unique_id=844599501 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2028, -3500)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster19" parent="Boosters aller" unique_id=1665469158 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(5565, -6761)
 rotation = -0.7557276
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster20" parent="Boosters aller" unique_id=923502964 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(5718, -6512)
 rotation = 2.1537364
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster18" parent="Boosters aller" unique_id=290060365 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(4645.0005, -3420.9998)
 rotation = -0.7557277
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster15" parent="Boosters aller" unique_id=23528652 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3812.9998, -3387.9998)
 rotation = 2.501057
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster28" parent="Boosters aller" unique_id=1018392393 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(815.99976, -5400)
 rotation = 2.501057
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster16" parent="Boosters aller" unique_id=1420960039 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3833.9998, -3603.0002)
 rotation = 0.17453292
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster29" parent="Boosters aller" unique_id=1340639695 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(831.9995, -5605.0005)
 rotation = 0.17453292
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster34" parent="Boosters aller" unique_id=328887969 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2667, -10499)
 rotation = 2.501057
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster35" parent="Boosters aller" unique_id=554085535 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2679.9998, -10752)
 rotation = 0.17453292
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster6" parent="Boosters aller" unique_id=435004434 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1876.9999, -5109)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster7" parent="Boosters aller" unique_id=1315316685 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1122, -5930)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster12" parent="Boosters aller" unique_id=1395010758 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1057, -10498.999)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster36" parent="Boosters aller" unique_id=1481240560 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1394.9999, -10242)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster37" parent="Boosters aller" unique_id=142077370 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(979.99994, -10728)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster38" parent="Boosters aller" unique_id=1237257715 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(251.99994, -10504.999)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster8" parent="Boosters aller" unique_id=996067501 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-45, -8493)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster10" parent="Boosters aller" unique_id=869607899 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(763, -9664)
 rotation = 1.0471976
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster2" parent="Boosters aller" unique_id=190120105 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3438, -518)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster3" parent="Boosters aller" unique_id=1487867455 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3192.0002, -527)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster32" parent="Boosters aller" unique_id=151543065 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1804.9998, -8507)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster33" parent="Boosters aller" unique_id=1371186849 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1559, -8516)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Boosters" type="Node" parent="Boosters aller" unique_id=358507131]
 
@@ -629,213 +701,287 @@ scale = Vector2(0.3, 0.3)
 z_index = 4
 position = Vector2(2250, 500)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster4" parent="Boosters retour" unique_id=1447464714 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(473, -1886)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster5" parent="Boosters retour" unique_id=348810033 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1120, -4154)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster13" parent="Boosters retour" unique_id=1783639979 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1373, -2162.0002)
 rotation = -2.151991
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster17" parent="Boosters retour" unique_id=502271425 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1373, -2162.0002)
 rotation = -2.151991
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster14" parent="Boosters retour" unique_id=1064645942 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3504, -1641)
 rotation = -1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster48" parent="Boosters retour" unique_id=188225874 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3740, -7502)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster50" parent="Boosters retour" unique_id=109691915 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2965, -8501)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster30" parent="Boosters retour" unique_id=694074791 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1030, -6502)
 rotation = 3.1415927
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster31" parent="Boosters retour" unique_id=412357591 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1500, -7945)
 rotation = 1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster37" parent="Boosters retour" unique_id=1319458189 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(4503, -7013)
 rotation = 1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster24" parent="Boosters retour" unique_id=1435307260 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3500, -5031)
 rotation = 1.5707964
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster25" parent="Boosters retour" unique_id=1443368236 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2074, -5502)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster21" parent="Boosters retour" unique_id=838388421 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(931, -3287)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster22" parent="Boosters retour" unique_id=1762096858 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1443, -3733)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster23" parent="Boosters retour" unique_id=1702730131 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2028, -3500)
 scale = Vector2(0.5, 0.5)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster18" parent="Boosters retour" unique_id=584754288 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(4645.0005, -3420.9998)
 rotation = -0.7557277
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster28" parent="Boosters retour" unique_id=1799964618 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(803, -5379.0005)
 rotation = -0.054105207
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster29" parent="Boosters retour" unique_id=6823695 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(764.99994, -5605)
 rotation = -2.984513
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster41" parent="Boosters retour" unique_id=267962336 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3815.0002, -3377.0002)
 rotation = -0.054105207
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster42" parent="Boosters retour" unique_id=1847506109 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3777, -3603)
 rotation = -2.984513
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster34" parent="Boosters retour" unique_id=635699290 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2728, -10543.999)
 rotation = -0.72431165
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster35" parent="Boosters retour" unique_id=314275546 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(2515.0002, -10719.999)
 rotation = -3.858923
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster39" parent="Boosters retour" unique_id=329724006 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(5729, -6544)
 rotation = -0.72431165
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster40" parent="Boosters retour" unique_id=1465136588 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(5516, -6720)
 rotation = -3.858923
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster6" parent="Boosters retour" unique_id=1559549585 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1876.9999, -5109)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster7" parent="Boosters retour" unique_id=1720226856 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1122, -5930)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster12" parent="Boosters retour" unique_id=377458908 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-1057, -10498.999)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster36" parent="Boosters retour" unique_id=794460367 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1782, -10494)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster38" parent="Boosters retour" unique_id=2127136916 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(251.99994, -10504.999)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster8" parent="Boosters retour" unique_id=1188619981 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-59.999996, -8502)
 rotation = 3.1415927
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster9" parent="Boosters retour" unique_id=1297929037 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(-965, -7496)
 rotation = 3.1415927
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster10" parent="Boosters retour" unique_id=1951330316 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(763, -9664)
 rotation = -1.5062191
 scale = Vector2(0.6, 0.6)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster2" parent="Boosters retour" unique_id=1486827261 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3438, -518)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster3" parent="Boosters retour" unique_id=417413468 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(3192.0002, -527)
 rotation = -1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster32" parent="Boosters retour" unique_id=2003311264 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1804.9998, -8507)
 rotation = 1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster33" parent="Boosters retour" unique_id=2110061040 instance=ExtResource("18_bo4m4")]
 z_index = 1
 position = Vector2(1559, -8516)
 rotation = 1.5707964
 scale = Vector2(0.3, 0.3)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Boosters" type="Node" parent="Boosters retour" unique_id=1685000301]
 

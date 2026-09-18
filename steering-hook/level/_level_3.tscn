@@ -134,22 +134,30 @@ z_index = 10
 position = Vector2(2587, -1343.0002)
 rotation = -0.8150688
 scale = Vector2(0.54999995, 0.54999995)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster2" parent="Boosters" unique_id=757906867 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(2985, -1500)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster3" parent="Boosters" unique_id=1259874124 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(4962, -1877)
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Booster4" parent="Boosters" unique_id=828174351 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(5898, -1124)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Batiment16" type="Sprite2D" parent="." unique_id=481867838]
 position = Vector2(3354, -485.99988)
