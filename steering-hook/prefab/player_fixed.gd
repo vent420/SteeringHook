@@ -43,21 +43,21 @@ func _process(delta: float) -> void:
 		
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
-		var dir_to_anchor_local = to_local(mouse_pos_global) - to_local(hook_anchor_global)
+		var dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
 		#print("dir local : ", dir_to_anchor_local)
 		
 		var hypothenuse = dir_to_anchor.length()
 		
 		var angle = dir_to_anchor.angle_to(Vector2.UP.rotated(rotation))
 		
-		peak_dist = cos(angle) * hypothenuse
+		peak_dist = (cos(angle) * hypothenuse)
 		
 		if (dir_to_anchor_local.x <= 0):
 			rot_direction = 1
 		else:
 			rot_direction = -1
 			
-		peak_coord = hook_anchor_global + (peak_dist * Vector2.UP.rotated(rotation))
+		peak_coord = (hook_anchor_global + (peak_dist * Vector2.UP.rotated(rotation)))
 		
 		has_input = true
 
@@ -81,6 +81,5 @@ func _draw() -> void:
 		var mouse_pos_local = to_local(mouse_pos_global)
 		var peak_coord_local = to_local(peak_coord)
 			
-		#draw_arc(mouse_pos_local, mouse_pos_global.distance_to(peak_coord), 0, TAU, 32, Color.RED, 2.0)
-		draw_arc(mouse_pos_local, mouse_pos_global.distance_to(peak_coord), 0, TAU, 32, Color.RED, 2.0)
-		draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
+		draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
+		#draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
