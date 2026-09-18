@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://q0xkmm2coax7"]
 
+[ext_resource type="Script" uid="uid://7if38et8x26f" path="res://level/global_level.gd" id="1_l531l"]
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_ryjsh"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_3w4y2"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_3w4y2"]
@@ -26,6 +27,8 @@ point_count = 4
 colors = PackedColorArray(0.55751747, 0.2212173, 0.9999998, 1, 0.9356824, 0.9044193, 0.9741083, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
+script = ExtResource("1_l531l")
+color = "m"
 
 [node name="Folder - Background" type="Node" parent="." unique_id=1949629531]
 
