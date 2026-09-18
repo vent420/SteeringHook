@@ -12,6 +12,14 @@
 font = ExtResource("2_t4vbi")
 font_size = 80
 
+[sub_resource type="LabelSettings" id="LabelSettings_fdxjf"]
+font = ExtResource("2_t4vbi")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_t4vbi"]
+font = ExtResource("2_t4vbi")
+font_size = 50
+
 [node name="Main" type="Control" unique_id=270908751]
 layout_mode = 3
 anchors_preset = 15
@@ -44,6 +52,46 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 100
 text = "You Lose!"
 label_settings = SubResource("LabelSettings_gjt1d")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=1979877523]
+layout_mode = 2
+alignment = 1
+
+[node name="Score_text" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=352937531]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Score:"
+label_settings = SubResource("LabelSettings_fdxjf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Score_value" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=2054811268]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "424242"
+label_settings = SubResource("LabelSettings_t4vbi")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=842686249]
+layout_mode = 2
+alignment = 1
+
+[node name="time_text" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=1434223648]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Time:"
+label_settings = SubResource("LabelSettings_fdxjf")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time_value" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=1112930485]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "424242"
+label_settings = SubResource("LabelSettings_t4vbi")
 horizontal_alignment = 1
 vertical_alignment = 1
 

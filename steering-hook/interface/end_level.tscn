@@ -1,7 +1,24 @@
 [gd_scene format=3 uid="uid://dl77xderk5ks7"]
 
 [ext_resource type="Script" uid="uid://dg6nomdy5akxu" path="res://interface/EndLevel.gd" id="1_gu11n"]
-[ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path_road/road_1.png" id="1_jg30k"]
+[ext_resource type="FontFile" uid="uid://dj1rrutc41i0q" path="res://sprite/ui_button/Odin Rounded - Bold.otf" id="2_xlgjr"]
+[ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="3_exlyv"]
+[ext_resource type="Texture2D" uid="uid://b7peoa20fp8mo" path="res://sprite/ui_button/mauve_button.png" id="4_jk63i"]
+[ext_resource type="LabelSettings" uid="uid://47yum7t20t4g" path="res://interface/text_settings.tres" id="5_iobme"]
+[ext_resource type="Texture2D" uid="uid://dft127rxkt1bo" path="res://sprite/ui_button/red_button.png" id="6_wjhjb"]
+[ext_resource type="Texture2D" uid="uid://i5mmwdf7ch8k" path="res://sprite/ui_button/pink_button.png" id="7_8rcas"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_40dma"]
+font = ExtResource("2_xlgjr")
+font_size = 80
+
+[sub_resource type="LabelSettings" id="LabelSettings_fnhlw"]
+font = ExtResource("2_xlgjr")
+font_size = 50
+
+[sub_resource type="LabelSettings" id="LabelSettings_un6q5"]
+font = ExtResource("2_xlgjr")
+font_size = 50
 
 [node name="EndLevel" type="Control" unique_id=789889436]
 layout_mode = 3
@@ -12,73 +29,111 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_gu11n")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=540786208]
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=1074689821]
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=793685043]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-theme_override_constants/separation = 10
-
-[node name="BG" type="NinePatchRect" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=1167235541]
-custom_minimum_size = Vector2(500, 200)
-custom_maximum_size = Vector2(500, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-texture = ExtResource("1_jg30k")
-region_rect = Rect2(0, 400, 1000, 200)
-patch_margin_left = 10
-patch_margin_top = 30
-patch_margin_right = 10
-patch_margin_bottom = 30
-
-[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/BG" unique_id=1871315456]
+[node name="Panel" type="Panel" parent="." unique_id=1134856344]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/margin_top = 40
-theme_override_constants/margin_bottom = 0
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer" unique_id=808459723]
-custom_maximum_size = Vector2(-1, 120)
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1616326673]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="Label" type="Label" parent="VBoxContainer" unique_id=253608887]
 layout_mode = 2
-theme_override_constants/separation = 10
+theme_override_font_sizes/font_size = 100
+text = "You Won!"
+label_settings = SubResource("LabelSettings_40dma")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Play_B" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer" unique_id=2095463916]
-custom_minimum_size = Vector2(80, 50)
-custom_maximum_size = Vector2(150, 80)
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer" unique_id=952943227]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 2
-theme_override_constants/outline_size = 5
-text = "Replay"
+alignment = 1
 
-[node name="Quit_B" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer" unique_id=1152032042]
-custom_minimum_size = Vector2(80, 50)
-custom_maximum_size = Vector2(150, 80)
+[node name="Score_text" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=191959251]
 layout_mode = 2
-size_flags_horizontal = 6
-size_flags_vertical = 10
-theme_override_constants/outline_size = 5
-theme_override_constants/h_separation = 4
-theme_override_constants/line_spacing = 0
-text = "Quit"
+theme_override_font_sizes/font_size = 100
+text = "Score:"
+label_settings = SubResource("LabelSettings_fnhlw")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Control" type="Control" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=720109314]
-custom_minimum_size = Vector2(50, 50)
+[node name="Score_value" type="Label" parent="VBoxContainer/HBoxContainer" unique_id=1310485395]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "424242"
+label_settings = SubResource("LabelSettings_un6q5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer" unique_id=1753719101]
+layout_mode = 2
+alignment = 1
+
+[node name="time_text" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=2055869659]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "Time:"
+label_settings = SubResource("LabelSettings_fnhlw")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Time_value" type="Label" parent="VBoxContainer/HBoxContainer2" unique_id=561226453]
+layout_mode = 2
+theme_override_font_sizes/font_size = 100
+text = "424242"
+label_settings = SubResource("LabelSettings_un6q5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="VBoxContainer" unique_id=251266863]
 layout_mode = 2
 
-[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Play_B" to="." method="_on_play_b_pressed"]
-[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Quit_B" to="." method="_on_quit_b_pressed"]
+[node name="retry" type="TextureButton" parent="VBoxContainer" unique_id=751314016]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+texture_normal = ExtResource("3_exlyv")
+texture_pressed = ExtResource("4_jk63i")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/retry" unique_id=776236843]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Retry"
+label_settings = ExtResource("5_iobme")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="quit" type="TextureButton" parent="VBoxContainer" unique_id=162881214]
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+texture_normal = ExtResource("6_wjhjb")
+texture_pressed = ExtResource("7_8rcas")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="VBoxContainer/quit" unique_id=1217013752]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Exit Game"
+label_settings = ExtResource("5_iobme")
+horizontal_alignment = 1
+vertical_alignment = 1
