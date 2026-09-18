@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75iwmxe2odss"
-path="res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"
+uid="uid://dwk60gre7pp33"
+path="res://.godot/imported/noiseTexture.png-4a0d16bc84a5a5956ca35e91121e8db2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vfx/drift/drift-particle_sprite-sheet.png"
-dest_files=["res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"]
+source_file="res://vfx/panning_particles/noiseTexture.png"
+dest_files=["res://.godot/imported/noiseTexture.png-4a0d16bc84a5a5956ca35e91121e8db2.ctex"]
 
 [params]
 
