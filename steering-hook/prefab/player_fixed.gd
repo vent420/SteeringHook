@@ -10,6 +10,9 @@ var peak_coord
 var peak_dist
 var hook_anchor_global
 var rot_direction
+var velocity
+
+var debug_direction
 
 var is_orbiting : bool = false
 var has_input : bool = false
@@ -22,37 +25,42 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var velocity = Vector2.UP.rotated(rotation) * speed
+	velocity = Vector2.UP.rotated(rotation) * speed
 	position += velocity * delta
+	
+	debug_direction = Vector2.UP.rotated(rotation)
+	
+	hook_anchor_global = to_global(get_node("HookAnchor").position)
+	
+	print("Hook anchor global : ", hook_anchor_global)
+	print("Hook anchor local : ", get_node("HookAnchor").position)
 	
 	if Input.is_action_just_pressed("left_click"):
 		# Mouse pos = A
 		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
-		hook_anchor_global = to_global(get_node("HookAnchor").position)
-		print("mouse pos : ", mouse_pos_global)
-		print("hook pos : ", hook_anchor_global)
 		
-		# Vecteur directeur de l'hypothenuse
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
-		#print("anchor direction : ", dir_to_anchor)
 			
 		var hypothenuse = dir_to_anchor.length()
-		#print("hypothenuse : ", hypothenuse)
-	
+		
 		var angle = dir_to_anchor.angle_to(Vector2.UP.rotated(rotation))
 	
 		peak_dist = cos(angle) * hypothenuse
-		#print("peak dist : ", peak_dist)
-	
-		if (mouse_pos_global.x < hook_anchor_global.x):
-			rot_direction = 1
+		
+		if (velocity.y <= 0):
+			if (mouse_pos_global.x < hook_anchor_global.x):
+				rot_direction = 1
+			else:
+				rot_direction = -1
+		
 		else:
-			rot_direction = -1
+			if (mouse_pos_global.x < hook_anchor_global.x):
+				rot_direction = -1
+			else:
+				rot_direction = 1
 			
 		peak_coord = hook_anchor_global + (peak_dist * Vector2.UP.rotated(rotation))
-		
-		#print("peak coord : ", peak_coord)
 		
 		has_input = true
 
@@ -62,22 +70,19 @@ func _process(delta: float) -> void:
 		is_orbiting = false
 	
 	if has_input:
-		print("position : ", position)
-		print("peak : ", peak_coord)
-		if position <= peak_coord:
+		if ((hook_anchor_global.distance_to(peak_coord) <= -1) or (hook_anchor_global.distance_to(peak_coord) <= 1)):
 			is_orbiting = true
 			
 	if is_orbiting:
-		#print(mouse_pos_global.distance_to(peak_coord))
 		var angular_speed = speed / mouse_pos_global.distance_to(peak_coord)
 		rotation -= (angular_speed * delta) * rot_direction
 	
 	queue_redraw()	
 	
 func _draw() -> void:
-	#if peak_coord:
-		#draw_line(debugInfo, debugInfoB, Color.GREEN, 2.0)
 	if has_input:
 		var mouse_pos_local = to_local(mouse_pos_global)
+		var peak_coord_local = to_local(peak_coord)
 			
 		draw_arc(mouse_pos_local, mouse_pos_global.distance_to(peak_coord), 0, TAU, 32, Color.RED, 2.0)
+		draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
