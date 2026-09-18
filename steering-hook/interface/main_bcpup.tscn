@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://dwuf6p1cd3jfw"]
 
 [ext_resource type="Script" uid="uid://dkv1ym56yoarp" path="res://interface/main_menue.gd" id="1_lhtm6"]
-[ext_resource type="Texture2D" uid="uid://vkcbc08dhaa7" path="res://sprite/main menu/start_screen_bg.png" id="2_dnrmd"]
-[ext_resource type="Texture2D" uid="uid://ukcepmls61lp" path="res://sprite/main menu/start_screen_logo.png" id="3_aynvo"]
-[ext_resource type="Script" uid="uid://nops4kkd7apu" path="res://interface/main_menu_parallax.gd" id="4_dlo0a"]
-[ext_resource type="Texture2D" uid="uid://6028jmenoxwg" path="res://sprite/main menu/start_screen_car.png" id="5_6v3cy"]
-[ext_resource type="Texture2D" uid="uid://dxwwt1hm60lp6" path="res://sprite/main menu/start_screen_phares_on.png" id="6_sepsm"]
+[ext_resource type="Texture2D" uid="uid://bllvpup2pnllf" path="res://sprite/menu/start_screen_bg.png" id="2_qcf8i"]
+[ext_resource type="Texture2D" uid="uid://bneu4ufbiu3pb" path="res://sprite/menu/start_screen_logo.png" id="3_lhtm6"]
+[ext_resource type="Texture2D" uid="uid://c27p8sok1lj2n" path="res://sprite/menu/start_screen_car.png" id="4_dnrmd"]
+[ext_resource type="Script" uid="uid://g205ha4r7qy4" path="res://interface/menu_parallax.gd" id="4_lhtm6"]
+[ext_resource type="Texture2D" uid="uid://ddju8fslnx3o5" path="res://sprite/menu/start_screen_phares_on.png" id="5_aynvo"]
 [ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="7_0u8qb"]
 [ext_resource type="Texture2D" uid="uid://b7peoa20fp8mo" path="res://sprite/ui_button/mauve_button.png" id="8_mk3u8"]
 [ext_resource type="LabelSettings" uid="uid://47yum7t20t4g" path="res://interface/text_settings.tres" id="9_i800w"]
@@ -29,7 +29,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_dnrmd")
+texture = ExtResource("2_qcf8i")
 expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=2025776574]
@@ -40,11 +40,9 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-texture = ExtResource("3_aynvo")
+texture = ExtResource("3_lhtm6")
 expand_mode = 1
-script = ExtResource("4_dlo0a")
-parallax_val = -90.0
-offs = Vector2(0, 0)
+script = ExtResource("4_lhtm6")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=132694469]
 layout_mode = 1
@@ -54,10 +52,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-texture = ExtResource("5_6v3cy")
+texture = ExtResource("4_dnrmd")
 expand_mode = 1
-script = ExtResource("4_dlo0a")
-parallax_val = 90.0
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/TextureRect" unique_id=1549696228]
 visible = false
@@ -72,7 +68,7 @@ offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.044214, 1.0293368)
-texture = ExtResource("6_sepsm")
+texture = ExtResource("5_aynvo")
 expand_mode = 1
 
 [node name="Button" type="Button" parent="CanvasLayer/TextureRect/TextureRect" unique_id=326054076]
@@ -106,6 +102,7 @@ custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 texture_normal = ExtResource("7_0u8qb")
 texture_pressed = ExtResource("8_mk3u8")
+texture_hover = ExtResource("8_mk3u8")
 ignore_texture_size = true
 stretch_mode = 5
 
@@ -126,6 +123,7 @@ custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
 texture_normal = ExtResource("10_mu57n")
 texture_pressed = ExtResource("11_xn316")
+texture_hover = ExtResource("11_xn316")
 ignore_texture_size = true
 stretch_mode = 5
 
