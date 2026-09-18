@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75iwmxe2odss"
-path="res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"
+uid="uid://dsnet7eb1vkxk"
+path="res://.godot/imported/carre.png-339801d7edb9613910f6d4d9e6ad1d39.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vfx/drift/drift-particle_sprite-sheet.png"
-dest_files=["res://.godot/imported/drift-particle_sprite-sheet.png-ffd87ad614156aa80cf94e7e9439765e.ctex"]
+source_file="res://vfx/panning_particles/background_shapes/carre.png"
+dest_files=["res://.godot/imported/carre.png-339801d7edb9613910f6d4d9e6ad1d39.ctex"]
 
 [params]
 
