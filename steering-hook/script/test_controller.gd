@@ -28,18 +28,25 @@ func collide(layer:int , obj:Area2D)->void:
 			DeathExplode()
 		2:
 			print("booster")
+			Boosting()
 		3:
 			print("obstacle")
+			DeathExplode()
 		4:
 			print("thy self")
 		5:
 			print("FinishLine")
+			finish()
 		6:
 			print("checkpoint")
+			checkpoint()
 			
 func DeathExplode():
 	print("died")
+	endScene.score = score
+	endScene.hasWon = false
 	get_tree().current_scene.add_child(endScene)
+	
 	#open end
 	
 func Boosting():
@@ -49,6 +56,10 @@ func Boosting():
 	
 func finish():
 	print("finished")
+	endScene.score = score
+	endScene.hasWon = true
+	get_tree().current_scene.add_child(endScene)
+	
 	
 func checkpoint():
 	print("checked the point")

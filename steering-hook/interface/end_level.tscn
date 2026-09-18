@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dl77xderk5ks7"]
 
+[ext_resource type="Script" uid="uid://dg6nomdy5akxu" path="res://interface/EndLevel.gd" id="1_gu11n"]
 [ext_resource type="Texture2D" uid="uid://bn1s5sjstr7ol" path="res://sprite/path_road/road_1.png" id="1_jg30k"]
 
 [node name="EndLevel" type="Control" unique_id=789889436]
@@ -9,6 +10,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_gu11n")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=540786208]
 
@@ -61,7 +63,7 @@ layout_mode = 2
 size_flags_horizontal = 6
 size_flags_vertical = 2
 theme_override_constants/outline_size = 5
-text = "Play"
+text = "Replay"
 
 [node name="Quit_B" type="Button" parent="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer" unique_id=1152032042]
 custom_minimum_size = Vector2(80, 50)
@@ -78,5 +80,5 @@ text = "Quit"
 custom_minimum_size = Vector2(50, 50)
 layout_mode = 2
 
-[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Play_B" to="CanvasLayer/MarginContainer" method="_on_play_b_pressed"]
-[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Quit_B" to="CanvasLayer/MarginContainer" method="_on_quit_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Play_B" to="." method="_on_play_b_pressed"]
+[connection signal="pressed" from="CanvasLayer/MarginContainer/VBoxContainer/BG/MarginContainer/VBoxContainer/Quit_B" to="." method="_on_quit_b_pressed"]
