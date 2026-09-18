@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75iwmxe2odss"
-path="res://.godot/imported/drift-particle_sprite-sheet.png-c52b10c9e183b2b06d83f1edec88f88e.ctex"
+uid="uid://bhh7qk3y80als"
+path="res://.godot/imported/bush_1_p.png-5d23b24df13cec2a7ed3e302fd9e2aa6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vfx/Drift/drift-particle_sprite-sheet.png"
-dest_files=["res://.godot/imported/drift-particle_sprite-sheet.png-c52b10c9e183b2b06d83f1edec88f88e.ctex"]
+source_file="res://sprite/buildings_decoration/bush_1_p.png"
+dest_files=["res://.godot/imported/bush_1_p.png-5d23b24df13cec2a7ed3e302fd9e2aa6.ctex"]
 
 [params]
 

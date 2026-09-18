@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://75iwmxe2odss"
-path="res://.godot/imported/drift-particle_sprite-sheet.png-c52b10c9e183b2b06d83f1edec88f88e.ctex"
+uid="uid://bis8if0lkkrj0"
+path="res://.godot/imported/obstacle_pin.png-922ae61674df69f913e6a90524c04bba.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://vfx/Drift/drift-particle_sprite-sheet.png"
-dest_files=["res://.godot/imported/drift-particle_sprite-sheet.png-c52b10c9e183b2b06d83f1edec88f88e.ctex"]
+source_file="res://sprite/objects/obstacle_pin.png"
+dest_files=["res://.godot/imported/obstacle_pin.png-922ae61674df69f913e6a90524c04bba.ctex"]
 
 [params]
 
