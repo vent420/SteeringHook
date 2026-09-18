@@ -78,6 +78,51 @@ scale = Vector2(0.55, 0.55)
 [node name="Decoration" type="Node" parent="." unique_id=416687317]
 script = ExtResource("9_tetyw")
 
+[node name="Batiment1T" type="Sprite2D" parent="Decoration" unique_id=862166834]
+position = Vector2(2965, 834)
+scale = Vector2(0.758, 0.758)
+texture = ExtResource("10_ts8dd")
+
+[node name="Batiment1T3" type="Sprite2D" parent="Decoration" unique_id=1208331905]
+position = Vector2(4806, -608)
+scale = Vector2(0.758, 0.758)
+texture = ExtResource("10_ts8dd")
+
+[node name="Batiment2T3" type="Sprite2D" parent="Decoration" unique_id=1518635580]
+position = Vector2(3188, 266)
+texture = ExtResource("11_5n1lq")
+
+[node name="Batiment4T2" type="Sprite2D" parent="Decoration" unique_id=901346927]
+position = Vector2(2166, 1133)
+texture = ExtResource("13_l531l")
+
+[node name="Batiment3T3" type="Sprite2D" parent="Decoration" unique_id=1379462551]
+position = Vector2(2333, 89)
+scale = Vector2(0.763, 0.763)
+texture = ExtResource("12_xeevs")
+
+[node name="Batiment3T4" type="Sprite2D" parent="Decoration" unique_id=72988035]
+position = Vector2(934, 826)
+scale = Vector2(0.5694998, 0.5694998)
+texture = ExtResource("12_xeevs")
+
+[node name="Batiment1T2" type="Sprite2D" parent="Decoration" unique_id=1917488659]
+position = Vector2(7039, 1362)
+texture = ExtResource("10_ts8dd")
+
+[node name="Batiment5T2" type="Sprite2D" parent="Decoration" unique_id=900250302]
+position = Vector2(6609, 2078)
+texture = ExtResource("14_kfcmc")
+
+[node name="Batiment5T3" type="Sprite2D" parent="Decoration" unique_id=1070090528]
+position = Vector2(5226, -1076)
+texture = ExtResource("14_kfcmc")
+
+[node name="Batiment16" type="Sprite2D" parent="Decoration" unique_id=274186925]
+position = Vector2(3354, -485.99988)
+scale = Vector2(0.5963729, 0.5963729)
+texture = ExtResource("14_kfcmc")
+
 [node name="Batiment1" type="Sprite2D" parent="Decoration" unique_id=1147660470]
 z_index = 100
 position = Vector2(5849, 179)
@@ -108,48 +153,3 @@ texture = ExtResource("12_xeevs")
 position = Vector2(5998, 793.00006)
 scale = Vector2(0.817, 0.817)
 texture = ExtResource("11_5n1lq")
-
-[node name="Batiment1T" type="Sprite2D" parent="." unique_id=862166834]
-position = Vector2(2965, 834)
-scale = Vector2(0.758, 0.758)
-texture = ExtResource("10_ts8dd")
-
-[node name="Batiment1T3" type="Sprite2D" parent="." unique_id=1208331905]
-position = Vector2(4806, -608)
-scale = Vector2(0.758, 0.758)
-texture = ExtResource("10_ts8dd")
-
-[node name="Batiment2T" type="Sprite2D" parent="." unique_id=1518635580]
-position = Vector2(3188, 266)
-texture = ExtResource("11_5n1lq")
-
-[node name="Batiment4T" type="Sprite2D" parent="." unique_id=901346927]
-position = Vector2(2166, 1133)
-texture = ExtResource("13_l531l")
-
-[node name="Batiment3T" type="Sprite2D" parent="." unique_id=1379462551]
-position = Vector2(2333, 89)
-scale = Vector2(0.763, 0.763)
-texture = ExtResource("12_xeevs")
-
-[node name="Batiment3T2" type="Sprite2D" parent="." unique_id=72988035]
-position = Vector2(934, 826)
-scale = Vector2(0.5694998, 0.5694998)
-texture = ExtResource("12_xeevs")
-
-[node name="Batiment1T2" type="Sprite2D" parent="." unique_id=1917488659]
-position = Vector2(7039, 1362)
-texture = ExtResource("10_ts8dd")
-
-[node name="Batiment5T" type="Sprite2D" parent="." unique_id=900250302]
-position = Vector2(6609, 2078)
-texture = ExtResource("14_kfcmc")
-
-[node name="Batiment5T2" type="Sprite2D" parent="." unique_id=1070090528]
-position = Vector2(5226, -1076)
-texture = ExtResource("14_kfcmc")
-
-[node name="Batiment16" type="Sprite2D" parent="." unique_id=274186925]
-position = Vector2(3354, -485.99988)
-scale = Vector2(0.5963729, 0.5963729)
-texture = ExtResource("14_kfcmc")

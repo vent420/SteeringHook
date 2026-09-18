@@ -8,7 +8,9 @@ func _on_button_2_button_down() -> void:
 		"res://audio/sfx_hook_attach_v01.ogg",
 		"res://audio/sfx_hook_detach_v01.ogg",
 		"res://audio/sfx_hook_retract_v01.ogg",
-		"res://audio/sfx_hook_trow_v01.ogg"
+		"res://audio/sfx_hook_trow_v01.ogg",
+		"res://audio/sfx_car_finish_win_v01.ogg",
+		"res://audio/sfx_car_crash_lose_v01.ogg"
 	]
 	GlobalsAudio.play_oneshot(array.pick_random(),1.0,1.0,true)
 
