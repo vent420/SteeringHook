@@ -330,112 +330,215 @@ position = Vector2(5009, -2918)
 scale = Vector2(0.5963729, 0.5963729)
 texture = ExtResource("19_w1uqk")
 
-[node name="Obj" type="Node" parent="." unique_id=539453919]
+[node name="obstacles retour" type="Node2D" parent="." unique_id=826791363]
 
-[node name="ObstacleCar" parent="Obj" unique_id=1745866449 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar" parent="obstacles retour" unique_id=1745866449 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(5468, -4753)
 
-[node name="ObstacleCar4" parent="Obj" unique_id=1242522709 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar4" parent="obstacles retour" unique_id=1242522709 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(4545, -4299)
 
-[node name="ObstacleCar5" parent="Obj" unique_id=2038916729 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar5" parent="obstacles retour" unique_id=2038916729 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(2477, -5269)
 
-[node name="ObstacleCar6" parent="Obj" unique_id=475227413 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar6" parent="obstacles retour" unique_id=475227413 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(2481, -5744)
 
-[node name="ObstacleCar19" parent="Obj" unique_id=184391469 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar19" parent="obstacles retour" unique_id=184391469 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(2851, -5269)
 
-[node name="ObstacleCar20" parent="Obj" unique_id=2106832264 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar20" parent="obstacles retour" unique_id=2106832264 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(2855, -5744)
 
-[node name="ObstacleCar7" parent="Obj" unique_id=1988208159 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar7" parent="obstacles retour" unique_id=1988208159 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(3955, -7270)
 
-[node name="ObstacleCar9" parent="Obj" unique_id=172572082 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar9" parent="obstacles retour" unique_id=172572082 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(4388, -7756)
 
-[node name="ObstacleCar10" parent="Obj" unique_id=43422638 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar10" parent="obstacles retour" unique_id=43422638 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(3943, -7754)
 
-[node name="ObstacleCar11" parent="Obj" unique_id=1105245463 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar11" parent="obstacles retour" unique_id=1105245463 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(-266, -7730)
 rotation = 1.5707964
 
-[node name="ObstacleCar12" parent="Obj" unique_id=459983474 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar12" parent="obstacles retour" unique_id=459983474 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(-275, -8118)
 rotation = 1.5707964
 
-[node name="ObstacleCar15" parent="Obj" unique_id=1582022552 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar15" parent="obstacles retour" unique_id=1582022552 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1280, -7128)
 rotation = 1.5707964
 
-[node name="ObstacleCar16" parent="Obj" unique_id=1565945223 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar16" parent="obstacles retour" unique_id=1565945223 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1271, -7516)
 rotation = 1.5707964
 
-[node name="ObstacleCar17" parent="Obj" unique_id=1240348167 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar17" parent="obstacles retour" unique_id=1240348167 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1729, -6731)
 rotation = 1.5707964
 
-[node name="ObstacleCar18" parent="Obj" unique_id=410577488 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar18" parent="obstacles retour" unique_id=410577488 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1720, -7119)
 rotation = 1.5707964
 
-[node name="ObstacleCar8" parent="Obj" unique_id=356017805 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar8" parent="obstacles retour" unique_id=356017805 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(3467, -7270)
 
-[node name="ObstacleCar13" parent="Obj" unique_id=856286483 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar13" parent="obstacles retour" unique_id=856286483 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(982, -10264)
 
-[node name="ObstacleCar14" parent="Obj" unique_id=478700016 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar14" parent="obstacles retour" unique_id=478700016 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(979, -10726)
 
-[node name="ObstacleCar21" parent="Obj" unique_id=1459599271 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar21" parent="obstacles retour" unique_id=1459599271 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(623, -10268)
 
-[node name="ObstacleCar22" parent="Obj" unique_id=919129001 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar22" parent="obstacles retour" unique_id=919129001 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(620, -10730)
 
-[node name="ObstacleCar23" parent="Obj" unique_id=701489788 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar23" parent="obstacles retour" unique_id=701489788 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1408, -10268)
 
-[node name="ObstacleCar24" parent="Obj" unique_id=1143700584 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar24" parent="obstacles retour" unique_id=1143700584 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(1405, -10730)
 
-[node name="ObstacleCar3" parent="Obj" unique_id=338227899 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar3" parent="obstacles retour" unique_id=338227899 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(5037, -4297)
 
-[node name="ObstacleCar2" parent="Obj" unique_id=1524185097 instance=ExtResource("21_1pg2i")]
+[node name="ObstacleCar2" parent="obstacles retour" unique_id=1524185097 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(5022, -4745)
+
+[node name="obstacles aller" type="Node2D" parent="." unique_id=84854178]
+
+[node name="ObstacleCar" parent="obstacles aller" unique_id=230516253 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(5468, -4753)
+
+[node name="ObstacleCar4" parent="obstacles aller" unique_id=1035779971 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(4545, -4299)
+
+[node name="ObstacleCar5" parent="obstacles aller" unique_id=1965820948 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2477, -5269)
+
+[node name="ObstacleCar6" parent="obstacles aller" unique_id=1912606729 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2481, -5744)
+
+[node name="ObstacleCar19" parent="obstacles aller" unique_id=654877896 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2851, -5269)
+
+[node name="ObstacleCar20" parent="obstacles aller" unique_id=448379394 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2855, -5744)
+
+[node name="ObstacleCar7" parent="obstacles aller" unique_id=1503250149 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3955, -7270)
+
+[node name="ObstacleCar9" parent="obstacles aller" unique_id=208955311 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(4388, -7756)
+
+[node name="ObstacleCar10" parent="obstacles aller" unique_id=1774675020 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3943, -7754)
+
+[node name="ObstacleCar11" parent="obstacles aller" unique_id=789885191 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(-266, -7730)
+rotation = 1.5707964
+
+[node name="ObstacleCar12" parent="obstacles aller" unique_id=1435448777 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(-275, -8118)
+rotation = 1.5707964
+
+[node name="ObstacleCar15" parent="obstacles aller" unique_id=327122624 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1280, -7128)
+rotation = 1.5707964
+
+[node name="ObstacleCar16" parent="obstacles aller" unique_id=633342265 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1271, -7516)
+rotation = 1.5707964
+
+[node name="ObstacleCar17" parent="obstacles aller" unique_id=1348772801 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1729, -6731)
+rotation = 1.5707964
+
+[node name="ObstacleCar18" parent="obstacles aller" unique_id=659437280 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1720, -7119)
+rotation = 1.5707964
+
+[node name="ObstacleCar8" parent="obstacles aller" unique_id=462402575 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3467, -7270)
+
+[node name="ObstacleCar13" parent="obstacles aller" unique_id=595853682 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(982, -10264)
+
+[node name="ObstacleCar14" parent="obstacles aller" unique_id=1742217038 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(979, -10726)
+
+[node name="ObstacleCar21" parent="obstacles aller" unique_id=295689805 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(623, -10268)
+
+[node name="ObstacleCar22" parent="obstacles aller" unique_id=1909593517 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(620, -10730)
+
+[node name="ObstacleCar23" parent="obstacles aller" unique_id=1503616129 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1408, -10268)
+
+[node name="ObstacleCar24" parent="obstacles aller" unique_id=190755381 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(1405, -10730)
+
+[node name="ObstacleCar3" parent="obstacles aller" unique_id=143515456 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(5037, -4297)
+
+[node name="ObstacleCar2" parent="obstacles aller" unique_id=543928 instance=ExtResource("21_1pg2i")]
 z_index = 5
 position = Vector2(5022, -4745)
 
 [node name="Boosters aller" type="Node2D" parent="." unique_id=1052873756]
-visible = false
 
 [node name="Booster" parent="Boosters aller" unique_id=559202974 instance=ExtResource("18_bo4m4")]
 z_index = 4
@@ -723,6 +826,7 @@ collision_mask = 8
 [node name="Boosters" type="Node" parent="Boosters aller" unique_id=358507131]
 
 [node name="Boosters retour" type="Node2D" parent="." unique_id=470324375]
+visible = false
 
 [node name="Booster" parent="Boosters retour" unique_id=1195323448 instance=ExtResource("18_bo4m4")]
 z_index = 4
@@ -1012,7 +1116,6 @@ collision_mask = 8
 z_index = 3
 position = Vector2(65, 498)
 rotation = 1.5707964
-scale = Vector2(0.2, 0.2)
 speed = 450.0
 peak_distance_check_behind = 750.0
 car_texture = ExtResource("26_22tqp")
