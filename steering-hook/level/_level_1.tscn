@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_0arg3"]
 [ext_resource type="Shader" uid="uid://bamf7wg5x1gmc" path="res://vfx/Bg/bg_test.gdshader" id="1_mo5h3"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_h15kj"]
-[ext_resource type="Texture2D" uid="uid://6o8ytq0vck24" path="res://sprite/path/carre01_1_m.png" id="2_ne7st"]
+[ext_resource type="Texture2D" uid="uid://6o8ytq0vck24" path="res://sprite/path_road/carre01_1_m.png" id="2_ne7st"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="3_xprkm"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="4_h15kj"]
 [ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings_decoration/building_color_change.gd" id="5_rw1e4"]
@@ -15,7 +15,7 @@
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_e17y4"]
 shader = ExtResource("1_mo5h3")
-shader_parameter/bg_color = Vector4(183, 151, 248, 225)
+shader_parameter/bg_color = Vector4(255, 216, 123, 225)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -35,28 +35,28 @@ texture = ExtResource("2_ne7st")
 
 [node name="Road Tiles" type="Node" parent="." unique_id=1469108335]
 
-[node name="TileRoadStraight" parent="Road Tiles" unique_id=258768893 instance=ExtResource("1_0arg3")]
+[node name="TileRoadStraight9" parent="Road Tiles" unique_id=258768893 instance=ExtResource("1_0arg3")]
 position = Vector2(500, 500)
 
-[node name="TileRoadStraight2" parent="Road Tiles" unique_id=380183257 instance=ExtResource("1_0arg3")]
+[node name="TileRoadStraight10" parent="Road Tiles" unique_id=380183257 instance=ExtResource("1_0arg3")]
 position = Vector2(1500, 500)
 
-[node name="TileRoadStraight4" parent="Road Tiles" unique_id=1312461760 instance=ExtResource("1_0arg3")]
+[node name="TileRoadStraight11" parent="Road Tiles" unique_id=1312461760 instance=ExtResource("1_0arg3")]
 position = Vector2(2500, -500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight3" parent="Road Tiles" unique_id=1175035263 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight12" parent="Road Tiles" unique_id=1175035263 instance=ExtResource("2_h15kj")]
 position = Vector2(2500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight5" parent="Road Tiles" unique_id=1596290077 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight13" parent="Road Tiles" unique_id=1596290077 instance=ExtResource("2_h15kj")]
 position = Vector2(2500, -1500)
 rotation = 3.1415925
 
-[node name="TileRoadStraight6" parent="Road Tiles" unique_id=1715367334 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight14" parent="Road Tiles" unique_id=1715367334 instance=ExtResource("2_h15kj")]
 position = Vector2(1500, -1500)
 
-[node name="TileRoadStraight7" parent="Road Tiles" unique_id=2083394287 instance=ExtResource("2_h15kj")]
+[node name="TileRoadStraight15" parent="Road Tiles" unique_id=2083394287 instance=ExtResource("2_h15kj")]
 position = Vector2(1500, -2500)
 rotation = 1.5707964
 
