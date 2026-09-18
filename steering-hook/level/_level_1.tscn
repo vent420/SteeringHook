@@ -13,6 +13,7 @@
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="11_ne7st"]
 [ext_resource type="Texture2D" uid="uid://gxvjcg4a7ltl" path="res://vfx/panning_particles/background_shapes/pentagone.png" id="12_ne7st"]
 [ext_resource type="Texture2D" uid="uid://bch3uhkh0bsnm" path="res://sprite/buildings_decoration/bush_1_t.png" id="13_6xv2m"]
+[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="14_tt14c"]
 
 [sub_resource type="Curve" id="Curve_ne7st"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -181,3 +182,10 @@ texture = ExtResource("9_ne7st")
 position = Vector2(2905, -1106.9999)
 scale = Vector2(0.57070714, 0.57070714)
 texture = ExtResource("13_6xv2m")
+
+[node name="Player" parent="." unique_id=1010667792 instance=ExtResource("14_tt14c")]
+z_index = 4
+position = Vector2(112, 502)
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+speed = 500
