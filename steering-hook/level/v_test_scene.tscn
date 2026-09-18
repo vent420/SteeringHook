@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="1_cisfb"]
 [ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="3_s3n3h"]
 [ext_resource type="PackedScene" uid="uid://d13t18oh5bcw8" path="res://prefab/finish.tscn" id="3_xtr2x"]
+[ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="4_s3n3h"]
 
 [node name="VTestScene" type="Node2D" unique_id=2140386462]
 
@@ -12,9 +13,12 @@ collision_layer = 2
 collision_mask = 8
 
 [node name="Finish" parent="." unique_id=460258275 instance=ExtResource("3_xtr2x")]
-position = Vector2(1630, 205)
+position = Vector2(2437, -602)
 rotation = 1.5792506
 scale = Vector2(1, 9.353615)
 
 [node name="Player" parent="." unique_id=1010667792 instance=ExtResource("3_s3n3h")]
 position = Vector2(570, 1482)
+
+[node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("4_s3n3h")]
+position = Vector2(585, 190)
