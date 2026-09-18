@@ -1,0 +1,7 @@
+[gd_resource type="LabelSettings" format=3 uid="uid://47yum7t20t4g"]
+
+[ext_resource type="FontFile" uid="uid://dj1rrutc41i0q" path="res://sprite/ui_button/Odin Rounded - Bold.otf" id="1_s5olf"]
+
+[resource]
+font = ExtResource("1_s5olf")
+font_size = 50

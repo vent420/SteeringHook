@@ -22,7 +22,6 @@
 [ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings_decoration/building_color_change.gd" id="19_rfwxk"]
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="19_w1uqk"]
 [ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="21_1pg2i"]
-[ext_resource type="PackedScene" uid="uid://bh1g177gp33gb" path="res://prefab/objects/obstacle_car_big.tscn" id="22_1pg2i"]
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="23_e1yqi"]
 [ext_resource type="Texture2D" uid="uid://dsnet7eb1vkxk" path="res://vfx/panning_particles/background_shapes/carre.png" id="24_e1yqi"]
 
@@ -318,233 +317,6 @@ rotation = 1.5707964
 [node name="TileRoadStraight60" parent="RoadTiles" unique_id=1449954802 instance=ExtResource("10_rfwxk")]
 position = Vector2(-500, -11500)
 
-[node name="Boosters" type="Node" parent="." unique_id=358507131]
-
-[node name="Booster" parent="Boosters" unique_id=559202974 instance=ExtResource("18_bo4m4")]
-position = Vector2(2250, 500)
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster4" parent="Boosters" unique_id=685555858 instance=ExtResource("18_bo4m4")]
-position = Vector2(473, -1886)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster5" parent="Boosters" unique_id=1953431514 instance=ExtResource("18_bo4m4")]
-position = Vector2(-1120, -4154)
-rotation = -1.5707964
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster13" parent="Boosters" unique_id=2114420469 instance=ExtResource("18_bo4m4")]
-position = Vector2(1373, -2162.0002)
-rotation = -2.151991
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster17" parent="Boosters" unique_id=969617039 instance=ExtResource("18_bo4m4")]
-position = Vector2(1373, -2162.0002)
-rotation = -2.151991
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster14" parent="Boosters" unique_id=1899027369 instance=ExtResource("18_bo4m4")]
-position = Vector2(3504, -1641)
-rotation = -1.5707964
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster39" parent="Boosters" unique_id=1681922014 instance=ExtResource("18_bo4m4")]
-position = Vector2(5034, -4289)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster41" parent="Boosters" unique_id=699714805 instance=ExtResource("18_bo4m4")]
-position = Vector2(5467, -4751)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster42" parent="Boosters" unique_id=258598731 instance=ExtResource("18_bo4m4")]
-position = Vector2(4546, -4295)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster40" parent="Boosters" unique_id=276994798 instance=ExtResource("18_bo4m4")]
-position = Vector2(5024, -4746)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster43" parent="Boosters" unique_id=1237726656 instance=ExtResource("18_bo4m4")]
-position = Vector2(3952, -7266)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster44" parent="Boosters" unique_id=886474196 instance=ExtResource("18_bo4m4")]
-position = Vector2(4383, -7754)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster47" parent="Boosters" unique_id=152717638 instance=ExtResource("18_bo4m4")]
-position = Vector2(4412, -7487)
-rotation = -3.1415925
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster48" parent="Boosters" unique_id=1718845741 instance=ExtResource("18_bo4m4")]
-position = Vector2(3740, -7502)
-rotation = -3.1415925
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster45" parent="Boosters" unique_id=1299918861 instance=ExtResource("18_bo4m4")]
-position = Vector2(3464, -7272)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster46" parent="Boosters" unique_id=1398623618 instance=ExtResource("18_bo4m4")]
-position = Vector2(3940, -7749)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster30" parent="Boosters" unique_id=75267340 instance=ExtResource("18_bo4m4")]
-position = Vector2(1733, -6725)
-rotation = -1.5707964
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster31" parent="Boosters" unique_id=1803553159 instance=ExtResource("18_bo4m4")]
-position = Vector2(1733, -7172)
-rotation = -1.5707964
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster24" parent="Boosters" unique_id=1995947296 instance=ExtResource("18_bo4m4")]
-position = Vector2(3066, -5252)
-rotation = -3.1415925
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster25" parent="Boosters" unique_id=262255361 instance=ExtResource("18_bo4m4")]
-position = Vector2(2475, -5510)
-rotation = -3.1415925
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster26" parent="Boosters" unique_id=571252013 instance=ExtResource("18_bo4m4")]
-position = Vector2(2485, -5743)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster27" parent="Boosters" unique_id=498632814 instance=ExtResource("18_bo4m4")]
-position = Vector2(2475, -5263)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster21" parent="Boosters" unique_id=107689155 instance=ExtResource("18_bo4m4")]
-position = Vector2(931, -3287)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster22" parent="Boosters" unique_id=2075494601 instance=ExtResource("18_bo4m4")]
-position = Vector2(1443, -3733)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster23" parent="Boosters" unique_id=844599501 instance=ExtResource("18_bo4m4")]
-position = Vector2(2028, -3500)
-scale = Vector2(0.5, 0.5)
-
-[node name="Booster19" parent="Boosters" unique_id=1665469158 instance=ExtResource("18_bo4m4")]
-position = Vector2(5565, -6761)
-rotation = -0.7557276
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster20" parent="Boosters" unique_id=923502964 instance=ExtResource("18_bo4m4")]
-position = Vector2(5718, -6512)
-rotation = 2.1537364
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster18" parent="Boosters" unique_id=290060365 instance=ExtResource("18_bo4m4")]
-position = Vector2(4645.0005, -3420.9998)
-rotation = -0.75572765
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster15" parent="Boosters" unique_id=23528652 instance=ExtResource("18_bo4m4")]
-position = Vector2(3812.9998, -3387.9998)
-rotation = 2.501057
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster28" parent="Boosters" unique_id=1018392393 instance=ExtResource("18_bo4m4")]
-position = Vector2(815.99976, -5400)
-rotation = 2.501057
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster16" parent="Boosters" unique_id=1420960039 instance=ExtResource("18_bo4m4")]
-position = Vector2(3833.9998, -3603.0002)
-rotation = 0.17453292
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster29" parent="Boosters" unique_id=1340639695 instance=ExtResource("18_bo4m4")]
-position = Vector2(831.9995, -5605.0005)
-rotation = 0.17453292
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster34" parent="Boosters" unique_id=328887969 instance=ExtResource("18_bo4m4")]
-position = Vector2(2667, -10499)
-rotation = 2.501057
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster35" parent="Boosters" unique_id=554085535 instance=ExtResource("18_bo4m4")]
-position = Vector2(2679.9998, -10752)
-rotation = 0.17453292
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster6" parent="Boosters" unique_id=435004434 instance=ExtResource("18_bo4m4")]
-position = Vector2(-1876.9999, -5109)
-rotation = -1.5707964
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster7" parent="Boosters" unique_id=1315316685 instance=ExtResource("18_bo4m4")]
-position = Vector2(-1122, -5930)
-rotation = -1.5707964
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster12" parent="Boosters" unique_id=1395010758 instance=ExtResource("18_bo4m4")]
-position = Vector2(-1057, -10498.999)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster36" parent="Boosters" unique_id=1481240560 instance=ExtResource("18_bo4m4")]
-position = Vector2(1394.9999, -10242)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster37" parent="Boosters" unique_id=142077370 instance=ExtResource("18_bo4m4")]
-position = Vector2(979.99994, -10728)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster38" parent="Boosters" unique_id=1237257715 instance=ExtResource("18_bo4m4")]
-position = Vector2(251.99994, -10504.999)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster9" parent="Boosters" unique_id=267574158 instance=ExtResource("18_bo4m4")]
-position = Vector2(-267, -7731.9995)
-rotation = 1.5707964
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster11" parent="Boosters" unique_id=1011631474 instance=ExtResource("18_bo4m4")]
-position = Vector2(-460, -8141)
-rotation = 1.5707964
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster8" parent="Boosters" unique_id=996067501 instance=ExtResource("18_bo4m4")]
-position = Vector2(-45, -8493)
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster10" parent="Boosters" unique_id=869607899 instance=ExtResource("18_bo4m4")]
-position = Vector2(763, -9664)
-rotation = 1.0471976
-scale = Vector2(0.6, 0.6)
-
-[node name="Booster2" parent="Boosters" unique_id=190120105 instance=ExtResource("18_bo4m4")]
-position = Vector2(3438, -518)
-rotation = -1.5707964
-scale = Vector2(0.3, 0.3)
-
-[node name="Booster3" parent="Boosters" unique_id=1487867455 instance=ExtResource("18_bo4m4")]
-position = Vector2(3192.0002, -527)
-rotation = -1.5707964
-scale = Vector2(0.3, 0.3)
-
-[node name="Booster32" parent="Boosters" unique_id=151543065 instance=ExtResource("18_bo4m4")]
-position = Vector2(1804.9998, -8507)
-rotation = -1.5707964
-scale = Vector2(0.3, 0.3)
-
-[node name="Booster33" parent="Boosters" unique_id=1371186849 instance=ExtResource("18_bo4m4")]
-position = Vector2(1559, -8516)
-rotation = -1.5707964
-scale = Vector2(0.3, 0.3)
-
 [node name="Camera2D" type="Camera2D" parent="." unique_id=41851679]
 position = Vector2(1655, -2432)
 zoom = Vector2(0.1, 0.1)
@@ -563,5 +335,482 @@ texture = ExtResource("19_w1uqk")
 z_index = 5
 position = Vector2(5468, -4753)
 
-[node name="ObstacleCar2" parent="Obj" unique_id=1673970530 instance=ExtResource("22_1pg2i")]
-position = Vector2(5647, -4708)
+[node name="ObstacleCar4" parent="Obj" unique_id=1242522709 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(4545, -4299)
+
+[node name="ObstacleCar5" parent="Obj" unique_id=2038916729 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2477, -5269)
+
+[node name="ObstacleCar6" parent="Obj" unique_id=475227413 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(2481, -5744)
+
+[node name="ObstacleCar7" parent="Obj" unique_id=1988208159 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3955, -7270)
+
+[node name="ObstacleCar9" parent="Obj" unique_id=172572082 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(4388, -7756)
+
+[node name="ObstacleCar10" parent="Obj" unique_id=43422638 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3943, -7754)
+
+[node name="ObstacleCar11" parent="Obj" unique_id=1105245463 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(-266, -7730)
+rotation = 1.5707964
+
+[node name="ObstacleCar12" parent="Obj" unique_id=459983474 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(-463, -8141)
+rotation = 1.5707964
+
+[node name="ObstacleCar8" parent="Obj" unique_id=356017805 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(3467, -7270)
+
+[node name="ObstacleCar13" parent="Obj" unique_id=856286483 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(982, -10264)
+
+[node name="ObstacleCar14" parent="Obj" unique_id=478700016 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(979, -10726)
+
+[node name="ObstacleCar3" parent="Obj" unique_id=338227899 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(5037, -4297)
+
+[node name="ObstacleCar2" parent="Obj" unique_id=1524185097 instance=ExtResource("21_1pg2i")]
+z_index = 5
+position = Vector2(5022, -4745)
+
+[node name="Boosters aller" type="Node2D" parent="." unique_id=1052873756]
+visible = false
+
+[node name="Booster" parent="Boosters aller" unique_id=559202974 instance=ExtResource("18_bo4m4")]
+z_index = 4
+position = Vector2(2250, 500)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster4" parent="Boosters aller" unique_id=685555858 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(473, -1886)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster5" parent="Boosters aller" unique_id=1953431514 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1120, -4154)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster13" parent="Boosters aller" unique_id=2114420469 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster17" parent="Boosters aller" unique_id=969617039 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster14" parent="Boosters aller" unique_id=1899027369 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3504, -1641)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster47" parent="Boosters aller" unique_id=152717638 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(4412, -7487)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster48" parent="Boosters aller" unique_id=1718845741 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3740, -7502)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster30" parent="Boosters aller" unique_id=75267340 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1733, -6725)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster31" parent="Boosters aller" unique_id=1803553159 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1733, -7172)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster24" parent="Boosters aller" unique_id=1995947296 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3066, -5252)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster25" parent="Boosters aller" unique_id=262255361 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2475, -5510)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster21" parent="Boosters aller" unique_id=107689155 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(931, -3287)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster22" parent="Boosters aller" unique_id=2075494601 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1443, -3733)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster23" parent="Boosters aller" unique_id=844599501 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2028, -3500)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster19" parent="Boosters aller" unique_id=1665469158 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(5565, -6761)
+rotation = -0.7557276
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster20" parent="Boosters aller" unique_id=923502964 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(5718, -6512)
+rotation = 2.1537364
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster18" parent="Boosters aller" unique_id=290060365 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(4645.0005, -3420.9998)
+rotation = -0.7557277
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster15" parent="Boosters aller" unique_id=23528652 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3812.9998, -3387.9998)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster28" parent="Boosters aller" unique_id=1018392393 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(815.99976, -5400)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster16" parent="Boosters aller" unique_id=1420960039 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3833.9998, -3603.0002)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster29" parent="Boosters aller" unique_id=1340639695 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(831.9995, -5605.0005)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster34" parent="Boosters aller" unique_id=328887969 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2667, -10499)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster35" parent="Boosters aller" unique_id=554085535 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2679.9998, -10752)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster6" parent="Boosters aller" unique_id=435004434 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1876.9999, -5109)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster7" parent="Boosters aller" unique_id=1315316685 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1122, -5930)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster12" parent="Boosters aller" unique_id=1395010758 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1057, -10498.999)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster36" parent="Boosters aller" unique_id=1481240560 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1394.9999, -10242)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster37" parent="Boosters aller" unique_id=142077370 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(979.99994, -10728)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster38" parent="Boosters aller" unique_id=1237257715 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(251.99994, -10504.999)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster8" parent="Boosters aller" unique_id=996067501 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-45, -8493)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster10" parent="Boosters aller" unique_id=869607899 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(763, -9664)
+rotation = 1.0471976
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster2" parent="Boosters aller" unique_id=190120105 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3438, -518)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster3" parent="Boosters aller" unique_id=1487867455 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3192.0002, -527)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster32" parent="Boosters aller" unique_id=151543065 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1804.9998, -8507)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster33" parent="Boosters aller" unique_id=1371186849 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1559, -8516)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Boosters" type="Node" parent="Boosters aller" unique_id=358507131]
+
+[node name="Boosters retour" type="Node2D" parent="." unique_id=470324375]
+
+[node name="Booster" parent="Boosters retour" unique_id=1195323448 instance=ExtResource("18_bo4m4")]
+z_index = 4
+position = Vector2(2250, 500)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster4" parent="Boosters retour" unique_id=1447464714 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(473, -1886)
+rotation = -3.1415925
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster5" parent="Boosters retour" unique_id=348810033 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1120, -4154)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster13" parent="Boosters retour" unique_id=1783639979 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster17" parent="Boosters retour" unique_id=502271425 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1373, -2162.0002)
+rotation = -2.151991
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster14" parent="Boosters retour" unique_id=1064645942 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3504, -1641)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster48" parent="Boosters retour" unique_id=188225874 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3740, -7502)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster50" parent="Boosters retour" unique_id=109691915 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2965, -8501)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster30" parent="Boosters retour" unique_id=694074791 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1733, -6725)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster31" parent="Boosters retour" unique_id=412357591 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1733, -7172)
+rotation = -1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster37" parent="Boosters retour" unique_id=1319458189 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(4503, -7013)
+rotation = 1.5707964
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster24" parent="Boosters retour" unique_id=1435307260 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3066, -5252)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster25" parent="Boosters retour" unique_id=1443368236 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2475, -5510)
+rotation = -3.1415925
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster21" parent="Boosters retour" unique_id=838388421 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(931, -3287)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster22" parent="Boosters retour" unique_id=1762096858 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1443, -3733)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster23" parent="Boosters retour" unique_id=1702730131 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2028, -3500)
+scale = Vector2(0.5, 0.5)
+
+[node name="Booster18" parent="Boosters retour" unique_id=584754288 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(4645.0005, -3420.9998)
+rotation = -0.7557277
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster15" parent="Boosters retour" unique_id=260308034 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3812.9998, -3387.9998)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster28" parent="Boosters retour" unique_id=1799964618 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(815.99976, -5400)
+rotation = 2.501057
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster16" parent="Boosters retour" unique_id=1054277166 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3833.9998, -3603.0002)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster29" parent="Boosters retour" unique_id=6823695 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(831.9995, -5605.0005)
+rotation = 0.17453292
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster34" parent="Boosters retour" unique_id=635699290 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2728, -10543.999)
+rotation = -0.72431165
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster35" parent="Boosters retour" unique_id=314275546 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(2515.0002, -10719.999)
+rotation = -3.858923
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster39" parent="Boosters retour" unique_id=329724006 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(5729, -6544)
+rotation = -0.72431165
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster40" parent="Boosters retour" unique_id=1465136588 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(5516, -6720)
+rotation = -3.858923
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster6" parent="Boosters retour" unique_id=1559549585 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1876.9999, -5109)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster7" parent="Boosters retour" unique_id=1720226856 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1122, -5930)
+rotation = -1.5707964
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster12" parent="Boosters retour" unique_id=377458908 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-1057, -10498.999)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster36" parent="Boosters retour" unique_id=794460367 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1782, -10494)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster38" parent="Boosters retour" unique_id=2127136916 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(251.99994, -10504.999)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster8" parent="Boosters retour" unique_id=1188619981 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(-45, -8493)
+scale = Vector2(0.55, 0.55)
+
+[node name="Booster10" parent="Boosters retour" unique_id=1951330316 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(763, -9664)
+rotation = -1.5062191
+scale = Vector2(0.6, 0.6)
+
+[node name="Booster2" parent="Boosters retour" unique_id=1486827261 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3438, -518)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster3" parent="Boosters retour" unique_id=417413468 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(3192.0002, -527)
+rotation = -1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster32" parent="Boosters retour" unique_id=2003311264 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1804.9998, -8507)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Booster33" parent="Boosters retour" unique_id=2110061040 instance=ExtResource("18_bo4m4")]
+z_index = 1
+position = Vector2(1559, -8516)
+rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
+
+[node name="Boosters" type="Node" parent="Boosters retour" unique_id=1685000301]
