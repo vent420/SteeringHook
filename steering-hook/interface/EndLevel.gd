@@ -1,6 +1,7 @@
 extends Node
 
 @export var score: int = 0
+@export var time : float = 0
 @export var hasWon = false	
 @export var scoreLabel: Label = null
 @export var TimerLabel: Label= null
