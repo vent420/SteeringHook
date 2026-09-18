@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://chicqe3kuowhy"
-<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-8_m.png.import
-path="res://.godot/imported/road-8_m.png-b07744d58dc13125478e8d562986fe60.ctex"
-========
-path="res://.godot/imported/road_8_m.png-4df560a37a89e316410337b44425d36b.ctex"
->>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_8_m.png.import
+uid="uid://8rw5ptblx2aa"
+path="res://.godot/imported/road_8_m.png-ac38497b9aa095bad32828c2d25ec373.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-8_m.png.import
-source_file="res://sprite/path_road/road-8_m.png"
-dest_files=["res://.godot/imported/road-8_m.png-b07744d58dc13125478e8d562986fe60.ctex"]
-========
-source_file="res://sprite/path/road_8_m.png"
-dest_files=["res://.godot/imported/road_8_m.png-4df560a37a89e316410337b44425d36b.ctex"]
->>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_8_m.png.import
+source_file="res://sprite/path_road/road_8_m.png"
+dest_files=["res://.godot/imported/road_8_m.png-ac38497b9aa095bad32828c2d25ec373.ctex"]
 
 [params]
 

@@ -15,87 +15,95 @@
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
-[node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("1_ooiad")]
+[node name="Road Tiles" type="Node" parent="." unique_id=1670743730]
+
+[node name="TileRoadStraight" parent="Road Tiles" unique_id=258768893 instance=ExtResource("1_ooiad")]
 position = Vector2(500, 500)
 
-[node name="TileRoadStraight2" parent="." unique_id=380183257 instance=ExtResource("1_ooiad")]
+[node name="TileRoadStraight2" parent="Road Tiles" unique_id=380183257 instance=ExtResource("1_ooiad")]
 position = Vector2(1500, 500)
 
-[node name="TileRoadStraight4" parent="." unique_id=1578059255 instance=ExtResource("1_ooiad")]
+[node name="TileRoadStraight4" parent="Road Tiles" unique_id=1578059255 instance=ExtResource("1_ooiad")]
 position = Vector2(2500, -500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight3" parent="." unique_id=763564536 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight3" parent="Road Tiles" unique_id=763564536 instance=ExtResource("2_3bdbt")]
 position = Vector2(2500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight5" parent="." unique_id=98744110 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight5" parent="Road Tiles" unique_id=98744110 instance=ExtResource("2_3bdbt")]
 position = Vector2(2500, -1500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight6" parent="." unique_id=1845002012 instance=ExtResource("5_xj2f1")]
+[node name="TileRoadStraight6" parent="Road Tiles" unique_id=1845002012 instance=ExtResource("5_xj2f1")]
 position = Vector2(3500, -500)
-rotation = -3.1415927
+rotation = 3.1415925
 
-[node name="TileRoadStraight7" parent="." unique_id=243618641 instance=ExtResource("6_lvl1f")]
+[node name="TileRoadStraight7" parent="Road Tiles" unique_id=243618641 instance=ExtResource("6_lvl1f")]
 position = Vector2(3500, -1500)
-rotation = 3.1415927
+rotation = -3.1415925
 
-[node name="TileRoadStraight8" parent="." unique_id=212073144 instance=ExtResource("5_0rnfi")]
+[node name="TileRoadStraight8" parent="Road Tiles" unique_id=212073144 instance=ExtResource("5_0rnfi")]
 position = Vector2(4500, -1500)
 
-[node name="TileRoadStraight9" parent="." unique_id=594072249 instance=ExtResource("6_r3mp8")]
+[node name="TileRoadStraight9" parent="Road Tiles" unique_id=594072249 instance=ExtResource("6_r3mp8")]
 position = Vector2(5500, -1500)
 
-[node name="TileRoadStraight10" parent="." unique_id=1100070043 instance=ExtResource("7_xj2f1")]
+[node name="TileRoadStraight10" parent="Road Tiles" unique_id=1100070043 instance=ExtResource("7_xj2f1")]
 position = Vector2(6500, -1500)
 
-[node name="TileRoadStraight11" parent="." unique_id=1894344251 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight11" parent="Road Tiles" unique_id=1894344251 instance=ExtResource("2_3bdbt")]
 position = Vector2(4500, -500)
-rotation = 3.1415927
+rotation = -3.1415925
 
-[node name="TileRoadStraight12" parent="." unique_id=506840284 instance=ExtResource("1_ooiad")]
+[node name="TileRoadStraight12" parent="Road Tiles" unique_id=506840284 instance=ExtResource("1_ooiad")]
 position = Vector2(5500, -500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight13" parent="." unique_id=484163815 instance=ExtResource("3_3avnd")]
+[node name="TileRoadStraight13" parent="Road Tiles" unique_id=484163815 instance=ExtResource("3_3avnd")]
 position = Vector2(5500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight14" parent="." unique_id=161649248 instance=ExtResource("4_r3mp8")]
+[node name="TileRoadStraight14" parent="Road Tiles" unique_id=161649248 instance=ExtResource("4_r3mp8")]
 position = Vector2(4500, 500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight15" parent="." unique_id=1919550128 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight15" parent="Road Tiles" unique_id=1919550128 instance=ExtResource("2_3bdbt")]
 position = Vector2(5500, 1500)
 rotation = -1.5707964
 
-[node name="TileRoadStraight16" parent="." unique_id=2140207368 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight16" parent="Road Tiles" unique_id=2140207368 instance=ExtResource("2_3bdbt")]
 position = Vector2(4500, 1500)
 rotation = 1.5707964
 
-[node name="TileRoadStraight17" parent="." unique_id=1220954127 instance=ExtResource("2_3bdbt")]
+[node name="TileRoadStraight17" parent="Road Tiles" unique_id=1220954127 instance=ExtResource("2_3bdbt")]
 position = Vector2(4500, 2500)
 
-[node name="TileRoadStraight18" parent="." unique_id=496110290 instance=ExtResource("7_iewcs")]
+[node name="TileRoadStraight18" parent="Road Tiles" unique_id=496110290 instance=ExtResource("7_iewcs")]
 position = Vector2(5500, 2500)
 
-[node name="Booster" parent="." unique_id=559202974 instance=ExtResource("11_xj2f1")]
+[node name="Boosters" type="Node" parent="." unique_id=1790259507]
+
+[node name="Booster" parent="Boosters" unique_id=559202974 instance=ExtResource("11_xj2f1")]
+z_index = 10
 position = Vector2(2587, -1343.0002)
 rotation = -0.8150688
-scale = Vector2(0.55, 0.55)
+scale = Vector2(0.54999995, 0.54999995)
 
-[node name="Booster2" parent="." unique_id=757906867 instance=ExtResource("11_xj2f1")]
+[node name="Booster2" parent="Boosters" unique_id=757906867 instance=ExtResource("11_xj2f1")]
+z_index = 10
 position = Vector2(2985, -1500)
 scale = Vector2(0.55, 0.55)
 
-[node name="Booster3" parent="." unique_id=1259874124 instance=ExtResource("11_xj2f1")]
+[node name="Booster3" parent="Boosters" unique_id=1259874124 instance=ExtResource("11_xj2f1")]
+z_index = 10
 position = Vector2(4962, -1877)
 scale = Vector2(0.55, 0.55)
 
-[node name="Booster4" parent="." unique_id=828174351 instance=ExtResource("11_xj2f1")]
+[node name="Booster4" parent="Boosters" unique_id=828174351 instance=ExtResource("11_xj2f1")]
+z_index = 10
 position = Vector2(5898, -1124)
-rotation = 3.1415927
+rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
 
 [node name="Batiment16" type="Sprite2D" parent="." unique_id=481867838]

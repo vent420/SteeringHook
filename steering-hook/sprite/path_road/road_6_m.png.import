@@ -2,25 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds3plvo0w0oeo"
-<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-6_m.png.import
-path="res://.godot/imported/road-6_m.png-ab6f738a4d89e907bd7d2521f0cb5b60.ctex"
-========
-path="res://.godot/imported/road_6_m.png-483c1bbbbf133a14c4366e0a9a5bc849.ctex"
->>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_6_m.png.import
+uid="uid://buwkh4t8y1jv4"
+path="res://.godot/imported/road_6_m.png-83fa991f615fcee51e412923d55d50f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-<<<<<<<< Updated upstream:steering-hook/sprite/path_road/road-6_m.png.import
-source_file="res://sprite/path_road/road-6_m.png"
-dest_files=["res://.godot/imported/road-6_m.png-ab6f738a4d89e907bd7d2521f0cb5b60.ctex"]
-========
-source_file="res://sprite/path/road_6_m.png"
-dest_files=["res://.godot/imported/road_6_m.png-483c1bbbbf133a14c4366e0a9a5bc849.ctex"]
->>>>>>>> Stashed changes:steering-hook/sprite/path_road/road_6_m.png.import
+source_file="res://sprite/path_road/road_6_m.png"
+dest_files=["res://.godot/imported/road_6_m.png-83fa991f615fcee51e412923d55d50f3.ctex"]
 
 [params]
 
