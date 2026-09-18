@@ -15,7 +15,7 @@ position = Vector2(225, 150)
 [node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
 light_mask = 0
 visibility_layer = 15
-position = Vector2(754.99994, 514)
+position = Vector2(1016.99994, 138.00005)
 scale = Vector2(0.36636066, 0.35502964)
 collision_layer = 2
 collision_mask = 8
@@ -24,7 +24,7 @@ collision_mask = 8
 self_modulate = Color(1, 0.44705883, 1, 1)
 light_mask = 0
 visibility_layer = 15
-position = Vector2(724, 266)
+position = Vector2(996, 97)
 collision_layer = 8
 collision_mask = 23
 script = ExtResource("1_c8jex")
@@ -40,4 +40,9 @@ position = Vector2(0, -3)
 scale = Vector2(6.5901327, 6.5901327)
 shape = SubResource("RectangleShape2D_c8jex")
 
+[node name="Timer" type="Timer" parent="player_phy_test" unique_id=909055056]
+wait_time = 2.0
+one_shot = true
+
 [connection signal="area_shape_entered" from="player_phy_test" to="player_phy_test" method="_on_area_shape_entered"]
+[connection signal="timeout" from="player_phy_test/Timer" to="player_phy_test" method="_on_timer_timeout"]
