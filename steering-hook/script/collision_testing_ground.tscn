@@ -11,12 +11,12 @@
 [node name="TEST_Controller" type="Node2D" unique_id=463197386]
 
 [node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("4_5jf4n")]
-position = Vector2(-732, 316)
+position = Vector2(25, 235)
 
 [node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
 light_mask = 0
 visibility_layer = 15
-position = Vector2(280, 232)
+position = Vector2(749, 395)
 scale = Vector2(0.36636066, 0.35502964)
 collision_layer = 2
 collision_mask = 8
@@ -48,6 +48,9 @@ one_shot = true
 [node name="Player" parent="." unique_id=1010667792 instance=ExtResource("5_2ka58")]
 position = Vector2(261.00003, 517)
 scale = Vector2(0.05, 0.05)
+
+[node name="TileRoadStraight6" parent="." unique_id=1986012144 instance=ExtResource("4_5jf4n")]
+position = Vector2(1778, 387)
 
 [connection signal="area_shape_entered" from="player_phy_test" to="player_phy_test" method="_on_area_shape_entered"]
 [connection signal="timeout" from="player_phy_test/Timer" to="player_phy_test" method="_on_timer_timeout"]

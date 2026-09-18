@@ -4,9 +4,13 @@ extends Node
 @export var hasWon = false	
 @export var scoreLabel: Label = null
 @export var TimerLabel: Label= null
+@export var textLabel: Label= null
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	scoreLabel.text = str(score)
+	TimerLabel.text = str(0)
 	pass # Replace with function body.
 
 
