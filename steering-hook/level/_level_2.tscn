@@ -14,6 +14,15 @@
 [ext_resource type="Texture2D" uid="uid://corbqsm2t5ri7" path="res://sprite/buildings_decoration/Batiment_3_t.png" id="12_xeevs"]
 [ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings_decoration/Batiment_4_t.png" id="13_l531l"]
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="14_kfcmc"]
+[ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="15_5n1lq"]
+[ext_resource type="Texture2D" uid="uid://ddabky3m52cy0" path="res://vfx/panning_particles/background_shapes/losange.png" id="16_5n1lq"]
+
+[sub_resource type="Curve" id="Curve_l531l"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_kfcmc"]
+colors = PackedColorArray(0.19022673, 0.00046564094, 0.38659015, 1, 1, 1, 1, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
 
@@ -153,3 +162,34 @@ texture = ExtResource("12_xeevs")
 position = Vector2(5998, 793.00006)
 scale = Vector2(0.817, 0.817)
 texture = ExtResource("11_5n1lq")
+
+[node name="Folder - Background" type="Node" parent="." unique_id=1949629531]
+
+[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=1037178519]
+self_modulate = Color(0.7176471, 0.5921569, 0.972549, 1)
+z_index = -101
+position = Vector2(3678, 823)
+scale = Vector2(144.12038, 124.94592)
+texture = ExtResource("15_5n1lq")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=1592989732]
+z_index = -100
+position = Vector2(3652, 755.99976)
+scale = Vector2(0.73898536, 0.34051758)
+amount = 500
+texture = ExtResource("16_5n1lq")
+lifetime = 10.0
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(6000, 7000)
+direction = Vector2(1, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 15.0
+scale_amount_min = 4.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_l531l")
+color_ramp = SubResource("Gradient_kfcmc")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
