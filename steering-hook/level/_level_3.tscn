@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://bg3mg20rgic8k"]
 
-[ext_resource type="Script" uid="uid://babpmc7odjnks" path="res://level/_level_3.gd" id="1_ktlj8"]
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_ooiad"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_3bdbt"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_3avnd"]
@@ -15,8 +14,6 @@
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="12_lvl1f"]
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="13_h550u"]
 [ext_resource type="Texture2D" uid="uid://bd2rsrhx47h03" path="res://vfx/panning_particles/background_shapes/triangle.png" id="14_h550u"]
-[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="16_jqj0v"]
-[ext_resource type="Texture2D" uid="uid://bi3c7k764bq77" path="res://sprite/objects/car_y.png" id="17_ntv1s"]
 
 [sub_resource type="Curve" id="Curve_ktlj8"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -25,9 +22,7 @@ point_count = 4
 [sub_resource type="Gradient" id="Gradient_ad3fy"]
 colors = PackedColorArray(0.89411765, 0.4862745, 0.16470589, 1, 0.99268097, 0.98334485, 0.6546464, 1)
 
-[node name="Level2" type="Node2D" unique_id=4028965]
-script = ExtResource("1_ktlj8")
-level_color = "y"
+[node name="Level1" type="Node2D" unique_id=4028965]
 
 [node name="Folder - Background" type="Node" parent="." unique_id=1127743767]
 
@@ -139,41 +134,24 @@ z_index = 10
 position = Vector2(2587, -1343.0002)
 rotation = -0.8150688
 scale = Vector2(0.54999995, 0.54999995)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster2" parent="Boosters" unique_id=757906867 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(2985, -1500)
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster3" parent="Boosters" unique_id=1259874124 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(4962, -1877)
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster4" parent="Boosters" unique_id=828174351 instance=ExtResource("11_xj2f1")]
 z_index = 10
 position = Vector2(5898, -1124)
 rotation = -3.1415925
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Batiment16" type="Sprite2D" parent="." unique_id=481867838]
 position = Vector2(3354, -485.99988)
 scale = Vector2(0.5963729, 0.5963729)
 texture = ExtResource("12_lvl1f")
-
-[node name="Player" parent="." unique_id=1010667792 instance=ExtResource("16_jqj0v")]
-z_index = 5
-position = Vector2(41.00003, 497)
-rotation = 1.5707964
-scale = Vector2(0.3, 0.3)
-priority = 5
-speed = 500.0
-car_texture = ExtResource("17_ntv1s")

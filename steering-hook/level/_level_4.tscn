@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://40c0k843m5ge"]
 
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_lmtnf"]
-[ext_resource type="Script" uid="uid://3ot15w0fi2pf" path="res://level/_level_4.gd" id="1_t44ah"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_xas6p"]
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="2_xttce"]
 [ext_resource type="PackedScene" uid="uid://bpluncum0evj1" path="res://tiles/tile_road_parking_parallel.tscn" id="4_ebgyn"]
@@ -19,9 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="15_ehl75"]
 [ext_resource type="Texture2D" uid="uid://do24qv71e3rr" path="res://vfx/panning_particles/background_shapes/rond.png" id="17_7ovs8"]
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="17_srl7w"]
-[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="18_phx8o"]
 [ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="19_2xjr2"]
-[ext_resource type="Texture2D" uid="uid://b6or6dinmlqeo" path="res://sprite/objects/car_p.png" id="20_mtlsp"]
 
 [sub_resource type="Curve" id="Curve_srl7w"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.27038628, 1), 0.0, 0.0, 0, 0, Vector2(0.68240345, 0.43750006), -1.3546509, -1.3546509, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -31,8 +28,6 @@ point_count = 4
 colors = PackedColorArray(0.57941115, 6.0644747e-06, 0.38766602, 1, 0.887299, 0.55076134, 0.7414434, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
-script = ExtResource("1_t44ah")
-level_color = "p"
 
 [node name="Folder - Background" type="Node" parent="." unique_id=11654876]
 
@@ -198,110 +193,75 @@ rotation = 1.5707964
 position = Vector2(8500, -2500)
 rotation = 1.5707964
 
-[node name="Player" parent="Folder - Tiles" unique_id=1010667792 instance=ExtResource("18_phx8o")]
-position = Vector2(205.99998, 496)
-rotation = 1.5707964
-scale = Vector2(0.2, 0.2)
-speed = 500.0
-car_texture = ExtResource("20_mtlsp")
-
 [node name="Folder - Booster" type="Node" parent="." unique_id=662896451]
 
 [node name="Booster" parent="Folder - Booster" unique_id=559202974 instance=ExtResource("15_ehl75")]
 position = Vector2(2497.9998, -973)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster4" parent="Folder - Booster" unique_id=441805055 instance=ExtResource("15_ehl75")]
 position = Vector2(5415, -3368)
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster6" parent="Folder - Booster" unique_id=30982011 instance=ExtResource("15_ehl75")]
 position = Vector2(6593.9995, -7526)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster2" parent="Folder - Booster" unique_id=501746168 instance=ExtResource("15_ehl75")]
 position = Vector2(2469.9998, -1748.0001)
 rotation = -2.0367992
 scale = Vector2(0.645, 0.645)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster12" parent="Folder - Booster" unique_id=320321098 instance=ExtResource("15_ehl75")]
 position = Vector2(7536, -1589)
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster14" parent="Folder - Booster" unique_id=862484352 instance=ExtResource("15_ehl75")]
 position = Vector2(8330, -5409)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster16" parent="Folder - Booster" unique_id=405577208 instance=ExtResource("15_ehl75")]
 position = Vector2(8709, -5961)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster19" parent="Folder - Booster" unique_id=347675960 instance=ExtResource("15_ehl75")]
 position = Vector2(8302.999, -6521)
 rotation = 1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster15" parent="Folder - Booster" unique_id=885008640 instance=ExtResource("15_ehl75")]
 position = Vector2(8702, -5419.9995)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster17" parent="Folder - Booster" unique_id=1325677523 instance=ExtResource("15_ehl75")]
 position = Vector2(8308, -5961.9995)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster18" parent="Folder - Booster" unique_id=391630284 instance=ExtResource("15_ehl75")]
 position = Vector2(8728, -6532)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster13" parent="Folder - Booster" unique_id=76759164 instance=ExtResource("15_ehl75")]
 position = Vector2(8886, -2464.9998)
 rotation = 1.5707964
 scale = Vector2(0.6, 0.6)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster11" parent="Folder - Booster" unique_id=602745735 instance=ExtResource("15_ehl75")]
 position = Vector2(6767, -401.0001)
 rotation = 1.1047934
 scale = Vector2(0.645, 0.645)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster3" parent="Folder - Booster" unique_id=383136729 instance=ExtResource("15_ehl75")]
 position = Vector2(2301, -1497.0001)
 rotation = 0.76270896
 scale = Vector2(0.645, 0.645)
-collision_layer = 2
-collision_mask = 8
 
 [node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("19_2xjr2")]
 z_index = 4
