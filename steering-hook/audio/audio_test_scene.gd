@@ -1,6 +1,5 @@
 extends Control
 
-
 func _on_button_2_button_down() -> void:
 	var array: Array[String] = [
 		"res://audio/sfx_boost_effect_v01.ogg",
