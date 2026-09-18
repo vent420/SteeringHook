@@ -22,6 +22,7 @@ var hook_trail
 
 @export var BoosterValue = 1.2
 @export var peak_distance_check_ahead : float = 10.0
+@export var peak_distance_check_behind : float = 75.0
 @export var draw_visual : bool = false
 @export var car_texture : Resource
 
@@ -32,12 +33,9 @@ var behind : bool = false
 
 var angle_tangente
 var angle_tangente_local
-var time_start
-var time_end
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	time_start = Time.get_ticks_msec()
 	hook_anchor = get_node("HookAnchor").position
 	screen_size = get_viewport_rect().size
 	
@@ -47,12 +45,9 @@ func _ready() -> void:
 	hook_trail = get_node("Line2D")
 	hook_trail.visible = false
 
+
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var time_now = Time.get_ticks_msec()
-	time_end = time_now - time_start
-	print(time_end / float(1000))
-	
 	velocity = Vector2.UP.rotated(rotation) * speed
 	position += velocity * delta
 	
@@ -61,7 +56,6 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("left_click"):
 		# Mouse pos = A
 		# hook anchor = B
-		print(time_start)
 		mouse_pos_global = get_global_mouse_position()
 		
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
@@ -174,7 +168,6 @@ func DeathExplode():
 	baseSpeed = 0
 	endScene.hasWon = false
 	endScene.score = score
-	endScene.time = time_end / (float(1000))
 	get_tree().current_scene.add_child(endScene)
 	
 	
@@ -192,7 +185,6 @@ func Boosting():
 	
 func finish():
 	print("finished")
-	endScene.time = time_end / (float(1000))
 	endScene.score = score
 	endScene.hasWon = true
 	get_tree().current_scene.add_child(endScene)

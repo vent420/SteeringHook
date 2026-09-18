@@ -22,6 +22,13 @@
 [ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="18_phx8o"]
 [ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="19_2xjr2"]
 [ext_resource type="Texture2D" uid="uid://b6or6dinmlqeo" path="res://sprite/objects/car_p.png" id="20_mtlsp"]
+[ext_resource type="Texture2D" uid="uid://b6jxtwsewbrbk" path="res://sprite/buildings_decoration/Batiment_1_t.png" id="22_ng5kh"]
+[ext_resource type="Script" uid="uid://durgx3aocuq3v" path="res://sprite/buildings_decoration/building_color_change.gd" id="22_posat"]
+[ext_resource type="Texture2D" uid="uid://bis8if0lkkrj0" path="res://sprite/objects/obstacle_pin.png" id="23_71cmn"]
+[ext_resource type="Texture2D" uid="uid://b7d5posctvehn" path="res://sprite/buildings_decoration/Batiment_2_t.png" id="23_posat"]
+[ext_resource type="Texture2D" uid="uid://bch3uhkh0bsnm" path="res://sprite/buildings_decoration/bush_1_t.png" id="24_2xpmu"]
+[ext_resource type="Texture2D" uid="uid://cmfafv8n165xq" path="res://sprite/buildings_decoration/Batiment_4_t.png" id="25_cujud"]
+[ext_resource type="Texture2D" uid="uid://corbqsm2t5ri7" path="res://sprite/buildings_decoration/Batiment_3_t.png" id="26_3672v"]
 
 [sub_resource type="Curve" id="Curve_srl7w"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.27038628, 1), 0.0, 0.0, 0, 0, Vector2(0.68240345, 0.43750006), -1.3546509, -1.3546509, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -39,7 +46,7 @@ color = "p"
 [node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=1494183052]
 self_modulate = Color(0.9019608, 0.5764706, 0.7607843, 1)
 z_index = -101
-position = Vector2(5000, -3437.0002)
+position = Vector2(5397.0005, -3437.0002)
 scale = Vector2(276.7157, 260.58038)
 texture = ExtResource("17_srl7w")
 
@@ -296,24 +303,266 @@ scale = Vector2(0.645, 0.645)
 collision_layer = 2
 collision_mask = 8
 
-[node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("19_2xjr2")]
-z_index = 4
-position = Vector2(4494, -1523)
-
-[node name="ObstacleCar2" parent="." unique_id=796120890 instance=ExtResource("19_2xjr2")]
-z_index = 4
-position = Vector2(4977, -1711)
-
-[node name="ObstacleCar4" parent="." unique_id=902200318 instance=ExtResource("19_2xjr2")]
-z_index = 4
-position = Vector2(5002, -3685)
-
-[node name="ObstacleCar3" parent="." unique_id=961465789 instance=ExtResource("19_2xjr2")]
-z_index = 4
-position = Vector2(5324, -1305)
-
 [node name="Player" parent="." unique_id=1010667792 instance=ExtResource("18_phx8o")]
 z_index = 1
 position = Vector2(237, 499)
 rotation = 1.5707964
+scale = Vector2(0.3, 0.3)
 car_texture = ExtResource("20_mtlsp")
+
+[node name="Decor" type="Node" parent="." unique_id=558124981]
+script = ExtResource("22_posat")
+
+[node name="Batiment1T" type="Sprite2D" parent="Decor" unique_id=61418412]
+position = Vector2(5391, -381)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment2T" type="Sprite2D" parent="Decor" unique_id=1773407964]
+position = Vector2(6138, -2172)
+texture = ExtResource("23_posat")
+
+[node name="Bush1T" type="Sprite2D" parent="Decor" unique_id=1872579606]
+position = Vector2(6107, -899)
+scale = Vector2(0.8501384, 0.8501384)
+texture = ExtResource("24_2xpmu")
+
+[node name="Batiment4T" type="Sprite2D" parent="Decor" unique_id=786649897]
+position = Vector2(7020, -437)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment5T" type="Sprite2D" parent="Decor" unique_id=1980954536]
+position = Vector2(4880.5, -2256.5)
+scale = Vector2(0.811, 0.811)
+texture = ExtResource("2_xttce")
+
+[node name="Batiment5T6" type="Sprite2D" parent="Decor" unique_id=2020233140]
+position = Vector2(2852, -29)
+scale = Vector2(0.46449983, 0.46449983)
+texture = ExtResource("2_xttce")
+
+[node name="Bush1T2" type="Sprite2D" parent="Decor" unique_id=1323912395]
+position = Vector2(8060, -2036)
+texture = ExtResource("24_2xpmu")
+
+[node name="Batiment4T2" type="Sprite2D" parent="Decor" unique_id=583411315]
+position = Vector2(9146, -2575)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment2T2" type="Sprite2D" parent="Decor" unique_id=396184831]
+position = Vector2(8309, -3971)
+texture = ExtResource("23_posat")
+
+[node name="Batiment1T2" type="Sprite2D" parent="Decor" unique_id=584834525]
+position = Vector2(9375, -3412)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment3T" type="Sprite2D" parent="Decor" unique_id=738657693]
+position = Vector2(9017, -4911)
+scale = Vector2(0.83, 0.83)
+texture = ExtResource("26_3672v")
+
+[node name="Batiment4T3" type="Sprite2D" parent="Decor" unique_id=1923603892]
+position = Vector2(9196, -4231)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment4T4" type="Sprite2D" parent="Decor" unique_id=1048132859]
+position = Vector2(8197, -4636)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment3T2" type="Sprite2D" parent="Decor" unique_id=382146657]
+position = Vector2(9099, -7286)
+texture = ExtResource("26_3672v")
+
+[node name="Batiment1T3" type="Sprite2D" parent="Decor" unique_id=236078207]
+position = Vector2(9317, -5418)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment1T4" type="Sprite2D" parent="Decor" unique_id=653726232]
+position = Vector2(7436, -7405)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment5T2" type="Sprite2D" parent="Decor" unique_id=204825745]
+position = Vector2(8127.001, -8018.0005)
+scale = Vector2(0.889, 0.889)
+texture = ExtResource("2_xttce")
+
+[node name="Batiment2T3" type="Sprite2D" parent="Decor" unique_id=1991854761]
+position = Vector2(7669, -8753)
+texture = ExtResource("23_posat")
+
+[node name="Batiment4T5" type="Sprite2D" parent="Decor" unique_id=1293926882]
+position = Vector2(6850, -8133)
+scale = Vector2(0.879, 0.879)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment3T3" type="Sprite2D" parent="Decor" unique_id=795904100]
+position = Vector2(7002, -6926)
+scale = Vector2(0.778, 0.778)
+texture = ExtResource("26_3672v")
+
+[node name="Bush1T3" type="Sprite2D" parent="Decor" unique_id=1416374142]
+position = Vector2(6269, -6205)
+scale = Vector2(0.693, 0.693)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T4" type="Sprite2D" parent="Decor" unique_id=657350207]
+position = Vector2(6908, -3960.9995)
+scale = Vector2(0.693, 0.693)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T12" type="Sprite2D" parent="Decor" unique_id=1470110766]
+position = Vector2(9240, -6700)
+scale = Vector2(0.693, 0.693)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T14" type="Sprite2D" parent="Decor" unique_id=1106687077]
+position = Vector2(8501, -9863.001)
+scale = Vector2(0.4934999, 0.4934999)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T15" type="Sprite2D" parent="Decor" unique_id=707349546]
+position = Vector2(7356.9995, -9225)
+scale = Vector2(0.41575006, 0.41575006)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T13" type="Sprite2D" parent="Decor" unique_id=1633269901]
+position = Vector2(5756, -5937)
+scale = Vector2(0.93549997, 0.93549997)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T5" type="Sprite2D" parent="Decor" unique_id=1407359142]
+position = Vector2(6259, -3056)
+scale = Vector2(0.85849977, 0.85849977)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T8" type="Sprite2D" parent="Decor" unique_id=1790219833]
+position = Vector2(1383.0001, 95)
+scale = Vector2(0.6242494, 0.6242494)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T16" type="Sprite2D" parent="Decor" unique_id=1293194268]
+position = Vector2(2395, 845)
+scale = Vector2(0.50012463, 0.482499)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T17" type="Sprite2D" parent="Decor" unique_id=100765837]
+position = Vector2(1125.0004, 852)
+scale = Vector2(0.50012463, 0.482499)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T18" type="Sprite2D" parent="Decor" unique_id=1879168054]
+position = Vector2(-167, 508)
+scale = Vector2(0.581062, 0.56058395)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T9" type="Sprite2D" parent="Decor" unique_id=1396831186]
+position = Vector2(3429, -2557)
+scale = Vector2(0.6242494, 0.6242494)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T10" type="Sprite2D" parent="Decor" unique_id=878834790]
+position = Vector2(3429, -2557)
+scale = Vector2(0.6242494, 0.6242494)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T11" type="Sprite2D" parent="Decor" unique_id=1290475420]
+position = Vector2(5665, -4273)
+scale = Vector2(0.6242494, 0.6242494)
+texture = ExtResource("24_2xpmu")
+
+[node name="Bush1T6" type="Sprite2D" parent="Decor" unique_id=330615947]
+position = Vector2(2911.875, -1101.125)
+scale = Vector2(0.75624985, 0.75624985)
+texture = ExtResource("24_2xpmu")
+
+[node name="Batiment5T3" type="Sprite2D" parent="Decor" unique_id=1836497158]
+position = Vector2(7044, -4608)
+texture = ExtResource("2_xttce")
+
+[node name="Batiment1T5" type="Sprite2D" parent="Decor" unique_id=1172253315]
+position = Vector2(3978.0002, -2978.0002)
+scale = Vector2(0.899, 0.899)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment3T4" type="Sprite2D" parent="Decor" unique_id=717702674]
+position = Vector2(5043, -2854)
+scale = Vector2(0.828, 0.828)
+texture = ExtResource("26_3672v")
+
+[node name="Batiment4T6" type="Sprite2D" parent="Decor" unique_id=769871865]
+position = Vector2(6127, -3979)
+scale = Vector2(0.876, 0.876)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment1T6" type="Sprite2D" parent="Decor" unique_id=1495830361]
+position = Vector2(1985, -1271)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment5T4" type="Sprite2D" parent="Decor" unique_id=848617811]
+position = Vector2(2048.0002, -601)
+scale = Vector2(0.779, 0.779)
+texture = ExtResource("2_xttce")
+
+[node name="Batiment2T4" type="Sprite2D" parent="Decor" unique_id=648645906]
+position = Vector2(4609, -719)
+texture = ExtResource("23_posat")
+
+[node name="Batiment2T6" type="Sprite2D" parent="Decor" unique_id=758149712]
+position = Vector2(1775, 937)
+texture = ExtResource("23_posat")
+
+[node name="Batiment1T7" type="Sprite2D" parent="Decor" unique_id=992693384]
+position = Vector2(6983, -10017)
+texture = ExtResource("22_ng5kh")
+
+[node name="Batiment3T5" type="Sprite2D" parent="Decor" unique_id=566581399]
+position = Vector2(7835, -10002)
+texture = ExtResource("26_3672v")
+
+[node name="Batiment4T7" type="Sprite2D" parent="Decor" unique_id=1947652743]
+position = Vector2(9007, -9534)
+texture = ExtResource("25_cujud")
+
+[node name="Bush1T7" type="Sprite2D" parent="Decor" unique_id=1197367139]
+position = Vector2(6959.0005, -9107)
+scale = Vector2(0.707, 0.707)
+texture = ExtResource("24_2xpmu")
+
+[node name="Batiment2T5" type="Sprite2D" parent="Decor" unique_id=1636186611]
+position = Vector2(5966, -8173)
+texture = ExtResource("23_posat")
+
+[node name="Batiment4T8" type="Sprite2D" parent="Decor" unique_id=1035567676]
+position = Vector2(6214, -8863)
+texture = ExtResource("25_cujud")
+
+[node name="Batiment5T5" type="Sprite2D" parent="Decor" unique_id=601442373]
+position = Vector2(6080, -7459)
+scale = Vector2(0.616, 0.616)
+texture = ExtResource("2_xttce")
+
+[node name="obst" type="Node" parent="." unique_id=684388716]
+
+[node name="ObstacleCar" parent="obst" unique_id=1745866449 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(4494, -1523)
+rotation = -0.24545014
+
+[node name="ObstacleCar2" parent="obst" unique_id=796120890 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(4977, -1711)
+
+[node name="ObstacleCar4" parent="obst" unique_id=902200318 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(5002, -3685)
+
+[node name="ObstacleCar3" parent="obst" unique_id=961465789 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(5324, -1305)
+rotation = 0.11466824
+
+[node name="ObstaclePin" type="Sprite2D" parent="obst" unique_id=996071986]
+z_index = -1
+position = Vector2(-178.00002, 505)
+scale = Vector2(0.7725, 0.7725)
+texture = ExtResource("23_71cmn")
