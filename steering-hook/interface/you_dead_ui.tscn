@@ -93,7 +93,7 @@ vertical_alignment = 1
 [node name="Time_value" type="Label" parent="CanvasLayer/VBoxContainer/HBoxContainer2" unique_id=1112930485]
 layout_mode = 2
 theme_override_font_sizes/font_size = 100
-text = "424242"
+text = "nah, id win"
 label_settings = SubResource("LabelSettings_t4vbi")
 horizontal_alignment = 1
 vertical_alignment = 1
