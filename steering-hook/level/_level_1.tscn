@@ -15,6 +15,9 @@
 [ext_resource type="Texture2D" uid="uid://gxvjcg4a7ltl" path="res://vfx/panning_particles/background_shapes/pentagone.png" id="12_ne7st"]
 [ext_resource type="Texture2D" uid="uid://bch3uhkh0bsnm" path="res://sprite/buildings_decoration/bush_1_t.png" id="13_6xv2m"]
 [ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="14_tt14c"]
+[ext_resource type="Texture2D" uid="uid://cq8p4vnaeb2xp" path="res://sprite/objects/car_t.png" id="15_2oh4c"]
+[ext_resource type="PackedScene" uid="uid://d13t18oh5bcw8" path="res://prefab/finish.tscn" id="17_xgkbu"]
+[ext_resource type="PackedScene" uid="uid://bskl231hyufn0" path="res://prefab/objects/obstacle_pin.tscn" id="18_td6j7"]
 
 [sub_resource type="Curve" id="Curve_ne7st"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -191,4 +194,11 @@ texture = ExtResource("13_6xv2m")
 z_index = 4
 position = Vector2(112, 502)
 rotation = 1.5707964
-scale = Vector2(0.5, 0.5)
+car_texture = ExtResource("15_2oh4c")
+
+[node name="Finish" parent="." unique_id=460258275 instance=ExtResource("17_xgkbu")]
+z_index = 1
+position = Vector2(2323, -2610)
+
+[node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("18_td6j7")]
+position = Vector2(-197, 516)

@@ -18,6 +18,8 @@
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="15_5n1lq"]
 [ext_resource type="Texture2D" uid="uid://ddabky3m52cy0" path="res://vfx/panning_particles/background_shapes/losange.png" id="16_5n1lq"]
 [ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="17_xeevs"]
+[ext_resource type="PackedScene" uid="uid://d13t18oh5bcw8" path="res://prefab/finish.tscn" id="19_q6lua"]
+[ext_resource type="PackedScene" uid="uid://bskl231hyufn0" path="res://prefab/objects/obstacle_pin.tscn" id="20_otqi5"]
 
 [sub_resource type="Curve" id="Curve_l531l"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -208,4 +210,9 @@ texture = ExtResource("11_5n1lq")
 z_index = 2
 position = Vector2(104, 500)
 rotation = 1.5707964
-scale = Vector2(0.5, 0.5)
+
+[node name="Finish" parent="." unique_id=460258275 instance=ExtResource("19_q6lua")]
+position = Vector2(5268, -620)
+
+[node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("20_otqi5")]
+position = Vector2(-178, 503)
