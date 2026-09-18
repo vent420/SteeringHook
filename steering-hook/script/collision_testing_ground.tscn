@@ -10,12 +10,12 @@
 [node name="TEST_Controller" type="Node2D" unique_id=463197386]
 
 [node name="TileRoadStraight" parent="." unique_id=258768893 instance=ExtResource("4_5jf4n")]
-position = Vector2(413, 305)
+position = Vector2(225, 150)
 
 [node name="Booster" parent="." unique_id=559202974 instance=ExtResource("3_07ddf")]
 light_mask = 0
 visibility_layer = 15
-position = Vector2(732, 343)
+position = Vector2(754.99994, 514)
 scale = Vector2(0.36636066, 0.35502964)
 collision_layer = 2
 collision_mask = 8
@@ -24,7 +24,7 @@ collision_mask = 8
 self_modulate = Color(1, 0.44705883, 1, 1)
 light_mask = 0
 visibility_layer = 15
-position = Vector2(711, 287)
+position = Vector2(724, 266)
 collision_layer = 8
 collision_mask = 23
 script = ExtResource("1_c8jex")

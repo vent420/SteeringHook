@@ -4,6 +4,7 @@ extends Area2D
 var isAlive = true
 @export var BoosterValue = 1.2
 var score = 0
+var endScene = preload("res://interface/end_level.tscn").instantiate()
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -24,6 +25,7 @@ func collide(layer:int , obj:Area2D)->void:
 	match layer:
 		1:
 			print("wall")
+			DeathExplode()
 		2:
 			print("booster")
 		3:
@@ -37,6 +39,8 @@ func collide(layer:int , obj:Area2D)->void:
 			
 func DeathExplode():
 	print("died")
+	get_tree().current_scene.add_child(endScene)
+	#open end
 	
 func Boosting():
 	print("boosting")
