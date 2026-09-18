@@ -4,9 +4,18 @@ extends Node
 @export var hasWon = false	
 @export var scoreLabel: Label = null
 @export var TimerLabel: Label= null
+@export var textLabel: Label= null
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	scoreLabel.text = str(score)
+	TimerLabel.text = str(0)
+	
+	if(hasWon):
+		textLabel.text = str("You Won!")
+	else:
+		textLabel.text = str("You Lost!!!")
 	pass # Replace with function body.
 
 

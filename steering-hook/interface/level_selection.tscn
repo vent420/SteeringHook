@@ -1,10 +1,27 @@
 [gd_scene format=3 uid="uid://ds7vknpp56bq2"]
 
-[ext_resource type="Script" uid="uid://b4mo8e5o8lpo" path="res://interface/level_selection.gd" id="1_tsoj0"]
-[ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="2_c3wja"]
-[ext_resource type="Texture2D" uid="uid://b7peoa20fp8mo" path="res://sprite/ui_button/mauve_button.png" id="3_un4ec"]
-[ext_resource type="Texture2D" uid="uid://ih3sodfxi6wb" path="res://sprite/ui_button/yellow_button.png" id="4_kw3r6"]
-[ext_resource type="Texture2D" uid="uid://i5mmwdf7ch8k" path="res://sprite/ui_button/pink_button.png" id="5_flgr8"]
+[ext_resource type="Texture2D" uid="uid://dasbh21nvtoph" path="res://sprite/ui_button/button_level_1.png" id="1_5h3e4"]
+[ext_resource type="Texture2D" uid="uid://bllvpup2pnllf" path="res://sprite/menu/start_screen_bg.png" id="1_g36gh"]
+[ext_resource type="Texture2D" uid="uid://dlf8ws6iuiu3j" path="res://sprite/ui_button/button_level_1_h.png" id="2_t2tqw"]
+[ext_resource type="Texture2D" uid="uid://c27p8sok1lj2n" path="res://sprite/menu/start_screen_car.png" id="2_yxj7h"]
+[ext_resource type="Script" uid="uid://dmhby4a35svyx" path="res://interface/level_select_button.gd" id="3_hsmag"]
+[ext_resource type="FontFile" uid="uid://dj1rrutc41i0q" path="res://sprite/ui_button/Odin Rounded - Bold.otf" id="4_8e3ho"]
+[ext_resource type="Texture2D" uid="uid://dkrsh5kth6nye" path="res://sprite/ui_button/button_level_2.png" id="5_t2tqw"]
+[ext_resource type="Texture2D" uid="uid://do56ubuy1hbvw" path="res://sprite/ui_button/button_level_2_h.png" id="6_hsmag"]
+[ext_resource type="Texture2D" uid="uid://inmtnh5i3cgi" path="res://sprite/ui_button/button_level_3.png" id="7_8e3ho"]
+[ext_resource type="Texture2D" uid="uid://7di51ixjf1v8" path="res://sprite/ui_button/button_level_3_h.png" id="8_a7gmy"]
+[ext_resource type="Texture2D" uid="uid://b478ufi61xy21" path="res://sprite/ui_button/button_level_4.png" id="9_g36gh"]
+[ext_resource type="Texture2D" uid="uid://d1j1jicka3inc" path="res://sprite/ui_button/button_level_4_h.png" id="10_yxj7h"]
+[ext_resource type="Texture2D" uid="uid://c2ikdqx4cc5vr" path="res://sprite/ui_button/button_level_5.png" id="11_8e3ho"]
+[ext_resource type="Texture2D" uid="uid://camif60103lqw" path="res://sprite/ui_button/button_level_5_h.png" id="12_a7gmy"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_a7gmy"]
+font = ExtResource("4_8e3ho")
+font_size = 60
+
+[sub_resource type="LabelSettings" id="LabelSettings_g36gh"]
+font = ExtResource("4_8e3ho")
+font_size = 40
 
 [node name="LevelSelection" type="Control" unique_id=928083003]
 layout_mode = 3
@@ -18,335 +35,322 @@ offset_bottom = 19.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=240491770]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1213199959]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1986818375]
+self_modulate = Color(0.22670749, 0.22670749, 0.22670746, 1)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_g36gh")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=1269737775]
+self_modulate = Color(0.22670749, 0.22670749, 0.22670746, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -154.0
+offset_top = 8.0
+offset_right = -154.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yxj7h")
+expand_mode = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer" unique_id=2132220720]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_right = -35.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer" unique_id=1700896183]
+layout_mode = 2
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=330849771]
+layout_mode = 2
+alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1880996887]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="TextureRect" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=1857767472]
+custom_minimum_size = Vector2(350, 260)
+layout_mode = 2
+texture_normal = ExtResource("1_5h3e4")
+texture_hover = ExtResource("2_t2tqw")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_hsmag")
+level_path = "res://level/_level_1.tscn"
+
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TextureRect" unique_id=654109767]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1256688422]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 13
-theme_override_constants/margin_top = 0
-theme_override_constants/margin_right = 5
-script = ExtResource("1_tsoj0")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer" unique_id=354609780]
-layout_mode = 2
-theme_override_constants/separation = 120
-
-[node name="Level_1" type="VBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1554089478]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
 size_flags_horizontal = 0
-size_flags_vertical = 4
-theme_override_constants/separation = 10
-
-[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1" unique_id=1350414968]
-custom_minimum_size = Vector2(500, 200)
-custom_maximum_size = Vector2(500, 200)
-layout_mode = 2
-size_flags_horizontal = 4
 size_flags_vertical = 8
-mouse_force_pass_scroll_events = false
-texture = ExtResource("2_c3wja")
-region_rect = Rect2(-4.4936523, 333.65732, 1011.2383, 360.02066)
-patch_margin_left = 10
-patch_margin_top = 30
-patch_margin_right = 10
-patch_margin_bottom = 30
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 1"
+label_settings = SubResource("LabelSettings_a7gmy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG" unique_id=1715373194]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -1.0
-offset_top = -2.0
-offset_right = 1.0
-offset_bottom = -2.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer" unique_id=721660221]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" unique_id=758685942]
 layout_mode = 2
-size_flags_vertical = 8
-theme_override_constants/separation = 60
+alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer" unique_id=758685942]
-layout_mode = 2
-
-[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=230264479]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=230264479]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Best score :"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="Score" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1172817624]
+[node name="Score" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer" unique_id=1172817624]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "696969"
+text = "0"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer" unique_id=261704185]
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=1812653900]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_right = 1
+theme_override_constants/separation = 0
 
-[node name="Play_L_1" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=1920689798]
-z_index = 99
-custom_minimum_size = Vector2(150, 80)
-custom_maximum_size = Vector2(150, 80)
+[node name="TextureRect" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=482929091]
+custom_minimum_size = Vector2(350, 260)
 layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-mouse_default_cursor_shape = 2
-text = "Play"
+texture_normal = ExtResource("5_t2tqw")
+texture_hover = ExtResource("6_hsmag")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_hsmag")
+level_path = "res://level/_level_2.tscn"
 
-[node name="Level_2" type="VBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer" unique_id=1646479663]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 4
-theme_override_constants/separation = 10
-
-[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2" unique_id=2006615618]
-custom_minimum_size = Vector2(500, 200)
-custom_maximum_size = Vector2(500, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-texture = ExtResource("3_un4ec")
-region_rect = Rect2(0, 354.23578, 1000, 348.11896)
-patch_margin_left = 10
-patch_margin_top = 30
-patch_margin_right = 10
-patch_margin_bottom = 30
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG" unique_id=1630373656]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureRect" unique_id=1220910934]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer" unique_id=1209567229]
-layout_mode = 2
+size_flags_horizontal = 0
 size_flags_vertical = 8
-theme_override_constants/separation = 60
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 2"
+label_settings = SubResource("LabelSettings_a7gmy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer" unique_id=972967724]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2" unique_id=1106040989]
 layout_mode = 2
+alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=212949264]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer" unique_id=284530801]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Best score :"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="Score" type="Label" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=1569854512]
+[node name="Score" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/HBoxContainer" unique_id=481884222]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "696969"
+text = "0"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer" unique_id=2039655564]
+[node name="VBoxContainer3" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer" unique_id=531998270]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_right = 1
+theme_override_constants/separation = 0
 
-[node name="Play_L_2" type="Button" parent="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=762715348]
-z_index = 1
-y_sort_enabled = true
-custom_minimum_size = Vector2(150, 80)
-custom_maximum_size = Vector2(150, 80)
+[node name="TextureRect" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=1630548763]
+custom_minimum_size = Vector2(350, 260)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-mouse_default_cursor_shape = 2
-keep_pressed_outside = true
-text = "Play"
+texture_normal = ExtResource("7_8e3ho")
+texture_hover = ExtResource("8_a7gmy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_hsmag")
+level_path = "res://level/_level_3.tscn"
 
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer" unique_id=1424798354]
-layout_mode = 2
-size_flags_vertical = 3
-theme_override_constants/margin_left = 13
-theme_override_constants/margin_top = 0
-theme_override_constants/margin_right = 5
-script = ExtResource("1_tsoj0")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3" unique_id=858010504]
-layout_mode = 2
-theme_override_constants/separation = 120
-
-[node name="Level_3" type="VBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer" unique_id=251308431]
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 4
-theme_override_constants/separation = 10
-
-[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3" unique_id=1903135677]
-custom_minimum_size = Vector2(500, 200)
-custom_maximum_size = Vector2(500, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-mouse_force_pass_scroll_events = false
-texture = ExtResource("4_kw3r6")
-region_rect = Rect2(-5.8871155, 325.08298, 1010.0593, 356.69327)
-patch_margin_left = 10
-patch_margin_top = 30
-patch_margin_right = 10
-patch_margin_bottom = 30
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG" unique_id=684534476]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/TextureRect" unique_id=913209965]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer" unique_id=1482713126]
-layout_mode = 2
+size_flags_horizontal = 0
 size_flags_vertical = 8
-theme_override_constants/separation = 60
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 3"
+label_settings = SubResource("LabelSettings_a7gmy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer" unique_id=1981630220]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3" unique_id=176731896]
 layout_mode = 2
+alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=745186637]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer" unique_id=387204436]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Best score :"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="Score" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=895621445]
+[node name="Score" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/HBoxContainer" unique_id=881890636]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "696969"
+text = "0"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer" unique_id=741096639]
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer" unique_id=903691034]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_right = 1
+alignment = 1
 
-[node name="Play_L_3" type="Button" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=1996099527]
-z_index = 99
-custom_minimum_size = Vector2(150, 80)
-custom_maximum_size = Vector2(150, 80)
+[node name="VBoxContainer4" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=341773634]
 layout_mode = 2
-size_flags_horizontal = 10
-size_flags_vertical = 4
-mouse_default_cursor_shape = 2
-text = "Play"
+theme_override_constants/separation = 0
 
-[node name="Level_4" type="VBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer" unique_id=248035366]
-custom_minimum_size = Vector2(0, 100)
+[node name="TextureRect" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4" unique_id=1709507800]
+custom_minimum_size = Vector2(350, 260)
 layout_mode = 2
-size_flags_horizontal = 0
-size_flags_vertical = 4
-theme_override_constants/separation = 10
+texture_normal = ExtResource("9_g36gh")
+texture_pressed = ExtResource("10_yxj7h")
+texture_hover = ExtResource("10_yxj7h")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_hsmag")
+level_path = "res://level/_level_4.tscn"
 
-[node name="BG" type="NinePatchRect" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4" unique_id=1390160245]
-custom_minimum_size = Vector2(500, 200)
-custom_maximum_size = Vector2(500, 200)
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 8
-texture = ExtResource("5_flgr8")
-region_rect = Rect2(-7.6019897, 318.22348, 1011.77423, 349.83383)
-patch_margin_left = 10
-patch_margin_top = 30
-patch_margin_right = 10
-patch_margin_bottom = 30
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG" unique_id=367018713]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/TextureRect" unique_id=875289470]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer" unique_id=350571382]
-layout_mode = 2
+size_flags_horizontal = 0
 size_flags_vertical = 8
-theme_override_constants/separation = 60
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 4"
+label_settings = SubResource("LabelSettings_a7gmy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer" unique_id=1343154073]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4" unique_id=1859333605]
 layout_mode = 2
+alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=72988268]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/HBoxContainer" unique_id=971650668]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
 text = "Best score :"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="Score" type="Label" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/HBoxContainer" unique_id=879389143]
+[node name="Score" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/HBoxContainer" unique_id=385913281]
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 8
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 32
-text = "696969"
+text = "0"
+label_settings = SubResource("LabelSettings_g36gh")
 
-[node name="MarginContainer3" type="MarginContainer" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer" unique_id=1931019672]
+[node name="VBoxContainer5" type="VBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2" unique_id=1083673377]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_constants/margin_right = 1
+theme_override_constants/separation = 0
 
-[node name="Play_L_4" type="Button" parent="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/MarginContainer3" unique_id=887818018]
-z_index = 1
-y_sort_enabled = true
-custom_minimum_size = Vector2(150, 80)
-custom_maximum_size = Vector2(150, 80)
+[node name="TextureRect" type="TextureButton" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5" unique_id=550466231]
+custom_minimum_size = Vector2(350, 260)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
-mouse_default_cursor_shape = 2
-keep_pressed_outside = true
-text = "Play"
+texture_normal = ExtResource("11_8e3ho")
+texture_hover = ExtResource("12_a7gmy")
+ignore_texture_size = true
+stretch_mode = 5
+script = ExtResource("3_hsmag")
+level_path = "res://level/_level_5.tscn"
 
-[node name="MarginContainer2" type="MarginContainer" parent="VBoxContainer" unique_id=1669522013]
-layout_mode = 2
-size_flags_vertical = 10
-theme_override_constants/margin_bottom = 25
-
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer2" unique_id=758804094]
-layout_mode = 2
-size_flags_horizontal = 4
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/TextureRect" unique_id=2081804690]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 0
 size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "LEVEL 5"
+label_settings = SubResource("LabelSettings_a7gmy")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="Return_B" type="Button" parent="VBoxContainer/MarginContainer2/HBoxContainer" unique_id=412181770]
-custom_minimum_size = Vector2(120, 60)
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5" unique_id=792542799]
 layout_mode = 2
-mouse_default_cursor_shape = 2
-text = "Return
-"
+alignment = 1
 
-[connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/Level_1/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_1" to="VBoxContainer/MarginContainer" method="_on_play_l_1_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/HBoxContainer/Level_2/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_2" to="VBoxContainer/MarginContainer" method="_on_play_l_2_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer3/HBoxContainer/Level_3/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_3" to="VBoxContainer/MarginContainer" method="_on_play_l_3_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer3/HBoxContainer/Level_4/BG/MarginContainer/HBoxContainer/MarginContainer3/Play_L_4" to="VBoxContainer/MarginContainer" method="_on_play_l_4_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer2/HBoxContainer/Return_B" to="VBoxContainer/MarginContainer" method="_on_return_b_pressed"]
+[node name="Label" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/HBoxContainer" unique_id=883283318]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "Best score :"
+label_settings = SubResource("LabelSettings_g36gh")
+
+[node name="Score" type="Label" parent="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/HBoxContainer" unique_id=2142303845]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 32
+text = "0"
+label_settings = SubResource("LabelSettings_g36gh")
+
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TextureRect" method="_on_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/TextureRect" method="_on_mouse_entered"]
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureRect" method="_on_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer2/TextureRect" method="_on_mouse_entered"]
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/TextureRect" method="_on_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer3/TextureRect" method="_on_mouse_entered"]
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/TextureRect" method="_on_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer4/TextureRect" method="_on_mouse_entered"]
+[connection signal="button_down" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/TextureRect" method="_on_button_down"]
+[connection signal="mouse_entered" from="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/TextureRect" to="CanvasLayer/MarginContainer/VBoxContainer/HBoxContainer2/VBoxContainer5/TextureRect" method="_on_mouse_entered"]

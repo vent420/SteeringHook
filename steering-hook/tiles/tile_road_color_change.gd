@@ -5,9 +5,10 @@ extends Sprite2D
 func _ready() -> void:
 	if defaultPath.is_empty(): defaultPath = texture.resource_path.left(-4)
 	# xxx.connect(ChangeRoadColor)
-	ChangeRoadColor("y")
+	ChangeRoadColor($"../..".color)
 
 func ChangeRoadColor(col: String):
+	if col == "t": return
 	var path_to_new_file: String = defaultPath + "_" + col + ".png"
 	if ResourceLoader.exists(path_to_new_file):
 		texture = load(path_to_new_file)
