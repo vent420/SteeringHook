@@ -1,7 +1,9 @@
 extends Node
 
-@export var score = 0
+@export var score: int = 0
 @export var hasWon = false	
+@export var scoreLabel: Label = null
+@export var TimerLabel: Label= null
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:

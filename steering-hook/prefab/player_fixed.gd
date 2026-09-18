@@ -13,6 +13,13 @@ var rot_direction
 var velocity
 var dir_to_anchor_local
 
+var baseSpeed = speed
+var isAlive = true
+
+var score: int = 0
+var endScene = preload("res://interface/you_dead_ui.tscn").instantiate()
+
+@export var BoosterValue = 1.2
 @export var peak_distance_check_ahead : float = 10.0
 @export var peak_distance_check_behind : float = 75.0
 @export var draw_visual : bool = false
@@ -67,7 +74,6 @@ func _process(delta: float) -> void:
 		is_orbiting = false
 	
 	if has_input:
-		print("dir to anchor : ", dir_to_anchor_local)
 		if (dir_to_anchor_local.y <= 0):
 			if ((hook_anchor_global.distance_to(peak_coord) <= peak_distance_check_ahead)):
 				is_orbiting = true
@@ -89,3 +95,70 @@ func _draw() -> void:
 				
 			#draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
 			draw_line(mouse_pos_local, hook_anchor, Color.GREEN, 2.0)
+
+
+
+func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
+	var layer: int = area.collision_layer
+	print(layer)
+	collide(layer, area)
+	
+	
+func collide(layer:int , obj:Area2D)->void:
+	match layer:
+		1:
+			print("wall")
+			DeathExplode()
+		2:
+			print("booster")
+			Boosting()
+		3:
+			print("obstacle")
+			DeathExplode()
+		4:
+			print("thy self")
+		5:
+			print("FinishLine")
+			finish()
+		6:
+			print("checkpoint")
+			checkpoint()
+			
+func DeathExplode():
+	print("died")
+	speed = 0
+	baseSpeed = 0
+	get_tree().current_scene.add_child(endScene)
+	endScene.hasWon = false
+	endScene.score = score
+	
+	
+	
+	
+	#open end
+	
+func Boosting():
+	print("boosting")
+	speed = speed*BoosterValue
+	score = score+125
+	$Timer.wait_time = 2
+	$Timer.start()
+	
+func finish():
+	print("finished")
+	endScene.score = score
+	endScene.hasWon = true
+	get_tree().current_scene.add_child(endScene)
+	
+	
+	
+	
+func checkpoint():
+	print("checked the point")
+	
+
+
+func _on_timer_timeout() -> void:
+	print("end boost")
+	speed = baseSpeed
+	pass # Replace with function body.
