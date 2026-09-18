@@ -11,6 +11,7 @@ extends Node
 func _ready() -> void:
 	scoreLabel.text = str(score)
 	TimerLabel.text = str(0)
+	print("ready called")
 	pass # Replace with function body.
 
 

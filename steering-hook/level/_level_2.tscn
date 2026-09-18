@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://q0xkmm2coax7"]
 
-[ext_resource type="Script" uid="uid://d2vldhd6tdmv8" path="res://level/2.gd" id="1_l531l"]
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_ryjsh"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_3w4y2"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_3w4y2"]
@@ -26,9 +25,7 @@ point_count = 4
 [sub_resource type="Gradient" id="Gradient_kfcmc"]
 colors = PackedColorArray(0.55751747, 0.2212173, 0.9999998, 1, 0.9356824, 0.9044193, 0.9741083, 1)
 
-[node name="Node2D" type="Node2D" unique_id=4028965]
-script = ExtResource("1_l531l")
-level_color = "m"
+[node name="Level1" type="Node2D" unique_id=4028965]
 
 [node name="Folder - Background" type="Node" parent="." unique_id=1949629531]
 
@@ -115,19 +112,14 @@ rotation = -3.1415925
 [node name="Booster" parent="." unique_id=559202974 instance=ExtResource("8_728ly")]
 position = Vector2(4481, 500)
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Booster2" parent="." unique_id=694578225 instance=ExtResource("8_728ly")]
 position = Vector2(6502, 746.99994)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
-collision_layer = 2
-collision_mask = 8
 
 [node name="Decoration" type="Node" parent="." unique_id=416687317]
 script = ExtResource("9_tetyw")
-color = "m"
 
 [node name="Batiment1T" type="Sprite2D" parent="Decoration" unique_id=862166834]
 position = Vector2(2965, 834)
@@ -209,5 +201,4 @@ texture = ExtResource("11_5n1lq")
 z_index = 2
 position = Vector2(104, 500)
 rotation = 1.5707964
-scale = Vector2(0.3, 0.3)
-speed = 500.0
+scale = Vector2(0.5, 0.5)

@@ -1,16 +1,16 @@
 [gd_scene format=3 uid="uid://cxg801abhwyw1"]
 
-[ext_resource type="Texture2D" uid="uid://vkcbc08dhaa7" path="res://sprite/main menu/start_screen_bg.png" id="1_l14rc"]
 [ext_resource type="Script" uid="uid://dkv1ym56yoarp" path="res://interface/main_menue.gd" id="1_rfu3d"]
-[ext_resource type="Texture2D" uid="uid://6028jmenoxwg" path="res://sprite/main menu/start_screen_car.png" id="2_ui3ld"]
-[ext_resource type="Texture2D" uid="uid://dxwwt1hm60lp6" path="res://sprite/main menu/start_screen_phares_on.png" id="3_rirh5"]
-[ext_resource type="Script" uid="uid://nops4kkd7apu" path="res://interface/main_menu_parallax.gd" id="3_ui3ld"]
-[ext_resource type="Texture2D" uid="uid://ukcepmls61lp" path="res://sprite/main menu/start_screen_logo.png" id="5_rirh5"]
-[ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="6_xq1bj"]
-[ext_resource type="Texture2D" uid="uid://b7peoa20fp8mo" path="res://sprite/ui_button/mauve_button.png" id="7_ipgly"]
-[ext_resource type="LabelSettings" uid="uid://47yum7t20t4g" path="res://interface/text_settings.tres" id="8_htyv3"]
-[ext_resource type="Texture2D" uid="uid://dft127rxkt1bo" path="res://sprite/ui_button/red_button.png" id="9_uwr2n"]
-[ext_resource type="Texture2D" uid="uid://i5mmwdf7ch8k" path="res://sprite/ui_button/pink_button.png" id="10_u26sr"]
+[ext_resource type="Texture2D" uid="uid://bllvpup2pnllf" path="res://sprite/menu/start_screen_bg.png" id="2_frosj"]
+[ext_resource type="Texture2D" uid="uid://bneu4ufbiu3pb" path="res://sprite/menu/start_screen_logo.png" id="3_xq1bj"]
+[ext_resource type="Script" uid="uid://g205ha4r7qy4" path="res://interface/menu_parallax.gd" id="4_ipgly"]
+[ext_resource type="Texture2D" uid="uid://c27p8sok1lj2n" path="res://sprite/menu/start_screen_car.png" id="5_htyv3"]
+[ext_resource type="Texture2D" uid="uid://ddju8fslnx3o5" path="res://sprite/menu/start_screen_phares_on.png" id="6_uwr2n"]
+[ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="7_u26sr"]
+[ext_resource type="Texture2D" uid="uid://b7peoa20fp8mo" path="res://sprite/ui_button/mauve_button.png" id="8_8ts25"]
+[ext_resource type="LabelSettings" uid="uid://47yum7t20t4g" path="res://interface/text_settings.tres" id="9_kf2kj"]
+[ext_resource type="Texture2D" uid="uid://dft127rxkt1bo" path="res://sprite/ui_button/red_button.png" id="10_4c1bg"]
+[ext_resource type="Texture2D" uid="uid://i5mmwdf7ch8k" path="res://sprite/ui_button/pink_button.png" id="11_4ftix"]
 
 [node name="Main" type="Control" unique_id=270908751]
 layout_mode = 3
@@ -21,18 +21,18 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_rfu3d")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1559363154]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=520187053]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1303469841]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1959514102]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_l14rc")
+texture = ExtResource("2_frosj")
 expand_mode = 1
 
-[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=2025776574]
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=1859375525]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -40,13 +40,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-texture = ExtResource("5_rirh5")
+texture = ExtResource("3_xq1bj")
 expand_mode = 1
-script = ExtResource("3_ui3ld")
-parallax_val = -90.0
-offs = Vector2(0, 0)
+script = ExtResource("4_ipgly")
+prlx = -80.0
+off = Vector2(0, 0)
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=132694469]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect" unique_id=31244307]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -54,12 +54,11 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 offset_transform_enabled = true
-texture = ExtResource("2_ui3ld")
+texture = ExtResource("5_htyv3")
 expand_mode = 1
-script = ExtResource("3_ui3ld")
-parallax_val = 90.0
+script = ExtResource("4_ipgly")
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/TextureRect" unique_id=1549696228]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/TextureRect" unique_id=1646800295]
 visible = false
 layout_mode = 1
 anchors_preset = 15
@@ -72,10 +71,10 @@ offset_bottom = -50.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(1.044214, 1.0293368)
-texture = ExtResource("3_rirh5")
+texture = ExtResource("6_uwr2n")
 expand_mode = 1
 
-[node name="Button" type="Button" parent="CanvasLayer/TextureRect/TextureRect" unique_id=326054076]
+[node name="Button" type="Button" parent="CanvasLayer/TextureRect/TextureRect" unique_id=1406410550]
 layout_mode = 0
 offset_left = 214.0
 offset_top = 288.0
@@ -83,7 +82,7 @@ offset_right = 681.0
 offset_bottom = 486.0
 flat = true
 
-[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/TextureRect" unique_id=1680171552]
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/TextureRect" unique_id=1862225142]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -93,23 +92,24 @@ offset_top = 322.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/TextureRect/MarginContainer2" unique_id=1093014099]
+[node name="VBoxContainer2" type="VBoxContainer" parent="CanvasLayer/TextureRect/MarginContainer2" unique_id=159191667]
 layout_mode = 2
 theme_override_constants/separation = 15
 alignment = 1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=1620602921]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=155528100]
 layout_mode = 2
 
-[node name="TextureButton" type="TextureButton" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=598801943]
+[node name="TextureButton" type="TextureButton" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=1561283643]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-texture_normal = ExtResource("6_xq1bj")
-texture_pressed = ExtResource("7_ipgly")
+texture_normal = ExtResource("7_u26sr")
+texture_pressed = ExtResource("8_8ts25")
+texture_hover = ExtResource("8_8ts25")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton" unique_id=1872532902]
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton" unique_id=1422606455]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -117,19 +117,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Continue"
-label_settings = ExtResource("8_htyv3")
+label_settings = ExtResource("9_kf2kj")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="TextureButton2" type="TextureButton" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=2039827385]
+[node name="TextureButton2" type="TextureButton" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2" unique_id=2041533216]
 custom_minimum_size = Vector2(200, 100)
 layout_mode = 2
-texture_normal = ExtResource("9_uwr2n")
-texture_pressed = ExtResource("10_u26sr")
+texture_normal = ExtResource("10_4c1bg")
+texture_pressed = ExtResource("11_4ftix")
+texture_hover = ExtResource("11_4ftix")
 ignore_texture_size = true
 stretch_mode = 5
 
-[node name="Label" type="Label" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton2" unique_id=406923101]
+[node name="Label" type="Label" parent="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton2" unique_id=691491460]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -137,12 +138,13 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Exit Game"
-label_settings = ExtResource("8_htyv3")
+label_settings = ExtResource("9_kf2kj")
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [connection signal="button_down" from="CanvasLayer/TextureRect/TextureRect/Button" to="CanvasLayer/TextureRect/TextureRect" method="_on_button_button_down"]
 [connection signal="button_up" from="CanvasLayer/TextureRect/TextureRect/Button" to="CanvasLayer/TextureRect/TextureRect" method="_on_button_button_up"]
-[connection signal="pressed" from="CanvasLayer/TextureRect/TextureRect/Button" to="CanvasLayer/TextureRect/TextureRect" method="_on_button_pressed"]
-[connection signal="button_down" from="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton" to="." method="_on_texture_button_button_down"]
+[connection signal="button_down" from="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton" to="." method="_on_play_b_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton" to="." method="_on_texture_button_mouse_entered"]
 [connection signal="button_down" from="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton2" to="." method="_on_quit_b_pressed"]
+[connection signal="mouse_entered" from="CanvasLayer/TextureRect/MarginContainer2/VBoxContainer2/TextureButton2" to="." method="_on_texture_button_mouse_entered"]
