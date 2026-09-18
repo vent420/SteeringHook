@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="SteeringHook"
-run/main_scene="uid://deribo2yqn282"
+run/main_scene="uid://cxg801abhwyw1"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
