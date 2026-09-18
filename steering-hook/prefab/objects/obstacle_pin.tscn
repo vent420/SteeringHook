@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bskl231hyufn0"]
+
+[ext_resource type="Texture2D" uid="uid://bis8if0lkkrj0" path="res://sprite/objects/obstacle_pin.png" id="1_omjbi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1t8b"]
+radius = 178.0
+height = 356.0
+
+[node name="ObstacleCar" type="Sprite2D" unique_id=1745866449]
+texture = ExtResource("1_omjbi")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1691906645]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1277819662]
+shape = SubResource("CapsuleShape2D_o1t8b")

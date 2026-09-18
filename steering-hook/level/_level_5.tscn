@@ -22,6 +22,15 @@
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="19_w1uqk"]
 [ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="21_1pg2i"]
 [ext_resource type="PackedScene" uid="uid://bh1g177gp33gb" path="res://prefab/objects/obstacle_car_big.tscn" id="22_1pg2i"]
+[ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="23_e1yqi"]
+[ext_resource type="Texture2D" uid="uid://dsnet7eb1vkxk" path="res://vfx/panning_particles/background_shapes/carre.png" id="24_e1yqi"]
+
+[sub_resource type="Curve" id="Curve_du08s"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 4
+
+[sub_resource type="Gradient" id="Gradient_22tqp"]
+colors = PackedColorArray(0.2924635, 0.013984197, 0.12511072, 1, 1, 1, 1, 1)
 
 [node name="Level2" type="Node2D" unique_id=4028965]
 
@@ -517,3 +526,34 @@ position = Vector2(5468, -4753)
 
 [node name="ObstacleCar2" parent="Obj" unique_id=1673970530 instance=ExtResource("22_1pg2i")]
 position = Vector2(5647, -4708)
+
+[node name="Folder - Background" type="Node" parent="." unique_id=1921465695]
+
+[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=302539295]
+self_modulate = Color(0.9019608, 0.4509804, 0.5294118, 1)
+z_index = -101
+position = Vector2(1932.0002, -5263)
+scale = Vector2(177.7774, 239.07227)
+texture = ExtResource("23_e1yqi")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236693653]
+z_index = -100
+position = Vector2(1932, -5503)
+scale = Vector2(-0.84693164, 0.9539013)
+amount = 500
+texture = ExtResource("24_e1yqi")
+lifetime = 10.0
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(6000, 7000)
+direction = Vector2(1, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 10.0
+initial_velocity_max = 15.0
+scale_amount_min = 4.0
+scale_amount_max = 4.0
+scale_amount_curve = SubResource("Curve_du08s")
+color_ramp = SubResource("Gradient_22tqp")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
