@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bh1g177gp33gb"]
+
+[ext_resource type="Texture2D" uid="uid://begm0mtav5nf2" path="res://sprite/objects/dead_car_big.png" id="1_bqxx7"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_o1t8b"]
+radius = 69.0
+height = 272.0
+
+[node name="ObstacleCar" type="Sprite2D" unique_id=1745866449]
+texture = ExtResource("1_bqxx7")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1691906645]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1277819662]
+shape = SubResource("CapsuleShape2D_o1t8b")

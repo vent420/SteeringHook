@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b3fs36xpymkj1"]
 
 [ext_resource type="Texture2D" uid="uid://d1rtk4f6hurd7" path="res://vfx/compas/arrow.png" id="1_y0doe"]
+[ext_resource type="Texture2D" uid="uid://c70jmytakpgfe" path="res://icon.svg" id="2_wk3u7"]
 
 [sub_resource type="Curve" id="Curve_ht41m"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, Vector2(0.75124377, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -12,7 +13,6 @@ colors = PackedColorArray(0.010420891, 0.17303637, 0.18702641, 1, 1, 1, 1, 1)
 [node name="Panning particle" type="Node2D" unique_id=1942748131]
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="." unique_id=529673755]
-position = Vector2(607, 304)
 amount = 50
 texture = ExtResource("1_y0doe")
 lifetime = 10.0
@@ -29,3 +29,7 @@ scale_amount_curve = SubResource("Curve_ht41m")
 color_ramp = SubResource("Gradient_eqlop")
 hue_variation_min = -1.0
 hue_variation_max = 1.0
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=536903626]
+visible = false
+texture = ExtResource("2_wk3u7")
