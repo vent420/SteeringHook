@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var speed = 300
+@export var speed : float = 300
 
 var hook_anchor
 var screen_size
@@ -16,6 +16,7 @@ var dir_to_anchor_local
 @export var peak_distance_check_ahead : float = 10.0
 @export var peak_distance_check_behind : float = 75.0
 @export var draw_visual : bool = false
+@export var car_texture : Resource
 
 var is_orbiting : bool = false
 var has_input : bool = false
@@ -26,6 +27,7 @@ func _ready() -> void:
 	screen_size = get_viewport_rect().size
 	
 	var car_sprite = get_node("CarTexture")
+	car_sprite.texture = car_texture
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
