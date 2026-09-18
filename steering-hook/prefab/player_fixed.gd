@@ -87,5 +87,5 @@ func _draw() -> void:
 			var mouse_pos_local = to_local(mouse_pos_global)
 			var peak_coord_local = to_local(peak_coord)
 				
-			draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
-			#draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
+			#draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
+			draw_line(mouse_pos_local, hook_anchor, Color.GREEN, 2.0)

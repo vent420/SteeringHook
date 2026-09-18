@@ -6,6 +6,7 @@
 [ext_resource type="Script" uid="uid://frfj2ntj3lfg" path="res://vfx/compas/compas.gd" id="4_1lk0m"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a1o1i"]
+resource_local_to_scene = true
 resource_name = "CarImage"
 load_path = "res://.godot/imported/car_placeholder.jpg-5980295fba4063bc7e60740546a3b1ab.ctex"
 
@@ -22,6 +23,9 @@ position = Vector2(-256.99997, -150.99998)
 scale = Vector2(0.2766696, 0.2766696)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=332899250]
+position = Vector2(0, -179)
+zoom = Vector2(1.2, 1.2)
+position_smoothing_enabled = true
 
 [node name="CarTexture" type="Sprite2D" parent="." unique_id=809086396]
 texture = SubResource("CompressedTexture2D_a1o1i")
