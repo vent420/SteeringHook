@@ -27,4 +27,6 @@ func collide(layer:int , obj:Area2D)->void:
 			print("obstacle")
 		4:
 			print("thy self")
+		5:
+			print("FinishLine")
 	

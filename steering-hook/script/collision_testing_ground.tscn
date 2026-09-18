@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://3cexfd67ctwd" path="res://script/test_controller.gd" id="1_c8jex"]
 [ext_resource type="Texture2D" uid="uid://c70jmytakpgfe" path="res://icon.svg" id="1_ytds1"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="3_07ddf"]
-[ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_slanted_donut.tscn" id="4_5jf4n"]
+[ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="4_5jf4n"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_c8jex"]
 
