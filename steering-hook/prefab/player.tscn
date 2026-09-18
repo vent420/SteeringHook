@@ -1,9 +1,13 @@
 [gd_scene format=3 uid="uid://ldg6u6x2qc1"]
 
 [ext_resource type="Script" uid="uid://2y1xx47nnuq3" path="res://prefab/player_fixed.gd" id="1_a1o1i"]
-[ext_resource type="Texture2D" uid="uid://csnife3x07mf2" path="res://sprite/placeholder/car_placeholder.jpg" id="1_umsav"]
 [ext_resource type="Texture2D" uid="uid://d1rtk4f6hurd7" path="res://vfx/compas/arrow.png" id="3_wowq3"]
 [ext_resource type="Script" uid="uid://frfj2ntj3lfg" path="res://vfx/compas/compas.gd" id="4_1lk0m"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_a1o1i"]
+resource_local_to_scene = true
+resource_name = "CarImage"
+load_path = "res://.godot/imported/car_placeholder.jpg-5980295fba4063bc7e60740546a3b1ab.ctex"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_am1su"]
 size = Vector2(108, 193)
@@ -19,9 +23,9 @@ scale = Vector2(0.2766696, 0.2766696)
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=332899250]
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=809086396]
+[node name="CarTexture" type="Sprite2D" parent="." unique_id=809086396]
 scale = Vector2(0.1, 0.1)
-texture = ExtResource("1_umsav")
+texture = SubResource("CompressedTexture2D_a1o1i")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=125151462]
 position = Vector2(0, -0.5)

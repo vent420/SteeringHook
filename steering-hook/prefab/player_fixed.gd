@@ -24,6 +24,8 @@ var has_input : bool = false
 func _ready() -> void:
 	hook_anchor = get_node("HookAnchor").position
 	screen_size = get_viewport_rect().size
+	
+	var car_sprite = get_node("CarTexture")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -31,21 +33,16 @@ func _process(delta: float) -> void:
 	velocity = Vector2.UP.rotated(rotation) * speed
 	position += velocity * delta
 	
-	hook_anchor_global = to_global(get_node("HookAnchor").position)
+	hook_anchor_global = to_global(hook_anchor)
 	
 	if Input.is_action_just_pressed("left_click"):
 		# Mouse pos = A
 		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
 		
-		#print("mouse local : ", to_local(mouse_pos_global))
-		#print("Hook anchor global : ", hook_anchor_global)
-		#print("Hook anchor local : ", get_node("HookAnchor").position)
-		
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
 		dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
-		#print("dir local : ", dir_to_anchor_local)
 		
 		var hypothenuse = dir_to_anchor.length()
 		
