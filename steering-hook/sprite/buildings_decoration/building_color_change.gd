@@ -1,7 +1,7 @@
 extends Node
-
+@export var color: String 
 func _ready() -> void:
-	ChangeBuildingColor("r")
+	ChangeBuildingColor(color)
 
 func ChangeBuildingColor(col: String):
 	for child in get_children():
