@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://b1fuhk487bdsg"]
 
+[ext_resource type="Script" uid="uid://b25pp1xeulst6" path="res://script/booster.gd" id="1_ac2qh"]
 [ext_resource type="Texture2D" uid="uid://hny34lehxmqu" path="res://sprite/placeholder/boost_arrow.png" id="1_vvrsb"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vml2s"]
@@ -9,6 +10,7 @@ height = 364.01
 [node name="Booster" type="Area2D" unique_id=1195323448]
 collision_layer = 8
 collision_mask = 2
+script = ExtResource("1_ac2qh")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1749520413]
 shape = SubResource("CapsuleShape2D_vml2s")
@@ -17,3 +19,5 @@ shape = SubResource("CapsuleShape2D_vml2s")
 z_index = 10
 position = Vector2(1, 0)
 texture = ExtResource("1_vvrsb")
+
+[connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]
