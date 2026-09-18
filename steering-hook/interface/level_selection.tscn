@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bllvpup2pnllf" path="res://sprite/menu/start_screen_bg.png" id="1_g36gh"]
 [ext_resource type="Texture2D" uid="uid://dlf8ws6iuiu3j" path="res://sprite/ui_button/button_level_1_h.png" id="2_t2tqw"]
 [ext_resource type="Texture2D" uid="uid://c27p8sok1lj2n" path="res://sprite/menu/start_screen_car.png" id="2_yxj7h"]
-[ext_resource type="Script" uid="uid://dmhby4a35svyx" path="res://interface/level_select_button.gd" id="3_hsmag"]
+[ext_resource type="Script" uid="uid://dmhby4a35svyx" path="res://interface/script/level_select_button.gd" id="3_hsmag"]
 [ext_resource type="FontFile" uid="uid://dj1rrutc41i0q" path="res://sprite/ui_button/Odin Rounded - Bold.otf" id="4_8e3ho"]
 [ext_resource type="Texture2D" uid="uid://dkrsh5kth6nye" path="res://sprite/ui_button/button_level_2.png" id="5_t2tqw"]
 [ext_resource type="Texture2D" uid="uid://do56ubuy1hbvw" path="res://sprite/ui_button/button_level_2_h.png" id="6_hsmag"]

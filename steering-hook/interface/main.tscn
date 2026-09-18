@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://cxg801abhwyw1"]
 
-[ext_resource type="Script" uid="uid://dkv1ym56yoarp" path="res://interface/main_menue.gd" id="1_rfu3d"]
+[ext_resource type="Script" uid="uid://dkv1ym56yoarp" path="res://interface/script/main_menue.gd" id="1_rfu3d"]
 [ext_resource type="Texture2D" uid="uid://bllvpup2pnllf" path="res://sprite/menu/start_screen_bg.png" id="2_frosj"]
 [ext_resource type="Texture2D" uid="uid://bneu4ufbiu3pb" path="res://sprite/menu/start_screen_logo.png" id="3_xq1bj"]
-[ext_resource type="Script" uid="uid://g205ha4r7qy4" path="res://interface/menu_parallax.gd" id="4_ipgly"]
+[ext_resource type="Script" uid="uid://g205ha4r7qy4" path="res://interface/script/menu_parallax.gd" id="4_ipgly"]
 [ext_resource type="Texture2D" uid="uid://c27p8sok1lj2n" path="res://sprite/menu/start_screen_car.png" id="5_htyv3"]
 [ext_resource type="Texture2D" uid="uid://ddju8fslnx3o5" path="res://sprite/menu/start_screen_phares_on.png" id="6_uwr2n"]
 [ext_resource type="Texture2D" uid="uid://ba41rw5ra2r8w" path="res://sprite/ui_button/blue_button.png" id="7_u26sr"]
