@@ -1,6 +1,9 @@
 extends Area2D
 
 @export var speed = 400
+var isAlive = true
+@export var BoosterValue = 1.2
+var score = 0
 
 func get_input():
 	var input_direction = Input.get_vector("left", "right", "up", "down")
@@ -29,4 +32,20 @@ func collide(layer:int , obj:Area2D)->void:
 			print("thy self")
 		5:
 			print("FinishLine")
+		6:
+			print("checkpoint")
+			
+func DeathExplode():
+	print("died")
+	
+func Boosting():
+	print("boosting")
+	speed = speed*BoosterValue
+	score = score+125
+	
+func finish():
+	print("finished")
+	
+func checkpoint():
+	print("checked the point")
 	

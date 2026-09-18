@@ -11,8 +11,11 @@ var peak_dist
 var hook_anchor_global
 var rot_direction
 var velocity
+var dir_to_anchor_local
 
-var debug_direction
+@export var peak_distance_check_ahead : float = 10.0
+@export var peak_distance_check_behind : float = 75.0
+@export var draw_visual : bool = false
 
 var is_orbiting : bool = false
 var has_input : bool = false
@@ -28,8 +31,6 @@ func _process(delta: float) -> void:
 	velocity = Vector2.UP.rotated(rotation) * speed
 	position += velocity * delta
 	
-	debug_direction = Vector2.UP.rotated(rotation)
-	
 	hook_anchor_global = to_global(get_node("HookAnchor").position)
 	
 	if Input.is_action_just_pressed("left_click"):
@@ -43,7 +44,7 @@ func _process(delta: float) -> void:
 		
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
-		var dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
+		dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
 		#print("dir local : ", dir_to_anchor_local)
 		
 		var hypothenuse = dir_to_anchor.length()
@@ -67,8 +68,13 @@ func _process(delta: float) -> void:
 		is_orbiting = false
 	
 	if has_input:
-		if ((hook_anchor_global.distance_to(peak_coord) <= -1) or (hook_anchor_global.distance_to(peak_coord) <= 1)):
-			is_orbiting = true
+		print("dir to anchor : ", dir_to_anchor_local)
+		if (dir_to_anchor_local.y <= 0):
+			if ((hook_anchor_global.distance_to(peak_coord) <= peak_distance_check_ahead)):
+				is_orbiting = true
+		else:
+			if ((hook_anchor_global.distance_to(peak_coord) <= peak_distance_check_behind)):
+				is_orbiting = true
 			
 	if is_orbiting:
 		var angular_speed = speed / mouse_pos_global.distance_to(peak_coord)
@@ -77,9 +83,10 @@ func _process(delta: float) -> void:
 	queue_redraw()	
 	
 func _draw() -> void:
-	if has_input:
-		var mouse_pos_local = to_local(mouse_pos_global)
-		var peak_coord_local = to_local(peak_coord)
-			
-		draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
-		#draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
+	if draw_visual:
+		if has_input:
+			var mouse_pos_local = to_local(mouse_pos_global)
+			var peak_coord_local = to_local(peak_coord)
+				
+			draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
+			#draw_line(mouse_pos_local, peak_coord_local, Color.GREEN, 2.0)
