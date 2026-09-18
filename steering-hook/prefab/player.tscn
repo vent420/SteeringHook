@@ -14,9 +14,11 @@ load_path = "res://.godot/imported/car_placeholder.jpg-5980295fba4063bc7e6074054
 size = Vector2(108, 193)
 
 [node name="Player" type="Area2D" unique_id=1010667792]
+scale = Vector2(0.2, 0.2)
 collision_layer = 8
 collision_mask = 23
 script = ExtResource("1_a1o1i")
+speed = 500.0
 draw_visual = true
 car_texture = ExtResource("2_wowq3")
 
@@ -46,5 +48,9 @@ script = ExtResource("4_1lk0m")
 target = NodePath("../TARGET")
 
 [node name="Timer" type="Timer" parent="." unique_id=1354530392]
+
+[node name="Line2D" type="Line2D" parent="." unique_id=362875683]
+points = PackedVector2Array(0, 0, 0, 1000)
+default_color = Color(0.6008274, 0.14933398, 0.9163416, 1)
 
 [connection signal="area_shape_entered" from="." to="." method="_on_area_shape_entered"]

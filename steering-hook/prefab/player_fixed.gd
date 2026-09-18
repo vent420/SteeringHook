@@ -18,6 +18,7 @@ var isAlive = true
 
 var score: int = 0
 var endScene = preload("res://interface/you_dead_ui.tscn").instantiate()
+var hook_trail
 
 @export var BoosterValue = 1.2
 @export var peak_distance_check_ahead : float = 10.0
@@ -27,6 +28,11 @@ var endScene = preload("res://interface/you_dead_ui.tscn").instantiate()
 
 var is_orbiting : bool = false
 var has_input : bool = false
+var tangente_added : bool = false
+var behind : bool = false
+
+var angle_tangente
+var angle_tangente_local
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -35,6 +41,9 @@ func _ready() -> void:
 	
 	var car_sprite = get_node("CarTexture")
 	car_sprite.texture = car_texture
+	
+	hook_trail = get_node("Line2D")
+	hook_trail.visible = false
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -48,19 +57,19 @@ func _process(delta: float) -> void:
 		# Mouse pos = A
 		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
-		if mouse_pos_global == hook_anchor:
-			pass
-		print("skibidi")
-		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
+		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
 		dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
 		if dir_to_anchor_local.x == 0.0:
-			print("r")
 			dir_to_anchor_local.x += 0.01
 			dir_to_anchor.x += 0.01
 		
-		print("here : ", dir_to_anchor_local)
+		var tangente = dir_to_anchor.rotated(PI / 2)
+		var tangente_local = dir_to_anchor_local.rotated(PI / 2)
+		
+		angle_tangente = tangente.angle_to(Vector2.UP.rotated(rotation))
+		angle_tangente_local = tangente_local.angle_to(Vector2.UP.rotated(rotation))
 		
 		var hypothenuse = dir_to_anchor.length()
 		
@@ -72,6 +81,11 @@ func _process(delta: float) -> void:
 			rot_direction = 1
 		else:
 			rot_direction = -1
+		
+		if (dir_to_anchor_local.y <= 0):
+			behind = false
+		else:
+			behind = true
 			
 		peak_coord = (hook_anchor_global + (peak_dist * Vector2.UP.rotated(rotation)))
 		
@@ -81,30 +95,42 @@ func _process(delta: float) -> void:
 		has_input = false
 		peak_coord = null
 		is_orbiting = false
+		
+		hook_trail.visible = false
 	
 	if has_input:
-		if (dir_to_anchor_local.y <= 0):
+		if not behind:
+			hook_trail.set_point_position(0, hook_anchor)
+				
+			hook_trail.visible = true
+			hook_trail.set_point_position(1, to_local(mouse_pos_global))
+			
 			if ((hook_anchor_global.distance_to(peak_coord) <= peak_distance_check_ahead)):
 				is_orbiting = true
-		else:
-			if ((hook_anchor_global.distance_to(peak_coord) <= peak_distance_check_behind)):
-				is_orbiting = true
+		
 			
 	if is_orbiting:
-		var angular_speed = speed / mouse_pos_global.distance_to(peak_coord)
-		rotation -= (angular_speed * delta) * rot_direction
+		if not behind:
+			var angular_speed = speed / mouse_pos_global.distance_to(peak_coord)
+			rotation -= (angular_speed * delta) * rot_direction
 	
 	queue_redraw()	
 	
 func _draw() -> void:
 	if draw_visual:
 		if has_input:
-			var mouse_pos_local = to_local(mouse_pos_global)
-			var peak_coord_local = to_local(peak_coord)
-				
-			#draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
-			draw_line(mouse_pos_local, hook_anchor, Color.GREEN, 2.0)
-
+			if not behind:
+				var mouse_pos_local = to_local(mouse_pos_global)
+				var peak_coord_local = to_local(peak_coord)
+					
+				#draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord_local), 0, TAU, 32, Color.RED, 2.0)
+				#draw_line(mouse_pos_local, hook_anchor, Color.GREEN, 2.0)
+			#else:
+			#	var mouse_pos_local = to_local(mouse_pos_global)
+			#	var peak_coord_local = to_local(peak_coord)
+					
+			#	draw_arc(mouse_pos_local, mouse_pos_local.distance_to(peak_coord), 0, TAU, 32, Color.RED, 2.0)
+				#draw_line(mouse_pos_local, hook_anchor, Color.GREEN, 2.0)
 
 
 func _on_area_shape_entered(area_rid: RID, area: Area2D, area_shape_index: int, local_shape_index: int) -> void:
@@ -140,9 +166,10 @@ func DeathExplode():
 	print("died")
 	speed = 0
 	baseSpeed = 0
-	get_tree().current_scene.add_child(endScene)
 	endScene.hasWon = false
 	endScene.score = score
+	get_tree().current_scene.add_child(endScene)
+	
 	
 	
 	
