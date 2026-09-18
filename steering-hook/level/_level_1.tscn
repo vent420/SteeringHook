@@ -97,6 +97,8 @@ position = Vector2(2500, -2500)
 position = Vector2(2498, -556)
 rotation = -1.5707964
 scale = Vector2(0.56, 0.56)
+collision_layer = 2
+collision_mask = 8
 
 [node name="Decoration" type="Node" parent="." unique_id=1257615534]
 script = ExtResource("5_rw1e4")
