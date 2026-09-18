@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://bht1k6jy2fukx"]
 
+[ext_resource type="Texture2D" uid="uid://bs5benmbfngy0" path="res://sprite/buildings_decoration/Batiment_1_r.png" id="1_8ia7c"]
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_uybmh"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_2bwxy"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_u288t"]
@@ -30,9 +31,47 @@ _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.2487562, 1), 0.0, 0.0, 0, 0, V
 point_count = 4
 
 [sub_resource type="Gradient" id="Gradient_22tqp"]
-colors = PackedColorArray(0.2924635, 0.013984197, 0.12511072, 1, 1, 1, 1, 1)
+offsets = PackedFloat32Array(0, 0.9875)
+colors = PackedColorArray(0.83137256, 0.08627451, 0.21176471, 1, 0.97901815, 0.48244607, 0.5217123, 1)
 
 [node name="Level2" type="Node2D" unique_id=4028965]
+
+[node name="Folder - Background" type="Node" parent="." unique_id=1921465695]
+
+[node name="Batiment1R" type="Sprite2D" parent="Folder - Background" unique_id=1797001428]
+position = Vector2(-311, -4472)
+texture = ExtResource("1_8ia7c")
+
+[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=302539295]
+self_modulate = Color(0.9019608, 0.4509804, 0.5294118, 1)
+z_index = -101
+position = Vector2(1932.0002, -5263)
+scale = Vector2(177.7774, 239.07227)
+texture = ExtResource("23_e1yqi")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236693653]
+z_index = -100
+position = Vector2(1932, -5503)
+scale = Vector2(-0.84693164, 0.9539013)
+amount = 1500
+texture = ExtResource("24_e1yqi")
+lifetime = 10.0
+speed_scale = 0.4
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(6000, 7000)
+direction = Vector2(1, -1)
+spread = 28.08
+gravity = Vector2(0, 0)
+initial_velocity_min = 120.0
+initial_velocity_max = 150.0
+scale_amount_min = 2.0
+scale_amount_max = 6.0
+scale_amount_curve = SubResource("Curve_du08s")
+color = Color(1, 1, 1, 0.50980395)
+color_ramp = SubResource("Gradient_22tqp")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
 
 [node name="RoadTiles" type="Node" parent="." unique_id=1664681287]
 
@@ -526,34 +565,3 @@ position = Vector2(5468, -4753)
 
 [node name="ObstacleCar2" parent="Obj" unique_id=1673970530 instance=ExtResource("22_1pg2i")]
 position = Vector2(5647, -4708)
-
-[node name="Folder - Background" type="Node" parent="." unique_id=1921465695]
-
-[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=302539295]
-self_modulate = Color(0.9019608, 0.4509804, 0.5294118, 1)
-z_index = -101
-position = Vector2(1932.0002, -5263)
-scale = Vector2(177.7774, 239.07227)
-texture = ExtResource("23_e1yqi")
-
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236693653]
-z_index = -100
-position = Vector2(1932, -5503)
-scale = Vector2(-0.84693164, 0.9539013)
-amount = 500
-texture = ExtResource("24_e1yqi")
-lifetime = 10.0
-randomness = 1.0
-emission_shape = 3
-emission_rect_extents = Vector2(6000, 7000)
-direction = Vector2(1, -1)
-spread = 0.0
-gravity = Vector2(0, 0)
-initial_velocity_min = 10.0
-initial_velocity_max = 15.0
-scale_amount_min = 4.0
-scale_amount_max = 4.0
-scale_amount_curve = SubResource("Curve_du08s")
-color_ramp = SubResource("Gradient_22tqp")
-hue_variation_min = -1.0
-hue_variation_max = 1.0
