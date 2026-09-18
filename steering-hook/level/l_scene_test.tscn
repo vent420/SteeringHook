@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bd46kdqtn2u7f"]
+
+[ext_resource type="PackedScene" uid="uid://cohxxbplgo1n4" path="res://prefab/checkpoint.tscn" id="1_1cy8g"]
+[ext_resource type="PackedScene" uid="uid://ldg6u6x2qc1" path="res://prefab/player.tscn" id="2_2g5vg"]
+
+[node name="LSceneTest" type="Node2D" unique_id=947285502]
+
+[node name="Checkpoint" parent="." unique_id=1011653763 instance=ExtResource("1_1cy8g")]
+position = Vector2(-3.0000002, -468)
+rotation = -1.5707964
+scale = Vector2(15.985339, 0.71129936)
+
+[node name="Player" parent="." unique_id=1010667792 node_paths=PackedStringArray("checkpoint_end") instance=ExtResource("2_2g5vg")]
+checkpoint_end = NodePath("../Checkpoint")

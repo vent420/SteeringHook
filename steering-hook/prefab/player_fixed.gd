@@ -24,6 +24,9 @@ var hook_trail
 @export var peak_distance_check_ahead : float = 10.0
 @export var draw_visual : bool = false
 @export var car_texture : Resource
+@export var checkpoint_end : Node2D
+@export var boost_go_start : Node2D = null
+@export var boost_go_back : Node2D = null
 
 var is_orbiting : bool = false
 var has_input : bool = false
@@ -51,7 +54,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	var time_now = Time.get_ticks_msec()
 	time_end = time_now - time_start
-	print(time_end / float(1000))
 	
 	velocity = Vector2.UP.rotated(rotation) * speed
 	position += velocity * delta
@@ -61,7 +63,6 @@ func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("left_click"):
 		# Mouse pos = A
 		# hook anchor = B
-		print(time_start)
 		mouse_pos_global = get_global_mouse_position()
 		
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
@@ -161,9 +162,11 @@ func collide(layer:int , obj:Area2D)->void:
 		16:
 			print("FinishLine")
 			finish()
-		6:
+		32:
 			print("checkpoint")
 			checkpoint()
+			
+	print("layer : ", layer)
 	
 	
 		
@@ -200,10 +203,15 @@ func finish():
 	baseSpeed = 0
 	
 	
-	
-	
 func checkpoint():
 	print("checked the point")
+	
+	position = checkpoint_end.position
+	rotation = checkpoint_end.rotation
+	
+	if boost_go_start:
+		boost_go_start.visible
+	
 	
 
 

@@ -1117,5 +1117,4 @@ z_index = 3
 position = Vector2(65, 498)
 rotation = 1.5707964
 speed = 450.0
-peak_distance_check_behind = 750.0
 car_texture = ExtResource("26_22tqp")

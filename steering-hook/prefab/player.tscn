@@ -16,7 +16,7 @@ size = Vector2(108, 193)
 [node name="Player" type="Area2D" unique_id=1010667792]
 scale = Vector2(0.2, 0.2)
 collision_layer = 8
-collision_mask = 23
+collision_mask = 55
 script = ExtResource("1_a1o1i")
 speed = 500.0
 draw_visual = true
