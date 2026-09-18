@@ -25,3 +25,11 @@ func _on_check_button_toggled(toggled_on: bool) -> void:
 
 func _on_h_slider_value_changed(value: float) -> void:
 	GlobalsAudio.engine_change(value,100.0)
+
+
+func _on_h_slider_2_value_changed(value: float) -> void:
+	GlobalsAudio.engine_vol_mult = value
+func _on_h_slider_3_value_changed(value: float) -> void:
+	GlobalsAudio.g_sounds_volume = value
+func _on_h_slider_4_value_changed(value: float) -> void:
+	GlobalsAudio.change_music_volume( value )

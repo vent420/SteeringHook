@@ -57,8 +57,59 @@ offset_top = -23.0
 offset_right = 40.0
 text = "engine strength"
 
+[node name="HSlider2" type="HSlider" parent="." unique_id=1864427908]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 313.0
+offset_right = 251.0
+offset_bottom = 329.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="Label" type="Label" parent="HSlider2" unique_id=384068278]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 40.0
+text = "sub-global engine volume"
+
+[node name="HSlider3" type="HSlider" parent="." unique_id=801204619]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 353.0
+offset_right = 251.0
+offset_bottom = 369.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="Label" type="Label" parent="HSlider3" unique_id=41441551]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 40.0
+text = "global sound volume"
+
+[node name="HSlider4" type="HSlider" parent="." unique_id=820039541]
+layout_mode = 0
+offset_left = 60.0
+offset_top = 396.0
+offset_right = 251.0
+offset_bottom = 412.0
+max_value = 1.0
+step = 0.1
+value = 1.0
+
+[node name="Label" type="Label" parent="HSlider4" unique_id=1096564087]
+layout_mode = 0
+offset_top = -23.0
+offset_right = 40.0
+text = "global music volume"
+
 [connection signal="button_down" from="Button2" to="." method="_on_button_2_button_down"]
 [connection signal="button_down" from="Button" to="." method="_on_button_button_down"]
 [connection signal="button_down" from="Button3" to="." method="_on_button_3_button_down"]
 [connection signal="toggled" from="CheckButton" to="." method="_on_check_button_toggled"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_h_slider_value_changed"]
+[connection signal="value_changed" from="HSlider2" to="." method="_on_h_slider_2_value_changed"]
+[connection signal="value_changed" from="HSlider3" to="." method="_on_h_slider_3_value_changed"]
+[connection signal="value_changed" from="HSlider4" to="." method="_on_h_slider_4_value_changed"]

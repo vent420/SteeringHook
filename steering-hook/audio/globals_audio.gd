@@ -85,6 +85,7 @@ func music_end(fade_time: float = 0.2):
 
 func change_music_volume(to: float):
 	music_player.volume_linear = to
+	g_music_volume = to
 
 func music():
 	music_player.stream = load("res://audio/mus_music_default_v01.ogg")
