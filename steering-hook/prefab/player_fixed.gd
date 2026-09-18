@@ -48,7 +48,9 @@ func _process(delta: float) -> void:
 		# Mouse pos = A
 		# hook anchor = B
 		mouse_pos_global = get_global_mouse_position()
-		
+		if mouse_pos_global == hook_anchor:
+			pass
+		print("skibidi")
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
 		dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))

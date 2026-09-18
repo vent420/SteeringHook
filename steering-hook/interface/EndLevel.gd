@@ -16,9 +16,11 @@ func _process(delta: float) -> void:
 func getscore(Score: int):
 	score = Score
 
-func _on_play_b_pressed() -> void:
+func _on_retry_pressed() -> void:
+	get_tree().reload_current_scene()
 	pass # Replace with function body.
 
 
-func _on_quit_b_pressed() -> void:
+func _on_quit_pressed() -> void:
+	get_tree().change_scene_to_file("res://interface/main.tscn")
 	pass # Replace with function body.
