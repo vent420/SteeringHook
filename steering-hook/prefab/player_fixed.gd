@@ -53,7 +53,14 @@ func _process(delta: float) -> void:
 		print("skibidi")
 		var dir_to_anchor = mouse_pos_global - hook_anchor_global
 		
+		
 		dir_to_anchor_local = (to_local(mouse_pos_global) - to_local(hook_anchor_global))
+		if dir_to_anchor_local.x == 0.0:
+			print("r")
+			dir_to_anchor_local.x += 0.01
+			dir_to_anchor.x += 0.01
+		
+		print("here : ", dir_to_anchor_local)
 		
 		var hypothenuse = dir_to_anchor.length()
 		
