@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="15_ehl75"]
 [ext_resource type="Texture2D" uid="uid://do24qv71e3rr" path="res://vfx/panning_particles/background_shapes/rond.png" id="17_7ovs8"]
 [ext_resource type="Texture2D" uid="uid://0a6exmkkj0xb" path="res://vfx/panning_particles/background_shapes/background.png" id="17_srl7w"]
+[ext_resource type="PackedScene" uid="uid://cgd58qhe80djy" path="res://prefab/objects/obstacle_car.tscn" id="19_2xjr2"]
 
 [sub_resource type="Curve" id="Curve_srl7w"]
 _data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.27038628, 1), 0.0, 0.0, 0, 0, Vector2(0.68240345, 0.43750006), -1.3546509, -1.3546509, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
@@ -27,6 +28,39 @@ point_count = 4
 colors = PackedColorArray(0.57941115, 6.0644747e-06, 0.38766602, 1, 0.887299, 0.55076134, 0.7414434, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
+
+[node name="Folder - Background" type="Node" parent="." unique_id=11654876]
+
+[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=1494183052]
+self_modulate = Color(0.9019608, 0.5764706, 0.7607843, 1)
+z_index = -101
+position = Vector2(5000, -3437.0002)
+scale = Vector2(276.7157, 260.58038)
+texture = ExtResource("17_srl7w")
+
+[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236978144]
+z_index = -100
+position = Vector2(5000, -3968)
+amount = 2000
+texture = ExtResource("17_7ovs8")
+lifetime = 10.0
+preprocess = 5.0
+speed_scale = 0.2
+randomness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(6000, 7000)
+direction = Vector2(1, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 60.0
+initial_velocity_max = 100.0
+scale_amount_min = 4.0
+scale_amount_max = 5.0
+scale_amount_curve = SubResource("Curve_srl7w")
+color = Color(1, 1, 1, 0.25882354)
+color_ramp = SubResource("Gradient_2xjr2")
+hue_variation_min = -1.0
+hue_variation_max = 1.0
 
 [node name="Folder - Tiles" type="Node" parent="." unique_id=264343881]
 
@@ -175,26 +209,6 @@ position = Vector2(6593.9995, -7526)
 rotation = -1.5707964
 scale = Vector2(0.55, 0.55)
 
-[node name="Booster5" parent="Folder - Booster" unique_id=1073140377 instance=ExtResource("15_ehl75")]
-position = Vector2(5002, -3689)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster7" parent="Folder - Booster" unique_id=313158652 instance=ExtResource("15_ehl75")]
-position = Vector2(4490, -1521)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster8" parent="Folder - Booster" unique_id=322451953 instance=ExtResource("15_ehl75")]
-position = Vector2(4975, -1708.0001)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
-[node name="Booster9" parent="Folder - Booster" unique_id=443290867 instance=ExtResource("15_ehl75")]
-position = Vector2(5318, -1295.9999)
-rotation = -3.1415925
-scale = Vector2(0.55, 0.55)
-
 [node name="Booster2" parent="Folder - Booster" unique_id=501746168 instance=ExtResource("15_ehl75")]
 position = Vector2(2469.9998, -1748.0001)
 rotation = -2.0367992
@@ -249,35 +263,18 @@ position = Vector2(2301, -1497.0001)
 rotation = 0.76270896
 scale = Vector2(0.645, 0.645)
 
-[node name="Folder - Background" type="Node" parent="." unique_id=11654876]
+[node name="ObstacleCar" parent="." unique_id=1745866449 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(4494, -1523)
 
-[node name="Background" type="Sprite2D" parent="Folder - Background" unique_id=1494183052]
-self_modulate = Color(0.9019608, 0.5764706, 0.7607843, 1)
-z_index = -101
-position = Vector2(5000, -3437.0002)
-scale = Vector2(276.7157, 260.58038)
-texture = ExtResource("17_srl7w")
+[node name="ObstacleCar2" parent="." unique_id=796120890 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(4977, -1711)
 
-[node name="CPUParticles2D" type="CPUParticles2D" parent="Folder - Background" unique_id=236978144]
-z_index = -100
-position = Vector2(5000, -3968)
-amount = 2000
-texture = ExtResource("17_7ovs8")
-lifetime = 10.0
-preprocess = 5.0
-speed_scale = 0.2
-randomness = 1.0
-emission_shape = 3
-emission_rect_extents = Vector2(6000, 7000)
-direction = Vector2(1, -1)
-spread = 0.0
-gravity = Vector2(0, 0)
-initial_velocity_min = 60.0
-initial_velocity_max = 100.0
-scale_amount_min = 4.0
-scale_amount_max = 5.0
-scale_amount_curve = SubResource("Curve_srl7w")
-color = Color(1, 1, 1, 0.25882354)
-color_ramp = SubResource("Gradient_2xjr2")
-hue_variation_min = -1.0
-hue_variation_max = 1.0
+[node name="ObstacleCar4" parent="." unique_id=902200318 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(5002, -3685)
+
+[node name="ObstacleCar3" parent="." unique_id=961465789 instance=ExtResource("19_2xjr2")]
+z_index = 4
+position = Vector2(5324, -1305)
