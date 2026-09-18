@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://deribo2yqn282"]
 
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_0arg3"]
+[ext_resource type="Script" uid="uid://7if38et8x26f" path="res://level/global_level.gd" id="1_2oh4c"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_h15kj"]
 [ext_resource type="PackedScene" uid="uid://c7hwb4mbxy631" path="res://tiles/tile_road_finish.tscn" id="3_xprkm"]
 [ext_resource type="PackedScene" uid="uid://b1fuhk487bdsg" path="res://prefab/booster_prefab.tscn" id="4_h15kj"]
@@ -23,6 +24,7 @@ point_count = 4
 colors = PackedColorArray(0.02248765, 0.17875454, 0.16530666, 1, 0.25487402, 0.6001797, 0.58033353, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
+script = ExtResource("1_2oh4c")
 
 [node name="Folder - Background" type="Node" parent="." unique_id=2133328095]
 

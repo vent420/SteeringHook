@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://bht1k6jy2fukx"]
 
 [ext_resource type="Texture2D" uid="uid://bs5benmbfngy0" path="res://sprite/buildings_decoration/Batiment_1_r.png" id="1_8ia7c"]
+[ext_resource type="Script" uid="uid://7if38et8x26f" path="res://level/global_level.gd" id="1_22tqp"]
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_uybmh"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_2bwxy"]
 [ext_resource type="PackedScene" uid="uid://co1ensvnf6vq4" path="res://tiles/tile_road_slanted_fork.tscn" id="3_u288t"]
@@ -36,6 +37,8 @@ offsets = PackedFloat32Array(0, 0.9875)
 colors = PackedColorArray(0.83137256, 0.08627451, 0.21176471, 1, 0.97901815, 0.48244607, 0.5217123, 1)
 
 [node name="Level2" type="Node2D" unique_id=4028965]
+script = ExtResource("1_22tqp")
+color = "r"
 
 [node name="Folder - Background" type="Node" parent="." unique_id=1921465695]
 

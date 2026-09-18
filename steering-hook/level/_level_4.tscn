@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://40c0k843m5ge"]
 
 [ext_resource type="PackedScene" uid="uid://cufmjv7e7rk0e" path="res://tiles/tile_road_straight.tscn" id="1_lmtnf"]
+[ext_resource type="Script" uid="uid://7if38et8x26f" path="res://level/global_level.gd" id="1_phx8o"]
 [ext_resource type="PackedScene" uid="uid://cp3mjo0ybnk1v" path="res://tiles/tile_road_turn.tscn" id="2_xas6p"]
 [ext_resource type="Texture2D" uid="uid://dhxqyircob250" path="res://sprite/buildings_decoration/Batiment_5_t.png" id="2_xttce"]
 [ext_resource type="PackedScene" uid="uid://bpluncum0evj1" path="res://tiles/tile_road_parking_parallel.tscn" id="4_ebgyn"]
@@ -28,6 +29,8 @@ point_count = 4
 colors = PackedColorArray(0.57941115, 6.0644747e-06, 0.38766602, 1, 0.887299, 0.55076134, 0.7414434, 1)
 
 [node name="Level1" type="Node2D" unique_id=4028965]
+script = ExtResource("1_phx8o")
+color = "p"
 
 [node name="Folder - Background" type="Node" parent="." unique_id=11654876]
 
