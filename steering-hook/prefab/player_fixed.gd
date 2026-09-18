@@ -27,6 +27,9 @@ var hook_trail
 @export var checkpoint_end : Node2D
 @export var boost_go_start : Node2D = null
 @export var boost_go_back : Node2D = null
+@export var obst_go_start : Node2D = null
+@export var obst_go_back : Node2D = null
+@export var finish_line_back : Node2D = null
 
 var is_orbiting : bool = false
 var has_input : bool = false
@@ -210,7 +213,18 @@ func checkpoint():
 	rotation = checkpoint_end.rotation
 	
 	if boost_go_start:
-		boost_go_start.visible
+		boost_go_start.visible = false
+	if boost_go_back:
+		boost_go_back.visible = true
+		
+	if obst_go_start:
+		obst_go_start.visible = false
+	if obst_go_back:
+		obst_go_back.visible = true
+		
+	if finish_line_back:
+		finish_line_back.visable = true
+	
 	
 	
 
